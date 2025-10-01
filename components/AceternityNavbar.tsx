@@ -49,18 +49,8 @@ const HamburgerIcon = ({ className, ...props }: React.SVGAttributes<SVGElement>)
 );
 
 export function AceternityNavbar() {
-  const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const checkWidth = () => {
@@ -137,10 +127,7 @@ export function AceternityNavbar() {
       {/* Main Navigation */}
       <header
         ref={containerRef}
-        className={cn(
-          'transition-all duration-300 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60',
-          isSticky ? 'fixed top-0 left-0 right-0 shadow-lg' : ''
-        )}
+        className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm transition-all duration-300"
       >
         <div className="container mx-auto px-4">
           <div className="flex h-20 items-center justify-between gap-4">

@@ -4,31 +4,31 @@ import { AnimatedTestimonials, Testimonial } from "@/components/ui/animated-test
 
 const testimonials: Testimonial[] = [
   {
-    quote: "Thanks to Wexford Educare, I was able to navigate the complex application process with ease. Their personalized support and dedication to my success were truly remarkable. I couldn't have done it without them.",
+    quote: "Thanks to Blossom Educare, I was able to navigate the complex application process with ease. Their personalized support and dedication to my success were truly remarkable. I couldn't have done it without them.",
     name: "Habibul Basar",
     designation: "Student",
     src: "/images/placeholder.png",
   },
   {
-    quote: "I was worried about how to manage my work and studies, but Wexford Educare's flexible schedules and comprehensive support made it possible.",
+    quote: "I was worried about how to manage my work and studies, but Blossom Educare's flexible schedules and comprehensive support made it possible.",
     name: "Maradon Radu",
     designation: "Student",
     src: "/images/placeholder.png",
   },
   {
-    quote: "I am so grateful for Wexford Educare's support in my university application process. They made it stress-free.",
+    quote: "I am so grateful for Blossom Educare's support in my university application process. They made it stress-free.",
     name: "Awais Hussain Khan",
     designation: "Student",
     src: "/images/placeholder.png",
   },
   {
-    quote: "Applying from another country felt overwhelming. Wexford Educare handled everything, from finding the right university to helping me understand the visa requirements. Their team is knowledgeable and incredibly patient.",
+    quote: "Applying from another country felt overwhelming. Blossom Educare handled everything, from finding the right university to helping me understand the visa requirements. Their team is knowledgeable and incredibly patient.",
     name: "Fatima Ahmed",
     designation: "CEO",
     src: "/images/placeholder.png",
   },
   {
-    quote: "As a parent, I was worried about my daughter's application. The team at Wexford Educare was professional, transparent, and kept us informed at every step. We couldn't be happier with the outcome.",
+    quote: "As a parent, I was worried about my daughter's application. The team at Blossom Educare was professional, transparent, and kept us informed at every step. We couldn't be happier with the outcome.",
     name: "Mrs. S. Rahman",
     designation: "Student",
     src: "/images/placeholder.png",
