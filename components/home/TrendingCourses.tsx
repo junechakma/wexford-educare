@@ -33,7 +33,7 @@ export function TrendingCourses() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e293b]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Trending Courses in the UK
           </h2>
         </div>
@@ -46,20 +46,20 @@ export function TrendingCourses() {
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e293b]/80 via-transparent to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-secondary)]/80 via-transparent to-transparent z-10" />
                 <Image
                   src={course.image}
                   alt={course.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white px-4 py-2 rounded-full text-xs font-semibold z-20">
+                <div className="absolute top-4 left-4 bg-secondary text-primary px-4 py-2 rounded-full text-xs font-semibold z-20">
                   {course.category}
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#1e293b] transition-colors line-clamp-2">
+                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-secondary transition-colors line-clamp-2">
                   {course.title}
                 </h3>
               </div>
@@ -75,7 +75,7 @@ export function TrendingCourses() {
               onClick={() => setCurrentPage(page)}
               className={`w-10 h-10 rounded-full font-semibold transition-all duration-300 ${
                 page === currentPage
-                  ? "bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white shadow-lg scale-110"
+                  ? "bg-secondary text-primary shadow-lg scale-110"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               }`}
             >

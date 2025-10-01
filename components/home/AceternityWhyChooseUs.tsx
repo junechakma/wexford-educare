@@ -41,16 +41,16 @@ function Feature3DCard({
 }) {
   return (
     <CardContainer containerClassName="py-0">
-      <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-gold/[0.1] border-border rounded-xl p-6 border h-auto w-full">
+      <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] border-border rounded-xl p-6 border h-auto w-full">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-navy mb-2"
+          className="text-xl font-bold text-secondary mb-2"
         >
           {title}
         </CardItem>
         <CardItem
           translateZ="60"
-          className="text-gold mb-4"
+          className="text-primary mb-4"
         >
           <Icon className="w-12 h-12" />
         </CardItem>
@@ -65,7 +65,7 @@ function Feature3DCard({
           translateZ="100"
           className="w-full mt-6"
         >
-          <div className="h-1 w-full bg-gradient-to-r from-navy via-gold to-navy rounded-full opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
+          <div className="h-1 w-full bg-gradient-to-r from-secondary via-primary to-secondary rounded-full opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
         </CardItem>
       </CardBody>
     </CardContainer>
@@ -77,7 +77,7 @@ export function AceternityWhyChooseUs() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-navy">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Why Choose Us?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

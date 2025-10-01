@@ -5,24 +5,24 @@
  * To change brand colors globally, update the values in app/globals.css
  *
  * Usage in components:
- * - Use CSS variables: bg-[var(--color-navy)]
- * - Use utility classes: bg-navy, text-gold, gradient-navy-gold
+ * - Use CSS variables: bg-[var(--color-primary)]
+ * - Use utility classes: bg-primary, text-secondary, gradient-secondary-primary
  * - Import constants: import { COLORS } from '@/lib/colors'
  */
 
 export const COLORS = {
-  // Primary Brand Color - Navy Blue
-  navy: {
-    DEFAULT: '#1e293b',
-    light: '#334155',
-    dark: '#0f172a',
+  // Primary Brand Color - Golden
+  primary: {
+    DEFAULT: '#dcb685',
+    light: '#e8c89f',
+    dark: '#c9a46b',
   },
 
-  // Secondary Brand Color - Royal Gold
-  gold: {
-    DEFAULT: '#d4af37',
-    light: '#f4d03f',
-    dark: '#b8941e',
+  // Secondary Brand Color - Navy Blue
+  secondary: {
+    DEFAULT: '#051d44',
+    light: '#0a2f61',
+    dark: '#030f27',
   },
 
   // Background Colors
@@ -46,18 +46,18 @@ export const COLORS = {
 
 /**
  * CSS Variable Names
- * Use these with Tailwind's arbitrary values: bg-[var(--color-navy)]
+ * Use these with Tailwind's arbitrary values: bg-[var(--color-primary)]
  */
 export const CSS_VARS = {
-  // Navy
-  navy: 'var(--color-navy)',
-  navyLight: 'var(--color-navy-light)',
-  navyDark: 'var(--color-navy-dark)',
+  // Primary
+  primary: 'var(--color-primary)',
+  primaryLight: 'var(--color-primary-light)',
+  primaryDark: 'var(--color-primary-dark)',
 
-  // Gold
-  gold: 'var(--color-gold)',
-  goldLight: 'var(--color-gold-light)',
-  goldDark: 'var(--color-gold-dark)',
+  // Secondary
+  secondary: 'var(--color-secondary)',
+  secondaryLight: 'var(--color-secondary-light)',
+  secondaryDark: 'var(--color-secondary-dark)',
 
   // Backgrounds
   background: 'var(--background)',
@@ -70,35 +70,35 @@ export const CSS_VARS = {
  */
 export const UTILITY_CLASSES = {
   // Background Colors
-  bgNavy: 'bg-navy',
-  bgNavyLight: 'bg-navy-light',
-  bgNavyDark: 'bg-navy-dark',
-  bgGold: 'bg-gold',
-  bgGoldLight: 'bg-gold-light',
-  bgGoldDark: 'bg-gold-dark',
+  bgPrimary: 'bg-primary',
+  bgPrimaryLight: 'bg-primary-light',
+  bgPrimaryDark: 'bg-primary-dark',
+  bgSecondary: 'bg-secondary',
+  bgSecondaryLight: 'bg-secondary-light',
+  bgSecondaryDark: 'bg-secondary-dark',
 
   // Text Colors
-  textNavy: 'text-navy',
-  textNavyLight: 'text-navy-light',
-  textNavyDark: 'text-navy-dark',
-  textGold: 'text-gold',
-  textGoldLight: 'text-gold-light',
-  textGoldDark: 'text-gold-dark',
+  textPrimary: 'text-primary',
+  textPrimaryLight: 'text-primary-light',
+  textPrimaryDark: 'text-primary-dark',
+  textSecondary: 'text-secondary',
+  textSecondaryLight: 'text-secondary-light',
+  textSecondaryDark: 'text-secondary-dark',
 
   // Border Colors
-  borderNavy: 'border-navy',
-  borderGold: 'border-gold',
+  borderPrimary: 'border-primary',
+  borderSecondary: 'border-secondary',
 
   // Gradients
-  gradientNavyGold: 'gradient-navy-gold',
-  gradientGoldNavy: 'gradient-gold-navy',
-  gradientNavyLight: 'gradient-navy-light',
+  gradientSecondaryPrimary: 'gradient-secondary-primary',
+  gradientPrimarySecondary: 'gradient-primary-secondary',
+  gradientSecondaryLight: 'gradient-secondary-light',
 
   // Hover Effects
-  hoverGold: 'hover-gold',
-  hoverNavy: 'hover-navy',
-  hoverBgGold: 'hover-bg-gold',
-  hoverBgNavy: 'hover-bg-navy',
+  hoverPrimary: 'hover-primary',
+  hoverSecondary: 'hover-secondary',
+  hoverBgPrimary: 'hover-bg-primary',
+  hoverBgSecondary: 'hover-bg-secondary',
 } as const;
 
 /**
@@ -106,14 +106,14 @@ export const UTILITY_CLASSES = {
  * Pre-configured color combinations for consistent styling
  */
 export const COLOR_COMBOS = {
-  primaryButton: 'bg-gradient-to-r from-[var(--color-navy)] to-[var(--color-gold)] text-white',
-  secondaryButton: 'bg-white text-[var(--color-navy)] border-2 border-[var(--color-navy)]',
-  cardBorder: 'border border-gray-100 hover:border-[var(--color-gold)]',
-  heading: 'text-[var(--color-navy)]',
+  primaryButton: 'bg-[var(--color-secondary)] text-[var(--color-primary)]',
+  secondaryButton: 'bg-white text-[var(--color-secondary)] border-2 border-[var(--color-secondary)]',
+  cardBorder: 'border border-gray-100 hover:border-[var(--color-primary)]',
+  heading: 'text-[var(--color-secondary)]',
   subheading: 'text-gray-600',
-  link: 'text-gray-700 hover:text-[var(--color-navy)]',
-  navLink: 'text-gray-700 hover-navy',
-  goldAccent: 'text-[var(--color-gold)]',
+  link: 'text-gray-700 hover:text-[var(--color-secondary)]',
+  navLink: 'text-gray-700 hover-secondary',
+  primaryAccent: 'text-[var(--color-primary)]',
 } as const;
 
 /**
@@ -121,10 +121,10 @@ export const COLOR_COMBOS = {
  * Ready-to-use gradient styles
  */
 export const GRADIENTS = {
-  navyToGold: 'linear-gradient(135deg, var(--color-navy) 0%, var(--color-gold) 100%)',
-  goldToNavy: 'linear-gradient(135deg, var(--color-gold) 0%, var(--color-navy) 100%)',
-  navyLight: 'linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%)',
-  heroGradient: 'linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 50%, var(--color-gold) 100%)',
+  secondaryToPrimary: 'linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%)',
+  primaryToSecondary: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)',
+  secondaryLight: 'linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%)',
+  heroGradient: 'linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 50%, var(--color-primary) 100%)',
 } as const;
 
 export type ColorKey = keyof typeof COLORS;

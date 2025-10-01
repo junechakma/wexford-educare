@@ -92,13 +92,13 @@ export function AceternityNavbar() {
                 href="https://www.facebook.com/wexfordeducare"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gold transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="hover:text-gold transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
@@ -108,14 +108,14 @@ export function AceternityNavbar() {
             <div className="flex gap-6 text-sm">
               <Link
                 href="tel:+442033759568"
-                className="hover:text-gold transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 +44 20 3375 9568
               </Link>
               <span className="text-gray-400">|</span>
               <Link
                 href="mailto:info@wexfordeducare.com"
-                className="hover:text-gold transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 info@wexfordeducare.com
               </Link>
@@ -217,12 +217,11 @@ export function AceternityNavbar() {
                 <Search className="w-5 h-5" />
               </Button>
               <Link href="/apply-now">
-                <Button
-                  size="sm"
-                  className="text-sm font-semibold px-6 h-10 rounded-full shadow-sm bg-gradient-to-r from-navy to-gold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                <button
+                  className="text-sm font-semibold px-6 h-10 rounded-full shadow-sm bg-secondary text-primary hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   Apply Now
-                </Button>
+                </button>
               </Link>
             </div>
           </div>

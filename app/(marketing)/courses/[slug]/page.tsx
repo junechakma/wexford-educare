@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 export default function CoursePage({ params }: { params: { slug: string } }) {
   return (
     <div className="container mx-auto px-4 py-20">
-      <h1 className="text-4xl font-bold text-navy mb-6">
+      <h1 className="text-4xl font-bold text-secondary mb-6">
         Course: {params.slug}
       </h1>
       <p className="text-lg text-gray-700">

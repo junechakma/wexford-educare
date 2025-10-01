@@ -8,15 +8,15 @@
 :root {
   /* Background Colors */
 
-  /* Brand Colors - PRIMARY (Navy Blue) */
-  --color-navy: #1e293b;
-  --color-navy-light: #334155;
-  --color-navy-dark: #0f172a;
+  /* Brand Colors - PRIMARY (Golden) */
+  --color-primary: #dcb685;
+  --color-primary-light: #e8c89f;
+  --color-primary-dark: #c9a46b;
 
-  /* Brand Colors - SECONDARY (Royal Gold) */
-  --color-gold: #d4af37;
-  --color-gold-light: #f4d03f;
-  --color-gold-dark: #b8941e;
+  /* Brand Colors - SECONDARY (Navy Blue) */
+  --color-secondary: #051d44;
+  --color-secondary-light: #0a2f61;
+  --color-secondary-dark: #030f27;
 
   /* Neutral Colors */
   --color-gray-50: #f9fafb;
@@ -72,27 +72,27 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Navy Colors */
-  --color-navy: var(--color-navy);
-  --color-navy-light: var(--color-navy-light);
-  --color-navy-dark: var(--color-navy-dark);
+  /* Primary Colors */
+  --color-primary: #dcb685;
+  --color-primary-light: #e8c89f;
+  --color-primary-dark: #c9a46b;
 
-  /* Gold Colors */
-  --color-gold: var(--color-gold);
-  --color-gold-light: var(--color-gold-light);
-  --color-gold-dark: var(--color-gold-dark);
+  /* Secondary Colors */
+  --color-secondary: #051d44;
+  --color-secondary-light: #0a2f61;
+  --color-secondary-dark: #030f27;
 
   /* Gray Scale */
-  --color-gray-50: var(--color-gray-50);
-  --color-gray-100: var(--color-gray-100);
-  --color-gray-200: var(--color-gray-200);
-  --color-gray-300: var(--color-gray-300);
-  --color-gray-400: var(--color-gray-400);
-  --color-gray-500: var(--color-gray-500);
-  --color-gray-600: var(--color-gray-600);
-  --color-gray-700: var(--color-gray-700);
-  --color-gray-800: var(--color-gray-800);
-  --color-gray-900: var(--color-gray-900);
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
 
   /* Font Family */
   --font-sans: var(--font-poppins);
@@ -123,99 +123,99 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-navy);
+  background: var(--color-secondary);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-navy-dark);
+  background: var(--color-secondary-dark);
 }
 
 /* Utility Classes for Brand Colors */
-.bg-navy {
-  background-color: var(--color-navy);
+.bg-primary {
+  background-color: var(--color-primary);
 }
 
-.bg-navy-light {
-  background-color: var(--color-navy-light);
+.bg-primary-light {
+  background-color: var(--color-primary-light);
 }
 
-.bg-navy-dark {
-  background-color: var(--color-navy-dark);
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
 }
 
-.bg-gold {
-  background-color: var(--color-gold);
+.bg-secondary {
+  background-color: var(--color-secondary);
 }
 
-.bg-gold-light {
-  background-color: var(--color-gold-light);
+.bg-secondary-light {
+  background-color: var(--color-secondary-light);
 }
 
-.bg-gold-dark {
-  background-color: var(--color-gold-dark);
+.bg-secondary-dark {
+  background-color: var(--color-secondary-dark);
 }
 
-.text-navy {
-  color: var(--color-navy);
+.text-primary {
+  color: var(--color-primary);
 }
 
-.text-navy-light {
-  color: var(--color-navy-light);
+.text-primary-light {
+  color: var(--color-primary-light);
 }
 
-.text-navy-dark {
-  color: var(--color-navy-dark);
+.text-primary-dark {
+  color: var(--color-primary-dark);
 }
 
-.text-gold {
-  color: var(--color-gold);
+.text-secondary {
+  color: var(--color-secondary);
 }
 
-.text-gold-light {
-  color: var(--color-gold-light);
+.text-secondary-light {
+  color: var(--color-secondary-light);
 }
 
-.text-gold-dark {
-  color: var(--color-gold-dark);
+.text-secondary-dark {
+  color: var(--color-secondary-dark);
 }
 
-.border-navy {
-  border-color: var(--color-navy);
+.border-primary {
+  border-color: var(--color-primary);
 }
 
-.border-gold {
-  border-color: var(--color-gold);
+.border-secondary {
+  border-color: var(--color-secondary);
 }
 
 /* Gradient Utilities */
-.gradient-navy-gold {
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-gold) 100%);
+.gradient-secondary-primary {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
 }
 
-.gradient-gold-navy {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-navy) 100%);
+.gradient-primary-secondary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 }
 
-.gradient-navy-light {
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+.gradient-secondary-light {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
 }
 
 /* Hover utilities */
-.hover-gold:hover {
-  color: var(--color-gold);
+.hover-primary:hover {
+  color: var(--color-primary);
 }
 
-.hover-navy:hover {
-  color: var(--color-navy);
+.hover-secondary:hover {
+  color: var(--color-secondary);
 }
 
-.hover-bg-gold:hover {
-  background-color: var(--color-gold);
+.hover-bg-primary:hover {
+  background-color: var(--color-primary);
 }
 
-.hover-bg-navy:hover {
-  background-color: var(--color-navy);
+.hover-bg-secondary:hover {
+  background-color: var(--color-secondary);
 }
 
 @theme inline {

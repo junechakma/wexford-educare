@@ -47,7 +47,7 @@ export function Partners() {
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e293b]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Partners – Wexford Educare
           </h2>
           <p className="text-xl text-gray-600">
@@ -60,7 +60,7 @@ export function Partners() {
             {visiblePartners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center border border-gray-100 hover:border-[#d4af37]"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center border border-gray-100 hover:border-primary"
               >
                 <div className="relative w-full h-24">
                   <Image
@@ -82,7 +82,7 @@ export function Partners() {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-[#d4af37] w-6"
+                    ? "bg-primary w-6"
                     : "bg-gray-300 hover:bg-gray-400"
                 }`}
                 aria-label={`Go to partner ${index + 1}`}

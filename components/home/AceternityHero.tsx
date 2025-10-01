@@ -55,7 +55,7 @@ export function AceternityHero() {
     <WavyBackground
       className="w-full min-h-[600px] flex items-center justify-center"
       containerClassName="w-full min-h-[600px]"
-      colors={["#1e293b", "#334155", "#d4af37", "#f4d03f", "#1e3a8a"]}
+      colors={["#051d44", "#0a2f61", "#dcb685", "#e8c89f", "#1e3a8a"]}
       waveWidth={80}
       backgroundFill="rgba(255,255,255,0.95)"
       blur={20}
@@ -88,7 +88,7 @@ export function AceternityHero() {
                 }}
               >
               <div className="container mx-auto text-center px-4 w-full">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-navy via-navy-light to-gold leading-tight">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-secondary via-secondary-light to-primary leading-tight">
                   {slide.heading}
                 </h1>
 
@@ -101,16 +101,13 @@ export function AceternityHero() {
                       <Link
                         key={ctaIndex}
                         href={cta.href}
-                        className={`group relative px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 overflow-hidden ${
+                        className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
                           ctaIndex === 0
-                            ? "bg-gradient-to-r from-navy to-gold text-white hover:shadow-2xl hover:scale-105"
-                            : "bg-white text-navy border-2 border-navy hover:bg-navy hover:text-white hover:shadow-xl"
+                            ? "bg-secondary text-primary hover:shadow-2xl hover:scale-105"
+                            : "bg-white text-secondary border-2 border-secondary hover:bg-secondary hover:text-primary hover:shadow-xl"
                         }`}
                       >
-                        <span className="relative z-10">{cta.text}</span>
-                        {ctaIndex === 0 && (
-                          <span className="absolute inset-0 bg-gradient-to-r from-gold to-navy opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        )}
+                        {cta.text}
                       </Link>
                     ))}
                 </div>
@@ -129,7 +126,7 @@ export function AceternityHero() {
               disabled={isTransitioning}
               className={`transition-all duration-300 rounded-full ${
                 index === currentSlide
-                  ? "bg-gold w-12 h-3 shadow-lg"
+                  ? "bg-primary w-12 h-3 shadow-lg"
                   : "bg-gray-300 hover:bg-gray-400 w-3 h-3"
               } ${isTransitioning ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
               aria-label={`Go to slide ${index + 1}`}

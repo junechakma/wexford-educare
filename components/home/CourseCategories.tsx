@@ -37,7 +37,7 @@ export function CourseCategories() {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e293b]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Course Categories
           </h2>
         </div>
@@ -49,20 +49,20 @@ export function CourseCategories() {
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
               <div className="relative h-72 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e293b]/80 via-transparent to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-secondary)]/80 via-transparent to-transparent z-10" />
                 <Image
                   src={category.image}
                   alt={category.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white px-4 py-2 rounded-full text-sm font-semibold z-20">
+                <div className="absolute top-4 right-4 bg-secondary text-primary px-4 py-2 rounded-full text-sm font-semibold z-20">
                   {category.duration}
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-[#1e293b]">
+                <h3 className="text-2xl font-bold mb-3 text-secondary">
                   {category.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
