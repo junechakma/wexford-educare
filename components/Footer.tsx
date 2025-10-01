@@ -1,11 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Particles } from "@/components/ui/particles";
 
 export function Footer() {
   return (
-    <footer className="bg-blue-950 text-white">
-      <div className="container mx-auto px-4 py-16">
+    <footer className="bg-blue-950 text-white relative overflow-hidden">
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color="#d4af37"
+        size={0.5}
+      />
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Contact Info */}
           <div>
