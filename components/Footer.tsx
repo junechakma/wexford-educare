@@ -4,66 +4,57 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-blue-950 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Contact Info</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#d4af37]">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex gap-3">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-1 text-purple-400" />
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-1 text-[#d4af37]" />
                 <p className="text-gray-300">
                   129 Mile End Road, London, E1 4BG, United Kingdom
                 </p>
               </div>
               <div className="flex gap-3">
-                <Phone className="w-5 h-5 flex-shrink-0 text-purple-400" />
+                <Phone className="w-5 h-5 flex-shrink-0 text-[#d4af37]" />
                 <div className="space-y-1">
                   <Link
-                    href="tel:02080894489"
-                    className="block text-gray-300 hover:text-purple-400 transition-colors"
+                    href="tel:+442033759568"
+                    className="block text-gray-300 hover:text-[#d4af37] transition-colors"
                   >
-                    02080894489
-                  </Link>
-                  <Link
-                    href="tel:+447437402307"
-                    className="block text-gray-300 hover:text-purple-400 transition-colors"
-                  >
-                    WhatsApp: +447437402307
+                    +44 20 3375 9568
                   </Link>
                 </div>
               </div>
               <div className="flex gap-3">
-                <Mail className="w-5 h-5 flex-shrink-0 text-purple-400" />
+                <Mail className="w-5 h-5 flex-shrink-0 text-[#d4af37]" />
                 <Link
-                  href="mailto:info@blossomeducare.co.uk"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  href="mailto:info@wexfordeducare.com"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
-                  info@blossomeducare.co.uk
+                  info@wexfordeducare.com
                 </Link>
               </div>
               <div className="flex gap-3">
-                <Clock className="w-5 h-5 flex-shrink-0 mt-1 text-purple-400" />
+                <Clock className="w-5 h-5 flex-shrink-0 mt-1 text-[#d4af37]" />
                 <div>
                   <p className="text-gray-300">Monday – Friday:</p>
                   <p className="text-gray-300">9:30 AM – 5:30 PM</p>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm mt-4">
-                Company Number: 13810286
-              </p>
             </div>
           </div>
 
           {/* Useful Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Useful Links</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#d4af37]">Useful Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/about-us"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   About Us
                 </Link>
@@ -71,7 +62,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/terms-conditions"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -79,7 +70,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -87,7 +78,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/cookies-policy"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Cookies Policy
                 </Link>
@@ -95,7 +86,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -103,7 +94,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/admin"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Administration Panel
                 </Link>
@@ -113,12 +104,12 @@ export function Footer() {
 
           {/* Quick Access */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Quick Access</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#d4af37]">Quick Access</h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/courses"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Courses
                 </Link>
@@ -126,7 +117,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/faqs"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   FAQs
                 </Link>
@@ -134,7 +125,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/apply-now"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Apply Now
                 </Link>
@@ -142,7 +133,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/complaints"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Complaints
                 </Link>
@@ -150,7 +141,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/sitemap"
-                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                  className="text-gray-300 hover:text-[#d4af37] transition-colors"
                 >
                   Sitemap
                 </Link>
@@ -160,14 +151,14 @@ export function Footer() {
 
           {/* Accreditations */}
           <div>
-            <h3 className="text-xl font-bold mb-6">
-              Accreditations & Customer Trust
+            <h3 className="text-xl font-bold mb-6 text-[#d4af37]">
+              Accreditations & Trust
             </h3>
             <div className="space-y-6">
               <div className="relative w-full h-20">
                 <Image
-                  src="/images/cropped-blossom-logo-removebg.png"
-                  alt="Blossom Educare"
+                  src="/WObg-Wexford Education Long.png"
+                  alt="Wexford Educare"
                   fill
                   className="object-contain object-left"
                 />
@@ -197,7 +188,7 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2020 - 2025 Blossom Educare | All Rights Reserved
+            © 2020 - 2025 Wexford Educare | All Rights Reserved
           </p>
         </div>
       </div>

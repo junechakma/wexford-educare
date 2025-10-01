@@ -16,7 +16,7 @@ const slides = [
   {
     heading: "Your Career Starts Here.",
     description:
-      "Blossom Educare connects you with the right courses to achieve your professional ambitions.",
+      "Wexford Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
   },
   {
@@ -38,7 +38,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
+    <section className="relative min-h-[600px] flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10" />
 
       <div className="container mx-auto px-4 py-20">
@@ -52,7 +52,7 @@ export function Hero() {
                   : "opacity-0 absolute translate-y-4 pointer-events-none"
               }`}
             >
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#1e293b] via-[#334155] to-[#d4af37]">
                 {slide.heading}
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
@@ -65,8 +65,8 @@ export function Hero() {
                     href={cta.href}
                     className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
                       ctaIndex === 0
-                        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-xl hover:scale-105"
-                        : "bg-white text-purple-600 border-2 border-purple-600 hover:bg-purple-600 hover:text-white hover:shadow-xl"
+                        ? "bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white hover:shadow-xl hover:scale-105"
+                        : "bg-white text-[#1e293b] border-2 border-[#1e293b] hover:bg-[#1e293b] hover:text-white hover:shadow-xl"
                     }`}
                   >
                     {cta.text}
@@ -84,7 +84,7 @@ export function Hero() {
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? "bg-purple-600 w-8"
+                  ? "bg-[#d4af37] w-8"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
               aria-label={`Go to slide ${index + 1}`}

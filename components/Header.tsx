@@ -29,22 +29,22 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-gray-900 text-white py-3 hidden md:block">
+      <div className="bg-blue-950 text-white py-3 hidden md:block">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Social Media */}
             <div className="flex gap-4">
               <Link
-                href="https://www.facebook.com/blossomEducare"
+                href="https://www.facebook.com/wexfordeducare"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-purple-400 transition-colors"
+                className="hover:text-[#d4af37] transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="hover:text-purple-400 transition-colors"
+                className="hover:text-[#d4af37] transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
@@ -53,17 +53,17 @@ export function Header() {
             {/* Contact Info */}
             <div className="flex gap-6 text-sm">
               <Link
-                href="tel:+447437402307"
-                className="hover:text-purple-400 transition-colors"
+                href="tel:+442033759568"
+                className="hover:text-[#d4af37] transition-colors"
               >
-                +447437402307
+                +44 20 3375 9568
               </Link>
-              <span className="text-gray-500">|</span>
+              <span className="text-gray-400">|</span>
               <Link
-                href="mailto:info@blossomeducare.co.uk"
-                className="hover:text-purple-400 transition-colors"
+                href="mailto:info@wexfordeducare.com"
+                className="hover:text-[#d4af37] transition-colors"
               >
-                info@blossomeducare.co.uk
+                info@wexfordeducare.com
               </Link>
             </div>
           </div>
@@ -82,12 +82,13 @@ export function Header() {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <div className="relative w-16 h-16">
+              <div className="relative w-48 h-16">
                 <Image
-                  src="/images/cropped-blossom-logo-removebg.png"
-                  alt="Blossom Educare"
+                  src="/Wbg-Wexford Education Long.png"
+                  alt="Wexford Educare"
                   fill
                   className="object-contain"
+                  priority
                 />
               </div>
             </Link>
@@ -98,9 +99,10 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-[#1e293b] font-medium transition-colors relative group"
                 >
                   {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#d4af37] group-hover:w-full transition-all duration-300"></span>
                 </Link>
               ))}
             </nav>
@@ -116,7 +118,7 @@ export function Header() {
 
               <Link
                 href="/apply-now"
-                className="hidden md:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="hidden md:block bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 Apply Now
               </Link>
@@ -143,7 +145,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block py-3 text-gray-700 hover:text-purple-600 hover:bg-gray-50 px-4 rounded transition-colors"
+                  className="block py-3 text-gray-700 hover:text-[#1e293b] hover:bg-gray-50 px-4 rounded transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -151,7 +153,7 @@ export function Header() {
               ))}
               <Link
                 href="/apply-now"
-                className="block mt-4 mx-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full font-semibold text-center"
+                className="block mt-4 mx-4 bg-gradient-to-r from-[#1e293b] to-[#d4af37] text-white px-6 py-3 rounded-full font-semibold text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Apply Now

@@ -4,9 +4,9 @@ import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 export function WhatsAppButton() {
-  const phoneNumber = "447437402307";
+  const phoneNumber = "442033759568";
   const message = encodeURIComponent(
-    "hello Blossom Educare, I need some help about admission. Would you mind to help me?"
+    "Hello Wexford Educare, I need some help about admission. Would you mind helping me?"
   );
 
   return (
@@ -20,7 +20,7 @@ export function WhatsAppButton() {
       <div className="bg-[#25D366] text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 flex items-center gap-3 group-hover:pr-6">
         <MessageCircle className="w-8 h-8" />
         <span className="hidden group-hover:inline-block text-sm font-semibold whitespace-nowrap transition-all duration-300">
-          Find us on Whatsapp
+          Chat with us on WhatsApp
         </span>
       </div>
     </Link>

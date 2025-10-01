@@ -1,17 +1,74 @@
 @import "tailwindcss";
 
+/* ============================================
+   WEXFORD EDUCARE - BRAND COLORS
+   Change these values to update colors globally
+   ============================================ */
+
 :root {
+  /* Background Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a2e;
+
+  /* Brand Colors - PRIMARY (Navy Blue) */
+  --color-navy: #1e293b;
+  --color-navy-light: #334155;
+  --color-navy-dark: #0f172a;
+
+  /* Brand Colors - SECONDARY (Royal Gold) */
+  --color-gold: #d4af37;
+  --color-gold-light: #f4d03f;
+  --color-gold-dark: #b8941e;
+
+  /* Neutral Colors */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Font Variables */
   --font-poppins: var(--font-poppins);
 }
 
-@theme inline {
+/* Register colors with Tailwind v4 */
+@theme {
+  /* Background & Foreground */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Navy Colors */
+  --color-navy: var(--color-navy);
+  --color-navy-light: var(--color-navy-light);
+  --color-navy-dark: var(--color-navy-dark);
+
+  /* Gold Colors */
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-gold-dark: var(--color-gold-dark);
+
+  /* Gray Scale */
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
+
+  /* Font Family */
   --font-sans: var(--font-poppins);
 }
 
+/* Global Styles */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -28,20 +85,107 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar with brand colors */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--color-gray-100);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--color-navy);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--color-navy-dark);
+}
+
+/* Utility Classes for Brand Colors */
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.bg-navy-light {
+  background-color: var(--color-navy-light);
+}
+
+.bg-navy-dark {
+  background-color: var(--color-navy-dark);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-gold-light {
+  background-color: var(--color-gold-light);
+}
+
+.bg-gold-dark {
+  background-color: var(--color-gold-dark);
+}
+
+.text-navy {
+  color: var(--color-navy);
+}
+
+.text-navy-light {
+  color: var(--color-navy-light);
+}
+
+.text-navy-dark {
+  color: var(--color-navy-dark);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+
+.text-gold-dark {
+  color: var(--color-gold-dark);
+}
+
+.border-navy {
+  border-color: var(--color-navy);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+/* Gradient Utilities */
+.gradient-navy-gold {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-gold) 100%);
+}
+
+.gradient-gold-navy {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-navy) 100%);
+}
+
+.gradient-navy-light {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+}
+
+/* Hover utilities */
+.hover-gold:hover {
+  color: var(--color-gold);
+}
+
+.hover-navy:hover {
+  color: var(--color-navy);
+}
+
+.hover-bg-gold:hover {
+  background-color: var(--color-gold);
+}
+
+.hover-bg-navy:hover {
+  background-color: var(--color-navy);
 }

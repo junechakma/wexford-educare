@@ -14,7 +14,7 @@ const features = [
     icon: Clipboard,
     title: "Expert Guidance",
     description:
-      "Schedule a free consultation with Blossom Educare. We provide dedicated support to help you choose and apply for your ideal course with confidence.",
+      "Schedule a free consultation with Wexford Educare. We provide dedicated support to help you choose and apply for your ideal course with confidence.",
   },
   {
     icon: Users,
@@ -56,14 +56,14 @@ function FlipCard({
         }`}
       >
         {/* Front */}
-        <div className="absolute inset-0 backface-hidden bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 flex flex-col items-center justify-center text-white shadow-xl">
-          <Icon className="w-16 h-16 mb-4" />
+        <div className="absolute inset-0 backface-hidden bg-[#1e293b] rounded-2xl p-8 flex flex-col items-center justify-center text-white shadow-xl">
+          <Icon className="w-16 h-16 mb-4 text-[#d4af37]" />
           <h3 className="text-2xl font-bold text-center">{title}</h3>
         </div>
 
         {/* Back */}
-        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-white border-2 border-purple-200 rounded-2xl p-6 flex flex-col items-center justify-center shadow-xl">
-          <h3 className="text-xl font-bold text-purple-600 mb-4 text-center">
+        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-white border-2 border-[#d4af37] rounded-2xl p-6 flex flex-col items-center justify-center shadow-xl">
+          <h3 className="text-xl font-bold text-[#1e293b] mb-4 text-center">
             {backTitle || title}
           </h3>
           <p className="text-gray-700 text-center">{description}</p>
@@ -78,11 +78,11 @@ export function WhyChooseUs() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e293b]">
             Why Choose Us?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Blossom Educare has been preferred as one of the top higher
+            Wexford Educare has been preferred as one of the top higher
             education consultants, when it comes to pursuing your higher degree
             in the UK
           </p>

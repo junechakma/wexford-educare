@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Blossom Educare - Your Path to UK Higher Education",
+  title: "Wexford Educare - Your Path to UK Higher Education",
   description: "Expert education consultants helping local, EU, and international students secure admission to top UK universities. From Bachelor's to Master's degrees, HND, and Top-Up programs.",
 };
 
