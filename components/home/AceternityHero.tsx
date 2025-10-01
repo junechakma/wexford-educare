@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { WavyBackground } from "./ui/wavy-background";
+import { WavyBackground } from "@/components/ui/wavy-background";
 import { motion } from "framer-motion";
 
 const slides = [
