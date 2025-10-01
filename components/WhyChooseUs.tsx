@@ -37,7 +37,7 @@ function FlipCard({
   backTitle,
   description,
 }: {
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   title: string;
   backTitle?: string;
   description: string;

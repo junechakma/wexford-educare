@@ -14,7 +14,7 @@ export interface WavyBackgroundProps {
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export const WavyBackground = ({
@@ -38,8 +38,8 @@ export const WavyBackground = ({
     nt: number,
     i: number,
     x: number,
-    ctx: any,
-    canvas: any;
+    ctx: CanvasRenderingContext2D | null,
+    canvas: HTMLCanvasElement | null;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const getSpeed = () => {
     switch (speed) {
@@ -50,6 +50,39 @@ export const WavyBackground = ({
       default:
         return 0.001;
     }
+  };
+
+  const waveColors = colors ?? [
+    "#1e293b",
+    "#334155",
+    "#d4af37",
+    "#f4d03f",
+    "#1e3a8a",
+  ];
+  const drawWave = (n: number) => {
+    if (!ctx) return;
+    nt += getSpeed();
+    for (i = 0; i < n; i++) {
+      ctx.beginPath();
+      ctx.lineWidth = waveWidth || 50;
+      ctx.strokeStyle = waveColors[i % waveColors.length];
+      for (x = 0; x < w; x += 5) {
+        const y = noise(x / 800, 0.3 * i, nt) * 100;
+        ctx.lineTo(x, y + h * 0.5);
+      }
+      ctx.stroke();
+      ctx.closePath();
+    }
+  };
+
+  let animationId: number;
+  const render = () => {
+    if (!ctx) return;
+    ctx.fillStyle = backgroundFill || "black";
+    ctx.globalAlpha = waveOpacity || 0.5;
+    ctx.fillRect(0, 0, w, h);
+    drawWave(5);
+    animationId = requestAnimationFrame(render);
   };
 
   const init = () => {
@@ -72,39 +105,6 @@ export const WavyBackground = ({
     render();
   };
 
-  const waveColors = colors ?? [
-    "#1e293b",
-    "#334155",
-    "#d4af37",
-    "#f4d03f",
-    "#1e3a8a",
-  ];
-  const drawWave = (n: number) => {
-    if (!ctx) return;
-    nt += getSpeed();
-    for (i = 0; i < n; i++) {
-      ctx.beginPath();
-      ctx.lineWidth = waveWidth || 50;
-      ctx.strokeStyle = waveColors[i % waveColors.length];
-      for (x = 0; x < w; x += 5) {
-        var y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5);
-      }
-      ctx.stroke();
-      ctx.closePath();
-    }
-  };
-
-  let animationId: number;
-  const render = () => {
-    if (!ctx) return;
-    ctx.fillStyle = backgroundFill || "black";
-    ctx.globalAlpha = waveOpacity || 0.5;
-    ctx.fillRect(0, 0, w, h);
-    drawWave(5);
-    animationId = requestAnimationFrame(render);
-  };
-
   useEffect(() => {
     if (isClient) {
       init();
@@ -114,7 +114,8 @@ export const WavyBackground = ({
         cancelAnimationFrame(animationId);
       }
     };
-  }, [isClient, blur, backgroundFill, waveOpacity, speed, waveWidth, colors]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isClient]);
 
   useEffect(() => {
     setIsClient(true);

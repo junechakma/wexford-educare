@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { WavyBackground } from "./ui/wavy-background";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { motion } from "framer-motion";
 
 const slides = [
@@ -58,10 +57,10 @@ export function AceternityHero() {
       containerClassName="w-full min-h-[600px]"
       colors={["#1e293b", "#334155", "#d4af37", "#f4d03f", "#1e3a8a"]}
       waveWidth={80}
-      backgroundFill="rgba(255,255,255,0.98)"
-      blur={12}
+      backgroundFill="rgba(255,255,255,0.95)"
+      blur={20}
       speed="slow"
-      waveOpacity={0.3}
+      waveOpacity={0.2}
     >
       <div className="w-full py-20">
         <div className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
