@@ -85,9 +85,9 @@ export function AceternityNavbar() {
       {/* Top Bar */}
       <div className="bg-blue-950 text-white py-3 hidden md:block">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-end items-center">
             {/* Social Media */}
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Link
                 href="https://www.facebook.com/wexfordeducare"
                 target="_blank"
@@ -102,7 +102,7 @@ export function AceternityNavbar() {
               >
                 <Instagram className="w-5 h-5" />
               </Link>
-            </div>
+            </div> */}
 
             {/* Contact Info */}
             <div className="flex gap-6 text-sm">

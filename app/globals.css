@@ -39,8 +39,8 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: #dcb685;
+  --primary-foreground: #051d44;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -76,11 +76,13 @@
   --color-primary: #dcb685;
   --color-primary-light: #e8c89f;
   --color-primary-dark: #c9a46b;
+  --color-primary-foreground: #051d44;
 
   /* Secondary Colors */
   --color-secondary: #051d44;
   --color-secondary-light: #0a2f61;
   --color-secondary-dark: #030f27;
+  --color-secondary-foreground: #dcb685;
 
   /* Gray Scale */
   --color-gray-50: #f9fafb;
@@ -229,8 +231,8 @@ html {
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: #dcb685;
+  --color-primary-foreground: #051d44;
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
