@@ -107,7 +107,7 @@ export type CardItemProps = {
   rotateX?: number | string;
   rotateY?: number | string;
   rotateZ?: number | string;
-} & Record<string, any>;
+} & Record<string, unknown>;
 
 export const CardItem = ({
   as: Tag = "div",
@@ -121,7 +121,7 @@ export const CardItem = ({
   rotateZ = 0,
   ...rest
 }: CardItemProps) => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
   useEffect(() => {
