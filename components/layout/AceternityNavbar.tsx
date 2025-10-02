@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Facebook, Instagram, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -51,6 +52,7 @@ const HamburgerIcon = ({ className, ...props }: React.SVGAttributes<SVGElement>)
 export function AceternityNavbar() {
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const checkWidth = () => {
@@ -73,12 +75,19 @@ export function AceternityNavbar() {
   }, []);
 
   const navItems = [
-    { name: 'Homepage', href: '/', active: true },
+    { name: 'Homepage', href: '/' },
     { name: 'About Us', href: '/about-us' },
     { name: 'Courses', href: '/courses' },
     { name: 'Contact Us', href: '/contact-us' },
     { name: 'Guidance', href: '/guidance' },
   ];
+
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <>
@@ -131,7 +140,7 @@ export function AceternityNavbar() {
       >
         <div className="container mx-auto px-4">
           <div className="flex h-20 items-center justify-between gap-4">
-            {/* Left side */}
+            {/* Left side - Logo */}
             <div className="flex items-center gap-2">
               {/* Mobile menu trigger */}
               {isMobile && (
@@ -153,9 +162,9 @@ export function AceternityNavbar() {
                             <Link
                               href={link.href}
                               className={cn(
-                                'flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground no-underline',
-                                link.active
-                                  ? 'bg-accent text-accent-foreground'
+                                'flex w-full items-center rounded-md px-3 py-2 text-sm font-bold transition-colors hover:bg-accent hover:text-accent-foreground no-underline',
+                                isActive(link.href)
+                                  ? 'text-primary'
                                   : 'text-foreground/80'
                               )}
                             >
@@ -181,30 +190,30 @@ export function AceternityNavbar() {
                   />
                 </div>
               </Link>
-
-              {/* Navigation menu */}
-              {!isMobile && (
-                <NavigationMenu className="flex ml-8">
-                  <NavigationMenuList className="gap-1">
-                    {navItems.map((link, index) => (
-                      <NavigationMenuItem key={index}>
-                        <Link
-                          href={link.href}
-                          className={cn(
-                            'group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none no-underline',
-                            link.active
-                              ? 'bg-accent text-accent-foreground'
-                              : 'text-foreground/80 hover:text-foreground'
-                          )}
-                        >
-                          {link.name}
-                        </Link>
-                      </NavigationMenuItem>
-                    ))}
-                  </NavigationMenuList>
-                </NavigationMenu>
-              )}
             </div>
+
+            {/* Center - Navigation menu */}
+            {!isMobile && (
+              <NavigationMenu className="absolute left-1/2 -translate-x-1/2">
+                <NavigationMenuList className="gap-1">
+                  {navItems.map((link, index) => (
+                    <NavigationMenuItem key={index}>
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          'group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-bold transition-colors hover:text-primary focus:text-primary focus:outline-none no-underline',
+                          isActive(link.href)
+                            ? 'text-primary'
+                            : 'text-foreground/80'
+                        )}
+                      >
+                        {link.name}
+                      </Link>
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+            )}
 
             {/* Right side */}
             <div className="flex items-center gap-3">

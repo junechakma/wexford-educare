@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CardContainer, CardBody, CardItem } from "@/components/ui/aceternity/3d-card";
+import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
@@ -118,13 +118,10 @@ export default function ApplyNow() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
-            Start Your Journey Today
+            Check Your Eligibility
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Find out if you qualify to study in the UK and access government
-            funding by completing the form below. If you&apos;re eligible, one of our
-            consultants will contact you to explain the process and guide you
-            through the next steps.
+            Find out if you qualify to study in the UK and access government funding by completing the form below. If you&apos;re eligible, one of our consultants will contact you to explain the process and guide you through the next steps.
           </p>
         </div>
       </section>
@@ -132,66 +129,53 @@ export default function ApplyNow() {
       {/* Application Form Section */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <CardContainer containerClassName="py-0">
-              <CardBody className="bg-white relative group/card hover:shadow-2xl w-full rounded-xl p-8 md:p-12 border-0 shadow-lg">
-                <CardItem
-                  translateZ="50"
-                  className="text-2xl md:text-3xl font-bold text-secondary mb-2"
-                >
-                  Application Form
-                </CardItem>
-                <CardItem
-                  translateZ="40"
-                  className="text-gray-600 mb-10"
-                >
-                  Complete all required fields below to submit your application.
-                </CardItem>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name and Email */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <CardItem translateZ="40">
-                      <label
-                        htmlFor="name"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Your Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                        placeholder="John Doe"
-                      />
-                    </CardItem>
-
-                    <CardItem translateZ="40">
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Your Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                        placeholder="john@example.com"
-                      />
-                    </CardItem>
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-white rounded-xl p-8 md:p-12 shadow-md">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Name and Email */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Your Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                      placeholder="Name"
+                    />
                   </div>
 
-                  {/* Phone Number */}
-                  <CardItem translateZ="40">
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Your Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+
+                {/* Phone and Campus */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
                     <label
                       htmlFor="phone"
                       className="block text-sm font-semibold text-gray-700 mb-2"
@@ -207,63 +191,62 @@ export default function ApplyNow() {
                       required
                       pattern="[0-9()#&+*\-=.]+"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                      placeholder="+44 123 456 7890"
+                      placeholder="Phone Number"
                     />
-                  </CardItem>
-
-                  {/* Campus and Status */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <CardItem translateZ="40">
-                      <label
-                        htmlFor="campus"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Which Campus Are You Preferred? *
-                      </label>
-                      <select
-                        id="campus"
-                        name="campus"
-                        value={formData.campus}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
-                      >
-                        <option value="">Select Campus</option>
-                        {campuses.map((campus) => (
-                          <option key={campus} value={campus}>
-                            {campus}
-                          </option>
-                        ))}
-                      </select>
-                    </CardItem>
-
-                    <CardItem translateZ="40">
-                      <label
-                        htmlFor="status"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Your Current Status in UK? *
-                      </label>
-                      <select
-                        id="status"
-                        name="status"
-                        value={formData.status}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
-                      >
-                        <option value="">Select Status</option>
-                        {statuses.map((status) => (
-                          <option key={status} value={status}>
-                            {status}
-                          </option>
-                        ))}
-                      </select>
-                    </CardItem>
                   </div>
 
-                  {/* Course */}
-                  <CardItem translateZ="40">
+                  <div>
+                    <label
+                      htmlFor="campus"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Which Campus Are You Preferred? *
+                    </label>
+                    <select
+                      id="campus"
+                      name="campus"
+                      value={formData.campus}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
+                    >
+                      <option value="">London</option>
+                      {campuses.map((campus) => (
+                        <option key={campus} value={campus}>
+                          {campus}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Status and Course */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="status"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Your Current Status in UK ? *
+                    </label>
+                    <select
+                      id="status"
+                      name="status"
+                      value={formData.status}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
+                    >
+                      <option value="">British</option>
+                      {statuses.map((status) => (
+                        <option key={status} value={status}>
+                          {status}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
                     <label
                       htmlFor="course"
                       className="block text-sm font-semibold text-gray-700 mb-2"
@@ -278,94 +261,92 @@ export default function ApplyNow() {
                       required
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
                     >
-                      <option value="">Select Course</option>
+                      <option value="">Business Management</option>
                       {courses.map((course) => (
                         <option key={course} value={course}>
                           {course}
                         </option>
                       ))}
                     </select>
-                  </CardItem>
+                  </div>
+                </div>
 
-                  {/* Best Time to Call */}
-                  <CardItem translateZ="40">
-                    <label
-                      htmlFor="bestTime"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      What is the best time to call you?
-                    </label>
-                    <input
-                      type="text"
-                      id="bestTime"
-                      name="bestTime"
-                      value={formData.bestTime}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                      placeholder="eg. Tomorrow 9AM - 11AM"
-                    />
-                  </CardItem>
+                {/* Best Time to Call */}
+                <div>
+                  <label
+                    htmlFor="bestTime"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
+                    What is the best time to call you?
+                  </label>
+                  <input
+                    type="text"
+                    id="bestTime"
+                    name="bestTime"
+                    value={formData.bestTime}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                    placeholder="eg. Tomorrow 9AM - 11AM"
+                  />
+                </div>
 
-                  {/* Message */}
-                  <CardItem translateZ="40">
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Enter your message (If any)
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
-                      placeholder="Tell us more about your educational goals..."
-                    />
-                  </CardItem>
+                {/* Message */}
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
+                    Enter your message (If any)
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
+                    placeholder="Message"
+                  />
+                </div>
 
-                  {/* Success Message */}
-                  {submitStatus.type && (
-                    <CardItem translateZ="40">
-                      <div
-                        className={`p-5 rounded-lg flex items-start gap-4 ${
-                          submitStatus.type === "success"
-                            ? "bg-green-50 text-green-800 border border-green-200"
-                            : "bg-red-50 text-red-800 border border-red-200"
-                        }`}
-                      >
-                        {submitStatus.type === "success" && (
-                          <CheckCircle2 className="w-6 h-6 flex-shrink-0 mt-0.5" />
-                        )}
-                        <span className="font-medium">{submitStatus.message}</span>
-                      </div>
-                    </CardItem>
-                  )}
+                {/* Success Message */}
+                {submitStatus.type && (
+                  <div
+                    className={`p-5 rounded-lg flex items-start gap-4 ${
+                      submitStatus.type === "success"
+                        ? "bg-green-50 text-green-800 border border-green-200"
+                        : "bg-red-50 text-red-800 border border-red-200"
+                    }`}
+                  >
+                    {submitStatus.type === "success" && (
+                      <CheckCircle2 className="w-6 h-6 flex-shrink-0 mt-0.5" />
+                    )}
+                    <span className="font-medium">{submitStatus.message}</span>
+                  </div>
+                )}
 
-                  {/* Submit Button */}
-                  <CardItem translateZ="50" className="pt-2">
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-secondary hover:bg-primary text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <div className="w-6 h-6 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                          Submitting...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="w-5 h-5" />
-                          Submit Application
-                        </>
-                      )}
-                    </button>
-                  </CardItem>
-                </form>
-              </CardBody>
-            </CardContainer>
+                {/* Submit Button */}
+                <div className="pt-4">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary hover:bg-secondary text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <div className="w-6 h-6 border-3 border-white border-t-transparent rounded-full animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        Submit Application
+                      </>
+                    )}
+                  </button>
+                </div>
+              </form>
+            </Card>
           </div>
         </div>
       </section>
@@ -376,7 +357,7 @@ export default function ApplyNow() {
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
             Why Apply With Us?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
                 title: "Free Consultation",
@@ -394,28 +375,17 @@ export default function ApplyNow() {
                   "From application to enrollment, we support you throughout your educational journey.",
               },
             ].map((item, index) => (
-              <CardContainer key={index} containerClassName="py-0">
-                <CardBody className="bg-white relative group/card hover:shadow-2xl w-full h-full rounded-xl p-8 border-0 shadow-md">
-                  <CardItem
-                    translateZ="50"
-                    className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
-                  >
-                    <CheckCircle2 className="w-6 h-6 text-primary" />
-                  </CardItem>
-                  <CardItem
-                    translateZ="40"
-                    className="text-xl font-bold text-secondary mb-3"
-                  >
-                    {item.title}
-                  </CardItem>
-                  <CardItem
-                    translateZ="30"
-                    className="text-gray-600 leading-relaxed"
-                  >
-                    {item.description}
-                  </CardItem>
-                </CardBody>
-              </CardContainer>
+              <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5">
+                  <CheckCircle2 className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-secondary mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </Card>
             ))}
           </div>
         </div>

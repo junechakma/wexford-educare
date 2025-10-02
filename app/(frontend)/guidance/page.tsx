@@ -128,60 +128,58 @@ export default function Guidance() {
           </p>
 
           <div className="grid grid-cols-1 gap-8 mb-8">
-            <CardContainer containerClassName="py-0">
-              <CardBody className="bg-gradient-to-br from-primary/5 to-primary/10 relative group/card hover:shadow-2xl w-full h-full rounded-xl p-8 border-0 shadow-md flex flex-col md:min-h-[260px]">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  <div className="flex flex-col justify-between">
-                    <div>
-                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                        <Building2 className="w-8 h-8 text-primary" />
-                      </div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-4">Our Mission</h3>
-                      <p className="text-gray-700 text-lg leading-relaxed">
-                        To guide clients through the application process, ensuring they meet entry requirements and secure funding to pursue their educational goals.
-                      </p>
+            <Card className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 border-0 shadow-md">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                      <Building2 className="w-8 h-8 text-primary" />
                     </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-4">Our Mission</h3>
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      To guide clients through the application process, ensuring they meet entry requirements and secure funding to pursue their educational goals.
+                    </p>
                   </div>
+                </div>
 
-                  <div className="flex flex-col justify-between">
-                    <div>
-                      <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4">
-                        <MapPin className="w-8 h-8 text-secondary" />
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4">
+                      <MapPin className="w-8 h-8 text-secondary" />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-4">Website & Locations</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Website</p>
+                        <a
+                          href="https://blossomeducare.co.uk"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:text-primary/80 text-lg font-semibold hover:underline transition-colors inline-flex items-center gap-2"
+                        >
+                          blossomeducare.co.uk
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
                       </div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-4">Website & Locations</h3>
-                      <div className="space-y-4">
-                        <div>
-                          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Website</p>
-                          <a
-                            href="https://blossomeducare.co.uk"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:text-primary/80 text-lg font-semibold hover:underline transition-colors inline-flex items-center gap-2"
-                          >
-                            blossomeducare.co.uk
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                          </a>
-                        </div>
 
-                        <div>
-                          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Operating Locations</p>
-                          <div className="grid grid-cols-2 gap-3">
-                            {["London", "Leeds", "Manchester", "Birmingham"].map((city, idx) => (
-                              <div key={idx} className="flex items-center gap-2 bg-white/60 rounded-lg px-3 py-2">
-                                <MapPin className="w-4 h-4 text-secondary flex-shrink-0" />
-                                <span className="text-gray-700 font-medium">{city}</span>
-                              </div>
-                            ))}
-                          </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Operating Locations</p>
+                        <div className="grid grid-cols-2 gap-3">
+                          {["London", "Leeds", "Manchester", "Birmingham"].map((city, idx) => (
+                            <div key={idx} className="flex items-center gap-2 bg-white/60 rounded-lg px-3 py-2">
+                              <MapPin className="w-4 h-4 text-secondary flex-shrink-0" />
+                              <span className="text-gray-700 font-medium">{city}</span>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </CardBody>
-            </CardContainer>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -241,7 +239,7 @@ export default function Guidance() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <Card className="mb-4">
+                <Card className="mb-4 flex flex-col items-start h-full md:min-h-[260px] lg:min-h-[320px]">
                   <CardHeader>
                     <CardTitle>Who We Help</CardTitle>
                   </CardHeader>
@@ -269,7 +267,7 @@ export default function Guidance() {
               </div>
 
               <div>
-                <Card className="mb-4">
+                <Card className="mb-4 flex flex-col items-start h-full md:min-h-[260px] lg:min-h-[320px]">
                   <CardHeader>
                     <CardTitle>Key Eligibility Points</CardTitle>
                   </CardHeader>
