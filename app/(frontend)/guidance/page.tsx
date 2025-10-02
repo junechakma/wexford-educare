@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Tabs, { TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import InfoGrid from "@/components/ui/info-grid";
+import LoanTable from "@/components/ui/loan-table";
 
 export default function Guidance() {
   const features = [
@@ -779,7 +781,96 @@ export default function Guidance() {
       </section>
 
       {/* Generel Section */}
-      
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-8">General Course Information</h2>
+
+          <InfoGrid
+            items={[
+              { title: "Foundation Degree (4 Yrs)", subtitle: "Includes foundation year + 3-year degree." },
+              { title: "Standard Degree (3 Yrs)", subtitle: "Direct entry. Generally higher entry requirements." },
+              { title: "CertHE (1 Yr)", subtitle: "Certificate of Higher Education with flexible entry." },
+              { title: "Top-Up Courses (1 Yr)", subtitle: "Allows HND holders to upgrade to a full Honours degree." },
+              { title: "Postgraduate (1 Yr)", subtitle: "Master's degrees like MBAs, MSc, LLM." },
+              { title: "HND (2 Yrs)", subtitle: "Higher National Diploma. Vocational pathways." },
+            ]}
+            className="mb-12"
+          />
+
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-6">Tuition Fee Loans</h2>
+          <div className="mb-12">
+            <LoanTable
+              headers={["Course Type", "Max Amount", "Details"]}
+              rows={[
+                { col1: "Full-time Standard", col2: "£9,535", col3: "Paid to university" },
+                { col1: "Accelerated Degree", col2: "£11,440", col3: "Intensive programs" },
+                { col1: "Foundation Year (classroom)", col2: "£5,760", col3: "Business, social sciences" },
+                { col1: "Foundation Year (practical)", col2: "£9,535", col3: "Science, engineering, arts" },
+                { col1: "Part-time", col2: "£7,145", col3: "Min 25% of full-time" },
+              ]}
+            />
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-6">Maintenance Loans (Living Costs)</h2>
+          <div>
+            <LoanTable
+              headers={["Living Situation", "Max Amount", "Details"]}
+              rows={[
+                  { col1: "Students 60+", col2: (
+                    <a
+                      href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      See the government guidance for student loans (2025–26)
+                    </a>
+                  ), col3: "Means-tested" },
+                  { col1: "Living with parents", col2: (
+                    <a
+                      href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      See the government guidance for student loans (2025–26)
+                    </a>
+                  ), col3: "Means-tested" },
+                  { col1: "Away (outside London)", col2: (
+                    <a
+                      href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      See the government guidance for student loans (2025–26)
+                    </a>
+                  ), col3: "Means-tested" },
+                  { col1: "Away (in London)", col2: (
+                    <a
+                      href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      See the government guidance for student loans (2025–26)
+                    </a>
+                  ), col3: "Means-tested" },
+                  { col1: "Studying abroad", col2: (
+                    <a
+                      href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      See the government guidance for student loans (2025–26)
+                    </a>
+                  ), col3: "Part of UK course" },
+                ]}
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
