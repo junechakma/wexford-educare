@@ -456,4 +456,779 @@ export const coursesData: Course[] = [
       },
     ],
   },
+  {
+    id: "7",
+    title: "BA (Hons) Business and Management with Foundation Year",
+    slug: "ba-hons-business-and-management-with-foundation-year",
+    category: "bachelor-courses",
+    duration: "4 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/business-and-management.jpg",
+    image: "/images/courses/business-and-management-large.jpg",
+    description:
+      "This degree is your ideal pathway to a successful career in business, especially if you don't currently meet the requirements for direct university entry. The integrated Foundation Year provides you with the essential academic and subject-specific knowledge you need to thrive, preparing you for the full three-year degree program. 🎓 The course blends core business theory with practical, real-world application, giving you a complete understanding of modern business.",
+    whyChoose: [
+      "Build a Strong Foundation: The initial year is dedicated to strengthening your core knowledge in management, economics, and business mathematics, ensuring you're fully prepared for the advanced topics of the degree.",
+      "Comprehensive Curriculum: Gain in-depth knowledge across key business areas—including finance, marketing, human resources, and strategic management—so you can understand how successful organizations operate.",
+      "Practical Skill Development: The program emphasizes hands-on experience through real-world case studies, projects, and potential internship opportunities, allowing you to apply classroom theory to practical business scenarios.",
+      "Versatile Career Pathways: A business and management degree opens doors to countless industries. You'll graduate with a diverse skill set that's highly valued by employers in finance, marketing, HR, operations, and beyond.",
+    ],
+    curriculum: [
+      {
+        year: "Foundation Year: Building the Basics",
+        modules: [
+          "Introduction to Business and Management",
+          "Mathematical Methodologies for Business",
+          "Economic Ideas",
+          "Academic and Research Skills",
+          "Financial Accounting Overview",
+          "Principles of Marketing",
+        ],
+      },
+      {
+        year: "Year 1: Core Business Principles",
+        modules: [
+          "The Business Environment",
+          "Organisational Behaviour",
+          "Financial Management",
+          "Marketing Management",
+          "Human Resource Management",
+        ],
+      },
+      {
+        year: "Year 2: Advanced Concepts",
+        modules: [
+          "Operations Management",
+          "Strategic Management",
+          "Corporate Ethics and Social Responsibility",
+          "Business Research Methods",
+          "Innovation and Entrepreneurship",
+        ],
+      },
+      {
+        year: "Year 3: Specialisation and Leadership",
+        modules: [
+          "International Business",
+          "Leadership and Management Skills Development",
+          "Project Management",
+          "Self-Directed Project",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Marketing Manager",
+      "Financial Analyst",
+      "Operations Manager",
+      "Human Resources Manager",
+      "Business Consultant",
+      "Entrepreneur",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Requirements",
+        items: [
+          "Applicants typically need GCSEs and A-Levels or equivalent qualifications. Relevant professional experience may also be considered.",
+        ],
+      },
+      {
+        title: "Application Process",
+        items: [
+          "Applications are typically submitted online via UCAS (for UK students) or the university's direct application portal (for international students).",
+          "International students may need to provide proof of English language proficiency through a recognized test like IELTS.",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "FAQs",
+        content:
+          "What subjects are taught in the foundation year? The foundation year focuses on the core principles of business, management, economics, and business mathematics. It also develops crucial academic skills like research, critical thinking, and academic writing to prepare you for the rest of your degree.",
+      },
+    ],
+  },
+  {
+    id: "8",
+    title: "BA (Hons) Business Management Top-Up",
+    slug: "ba-hons-business-management-top-up",
+    category: "top-up-courses",
+    duration: "1 Year",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/business-topup.jpg",
+    image: "/images/courses/business-topup-large.jpg",
+    description:
+      "Upgrade your existing qualification to a full Bachelor's degree in just one year. This BA Business Management Top-Up program is specifically designed for students who have already completed a Foundation Degree, HND, or an equivalent qualification in a business-related field. The curriculum focuses on developing your strategic and analytical thinking, preparing you for leadership roles in the corporate world.",
+    whyChoose: [
+      "Fast-Track to a Full Degree: This one-year program is the quickest route to converting your HND or Foundation Degree into a full BA (Hons), significantly enhancing your academic standing and career prospects.",
+      "Advanced Business Curriculum: The course delves into advanced topics in strategic management, leadership, and international business, giving you a deeper understanding of how global industries operate.",
+      "Practical, Applied Learning: The program emphasizes hands-on experience through case studies, live projects, and simulations of real-world business environments, allowing you to directly apply your knowledge.",
+      "Enhanced Career Progression: Graduates are prepared for strategic and leadership positions. This degree makes you a more competitive candidate for roles in management, marketing, finance, and human resources.",
+      "Flexible Study Options: Designed with professionals in mind, many institutions offer flexible part-time or online study options to help you balance your education with your personal and professional life.",
+    ],
+    curriculum: [
+      {
+        year: "Core Modules",
+        modules: [
+          "Strategic Management",
+          "International Business",
+          "Leadership and Management",
+          "Contemporary Business Issues",
+          "Business Research Methods",
+        ],
+      },
+      {
+        year: "Elective Modules",
+        modules: [
+          "Project Management",
+          "Digital Marketing",
+          "Financial Management",
+          "Human Resource Management",
+        ],
+      },
+      {
+        year: "Final Project",
+        modules: [
+          "Capstone project or dissertation on a relevant business topic",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Marketing Manager",
+      "Financial Analyst",
+      "Human Resources (HR) Manager",
+      "Operations Manager",
+      "Business Consultant",
+      "Project Manager",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Requirements",
+        items: [
+          "Applicants must have successfully completed an HND, Foundation Degree, or an equivalent Level 5 qualification in Business or a related subject.",
+        ],
+      },
+      {
+        title: "Application Process",
+        items: [
+          "Applications are typically submitted via the university's online portal.",
+          "International students may need to provide proof of English language proficiency through a recognized test like IELTS.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "9",
+    title: "BA (Hons) Business Management (3 Years)",
+    slug: "ba-hons-business-management-3-years",
+    category: "bachelor-courses",
+    duration: "3 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/business-management-3yr.jpg",
+    image: "/images/courses/business-management-3yr-large.jpg",
+    description:
+      "This three-year undergraduate degree provides a comprehensive understanding of modern business principles and management practices. It is the perfect choice for aspiring professionals seeking a versatile qualification that blends academic knowledge with practical skills, ensuring you are fully prepared to meet the challenges of the global corporate world. The curriculum covers all essential business areas, including marketing, finance, human resources, and strategic planning.",
+    whyChoose: [
+      "Comprehensive Business Knowledge: Gain a thorough understanding of every major business discipline, from marketing and finance to strategic management and human resources.",
+      "Practical, Real-World Experience: The program emphasizes hands-on learning through internships, work placements, and live projects, allowing you to apply theory to real business challenges.",
+      "Versatile Career Pathways: A business management degree opens doors to countless industries. You'll graduate with highly transferable skills, preparing you for roles in finance, marketing, operations, and beyond.",
+      "Professional Skill Development: The curriculum focuses on developing the professional skills essential for career advancement, including leadership, communication, and critical thinking.",
+      "Global Business Perspective: In today's interconnected world, a global outlook is vital. This degree incorporates international business modules to give you an understanding of foreign markets and cross-cultural management.",
+    ],
+    curriculum: [
+      {
+        year: "Year 1: Foundational Concepts",
+        modules: [
+          "Introduction to Business Management",
+          "Marketing Foundations",
+          "Financial Accounting",
+          "Organisational Behaviour",
+          "Business Economics",
+          "Academic and Professional Skills",
+        ],
+      },
+      {
+        year: "Year 2: Core Business Functions",
+        modules: [
+          "Operations Management",
+          "Human Resource Management",
+          "Business Law",
+          "Digital Business",
+          "Business Research Methods",
+          "Management Accounting",
+        ],
+      },
+      {
+        year: "Year 3: Strategic & Advanced Topics",
+        modules: [
+          "Strategic Management",
+          "International Business",
+          "Leadership and Management Skills Development",
+          "Project Management",
+          "Business Ethics and Corporate Social Responsibility",
+          "Capstone Project",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Marketing Manager",
+      "Financial Analyst",
+      "Human Resources Manager",
+      "Operations Manager",
+      "Business Consultant",
+      "Entrepreneur",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Requirements",
+        items: [
+          "Applicants typically need A-Levels and GCSEs or equivalent qualifications. Relevant professional experience may also be considered.",
+        ],
+      },
+      {
+        title: "Application Process",
+        items: [
+          "Applications are submitted online via UCAS (for UK students) or the university's direct application portal (for international students).",
+          "International students may need to provide proof of English language proficiency through a recognized test like IELTS.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "10",
+    title: "BSc (Hons) Accounting and Finance (3 Years)",
+    slug: "bsc-hons-accounting-and-finance-3-years",
+    category: "bachelor-courses",
+    duration: "3 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/accounting-finance-3yr.jpg",
+    image: "/images/courses/accounting-finance-3yr-large.jpg",
+    description:
+      "Build a successful career in the fast-paced world of accounting and finance with this three-year undergraduate degree. The program is designed to provide you with a comprehensive understanding of accounting principles and financial management, blending rigorous academic theory with practical, real-world application. You will gain expertise in critical areas like corporate finance, financial markets, and management accounting.",
+    whyChoose: [
+      "Professional Accreditation & Exam Exemptions: This degree is often accredited by professional bodies like the ACCA, CIMA, and ICAEW. This means graduates may receive exemptions from several professional exams, providing a faster route to becoming a chartered accountant.",
+      "Comprehensive Curriculum: Gain a deep understanding of all key aspects of the financial industry, including auditing, taxation, management accounting, and financial management.",
+      "Practical Experience: The program emphasizes hands-on learning through internships, work placements, and real-world projects, allowing you to apply your knowledge and gain valuable industry experience.",
+      "Excellent Career Prospects: Graduates are in high demand across public and private sectors, with opportunities in major accounting firms, financial institutions, and corporate finance departments.",
+    ],
+    curriculum: [
+      {
+        year: "Year 1: Foundational Principles",
+        modules: [
+          "Introduction to Accounting",
+          "Business Economics",
+          "Quantitative Methods",
+          "Principles of Finance",
+          "Academic and Research Skills",
+        ],
+      },
+      {
+        year: "Year 2: Core Concepts & Practice",
+        modules: [
+          "Financial Accounting & Reporting",
+          "Managerial Accounting",
+          "Corporate Finance",
+          "Auditing & Assurance",
+          "Taxation",
+          "Business Law",
+        ],
+      },
+      {
+        year: "Year 3: Advanced & Strategic Topics",
+        modules: [
+          "Advanced Financial Accounting",
+          "Strategic Management Accounting",
+          "Investment Analysis",
+          "Financial Risk Management",
+          "International Finance",
+          "Dissertation/Major Project",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Chartered Accountant",
+      "Financial Analyst",
+      "Corporate Treasurer",
+      "Tax Consultant",
+      "Auditor",
+      "Financial Advisor",
+    ],
+    admissionRequirements: [
+      {
+        title: "General Requirements",
+        items: [
+          "Applicants typically need A-Levels and GCSEs in relevant subjects. Equivalent qualifications and relevant professional experience may also be considered.",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "Professional Accreditation",
+        content:
+          "These degrees are often accredited by major professional bodies like ACCA, CIMA, and ICAEW, which can grant you exemptions from certain professional exams.",
+      },
+    ],
+  },
+  {
+    id: "11",
+    title: "CertHE Business Management",
+    slug: "certhe-business-management",
+    category: "certhe",
+    duration: "1 Year",
+    level: "Certificate",
+    thumbnail: "/images/courses/certhe-business.jpg",
+    image: "/images/courses/certhe-business-large.jpg",
+    description:
+      "Launch your business career in just one year with a Certificate of Higher Education (CertHE) in Business Management. This intensive program provides a university-level qualification, giving you a solid foundation in the core concepts and practices of the modern business world. This course is the perfect choice if you are looking to start your career, formalize your existing knowledge, or take the first step towards a full Bachelor's degree.",
+    whyChoose: [
+      "Fast-Track Qualification: Earn a valuable, standalone university-level certificate in just one year of full-time study.",
+      "Industry-Relevant Skills: The curriculum is developed with input from industry experts, ensuring you learn the practical skills in finance, marketing, and management that employers are looking for.",
+      "Flexible Learning: A blend of on-campus and online learning helps you balance your studies with work or other personal commitments.",
+      "Expert Tutors: Learn from seasoned professionals who bring their real-world business experience and practical insights into the classroom.",
+      "Dedicated Career Support: Receive expert guidance with CV writing, interview preparation, and job placement to ensure a smooth transition into the workforce.",
+    ],
+    curriculum: [
+      {
+        year: "Semester 1: Foundational Concepts",
+        modules: [
+          "Introduction to Business Management",
+          "Marketing Principles",
+          "Financial Accounting",
+        ],
+      },
+      {
+        year: "Semester 2: Core & Elective Modules",
+        modules: [
+          "Human Resources Management",
+          "Operations Management",
+          "Elective: Business Law or Business and Technology",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Business Administrator",
+      "Marketing Assistant",
+      "Human Resources (HR) Assistant",
+      "Operations Coordinator",
+      "Entrepreneur",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Qualifications",
+        items: [
+          "A minimum of five GCSEs at Grade C/4 or above (including English and Maths) or equivalent qualifications. Relevant work experience may be considered on an individual basis.",
+        ],
+      },
+      {
+        title: "English Language Proficiency",
+        items: [
+          "Non-native English speakers typically require an IELTS score of 6.0 or equivalent.",
+        ],
+      },
+      {
+        title: "Additional Requirements",
+        items: [
+          "A brief statement outlining your interest in business management and your career ambitions.",
+          "Suitable candidates may be invited for an interview to assess their fit for the program.",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "Pathway to a Full Degree",
+        content:
+          "The CertHE in Business Management also serves as the first year of a full Bachelor's degree. Upon successful completion, you can progress directly into the second year of a BA/BSc in Business Management or a related field.",
+      },
+    ],
+  },
+  {
+    id: "12",
+    title: "BA (Hons) Education Studies",
+    slug: "ba-hons-education-studies",
+    category: "bachelor-courses",
+    duration: "3 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/education-studies.jpg",
+    image: "/images/courses/education-studies-large.jpg",
+    description:
+      "Are you passionate about shaping the future of education? This BA (Hons) Education Studies degree, offered by our esteemed partner institutions, is designed for aspiring professionals who want to deepen their understanding of the pedagogical, social, and philosophical issues in education today. This comprehensive program blends academic theory with practical application, equipping you with the critical thinking and intellectual skills essential for management and leadership roles in both national and international educational contexts.",
+    whyChoose: [
+      "Deepen Your Understanding: Develop a profound grasp of the key theories, techniques, and insights vital for success in the education sector.",
+      "Analyze Modern Education: Critically examine current teaching practices and evaluate UK educational policies from an informed, global perspective.",
+      "Enhance Your Professional Practice: Advance your own professional skills through critical self-assessment, reflection, and analysis.",
+      "Master Educational Research: Acquire a comprehensive understanding of the tools and techniques needed to conduct impactful research in education.",
+    ],
+    curriculum: [
+      {
+        year: "Core Topics",
+        modules: [
+          "Educational Theory and Philosophy",
+          "Contemporary Educational Practices",
+          "Educational Research Methods",
+          "Policy Development and Analysis",
+          "Leadership in Education",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Educational Leadership and Management",
+      "Policy Development",
+      "Quality Assurance and Compliance",
+      "Training and Development",
+    ],
+    admissionRequirements: [
+      {
+        title: "General Requirements",
+        items: [
+          "Contact Blossom Educare for detailed entry requirements and application process.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "13",
+    title: "LLB (Hons) Law with Foundation Year",
+    slug: "llb-hons-law-with-foundation-year",
+    category: "bachelor-courses",
+    duration: "4 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/law-foundation.jpg",
+    image: "/images/courses/law-foundation-large.jpg",
+    description:
+      "Dreaming of a career in law but need the right starting point? The LLB (Hons) Law with Foundation Year, offered by our partner universities, is the ideal pathway to build the robust legal knowledge and academic skills required to succeed. This program is specifically designed for aspiring legal professionals who need a supportive first step. The integrated Foundation Year provides essential study skills and subject knowledge, ensuring you are fully prepared for the rigours of a university law degree.",
+    whyChoose: [
+      "Build a Strong Academic Foundation: Gain the essential study habits and critical thinking skills needed to excel at the university level.",
+      "Develop Core Legal Expertise: Master a broad range of legal and research skills, preparing you to tackle diverse legal challenges.",
+      "Achieve Career Readiness: Equip yourself with highly valued professional attributes applicable across numerous careers, both within and outside the legal sector.",
+      "Prepare for Professional Pathways: This degree provides tailored pathways to effectively prepare you for the Solicitors Qualifying Examination (SQE 1) or for a career at the Bar.",
+    ],
+    curriculum: [
+      {
+        year: "Foundation Year",
+        modules: [
+          "Introduction to Legal Studies",
+          "Academic Skills Development",
+          "Critical Thinking and Analysis",
+        ],
+      },
+      {
+        year: "Years 1-3",
+        modules: [
+          "Contract Law",
+          "Criminal Law",
+          "Constitutional Law",
+          "Land Law",
+          "Tort Law",
+          "Equity and Trusts",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Solicitor",
+      "Barrister",
+      "Paralegal",
+      "Legal Executive",
+      "Journalist",
+      "Police Officer",
+      "Politician or Civil Servant",
+      "Teacher or Academic",
+      "Tax and Business Consultant",
+    ],
+    admissionRequirements: [
+      {
+        title: "General Requirements",
+        items: [
+          "Contact Blossom Educare for detailed entry requirements and application process.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "14",
+    title: "Master of Public Health (MPH)",
+    slug: "master-of-public-health",
+    category: "master-courses",
+    duration: "1-2 Years",
+    level: "Postgraduate",
+    thumbnail: "/images/courses/mph.jpg",
+    image: "/images/courses/mph-large.jpg",
+    description:
+      "Ready to tackle today's complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by Blossom Educare's partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector. This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.",
+    whyChoose: [
+      "Industry-Relevant Curriculum: Explore the intricate social and environmental factors that shape population health and gain insights into practical strategies for health improvement and protection.",
+      "Real-World Application: Your learning is grounded in reality through case studies and direct input from public health professionals.",
+      "Advanced Skill Building: Cultivate essential skills in research, leadership, and critical analysis to navigate the dynamic public health landscape.",
+      "The London Advantage: Studying in London gives you direct access to one of the world's most active public health landscapes.",
+    ],
+    curriculum: [
+      {
+        year: "Core Modules",
+        modules: [
+          "Postgraduate Study Skills, Research Methods, and Ethics (Healthcare)",
+          "Determinants of Population Health",
+          "Health Protection",
+          "Finance and Governance in Health and Social Care",
+          "Population Healthcare and Health Improvement",
+          "Postgraduate Major Project (Healthcare)",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Public Health Officer",
+      "Health Promotion Specialist",
+      "Community Health Advisor",
+      "Epidemiology or Research Assistant",
+      "Health Policy Analyst",
+      "NGO or International Health Project Worker",
+      "Public Health Intelligence Analyst",
+    ],
+    admissionRequirements: [
+      {
+        title: "General Requirements",
+        items: [
+          "Contact Blossom Educare for detailed entry requirements and application process.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "15",
+    title: "BSc (Hons) Business Management (3 Years)",
+    slug: "bsc-hons-business-management-3-years",
+    category: "bachelor-courses",
+    duration: "3 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/business-management.jpg",
+    image: "/images/courses/business-management-large.jpg",
+    description:
+      "The BSc (Hons) Business Management is a three-year undergraduate program designed to give you a complete understanding of modern business principles and management practices. The first year is crucial, as it builds a strong foundation for your advanced studies. This foundational year covers essential subjects like organizational behavior, financial accounting, and marketing to ensure you develop a comprehensive knowledge of core business operations from day one.",
+    whyChoose: [
+      "Comprehensive Curriculum: Gain a thorough understanding of all major business domains, from marketing and finance to human resources and strategic management.",
+      "Real-World Experience: This program emphasizes practical learning through internships, placements, and live projects, allowing you to apply theory to real business challenges and enhance your employability.",
+      "Versatile Career Options: A business management degree opens doors to countless industries. You'll graduate with highly transferable skills, preparing you for roles in finance, marketing, operations, and beyond.",
+      "Professional & Academic Development: The curriculum is designed to develop not only your academic knowledge but also your professional skills in leadership, critical thinking, and communication—qualities essential for career growth.",
+      "Global Business Perspective: In today's interconnected world, a global outlook is vital. This degree incorporates international business modules to give you an understanding of foreign markets and cross-cultural management.",
+    ],
+    curriculum: [
+      {
+        year: "Year 1: Core Business Introduction",
+        modules: [
+          "Fundamentals of Business Administration",
+          "Marketing Fundamentals",
+          "Financial Accounting",
+          "Organisational Behaviour",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Marketing Manager",
+      "Financial Analyst",
+      "Human Resources (HR) Manager",
+      "Operations Manager",
+      "Business Consultant",
+      "Entrepreneur",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Requirements",
+        items: [
+          "Candidates typically need A-Levels and GCSEs in relevant subjects.",
+          "Equivalent qualifications and relevant professional experience may also be considered.",
+        ],
+      },
+      {
+        title: "Application Process",
+        items: [
+          "Applications are submitted online via UCAS or the university's direct application portal.",
+          "International students may need to provide proof of English language proficiency through a recognized test like IELTS.",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "FAQs",
+        content:
+          "What are the admission requirements for this program? Candidates typically need A-Levels and GCSEs in relevant subjects. What kind of real-world experience will I get? The program integrates practical experience through internships, work placements, and real-world projects. What career options will I have after graduating? Graduates can pursue a wide range of careers, including roles in marketing, finance, HR, operations, and consultancy.",
+      },
+    ],
+  },
+  {
+    id: "16",
+    title: "BA/BSc Business Management with Foundation Year (4 Years)",
+    slug: "ba-bsc-business-management-with-foundation-year",
+    category: "bachelor-courses",
+    duration: "4 Years",
+    level: "Undergraduate",
+    thumbnail: "/images/courses/business-management.jpg",
+    image: "/images/courses/business-management-large.jpg",
+    description:
+      "This four-year degree is your direct pathway to a career in corporate management, even if you don't currently meet the standard entry requirements for a three-year course. The integrated foundation year is designed to provide you with the essential academic and professional skills needed to succeed, preparing you for three years of focused, advanced study.",
+    whyChoose: [
+      "A Strong Academic Start: The foundation year is specifically designed to build your confidence and equip you with the research, writing, and critical thinking skills needed for university-level challenges.",
+      "Learn In-Demand Skills: With input from industry professionals, the curriculum is designed to teach you the skills that employers are actively seeking in today's competitive business world.",
+      "Practical Application: You'll apply academic theories to real-world situations through hands-on projects, case studies, and coursework, significantly boosting your job readiness upon graduation.",
+      "Flexible Learning: The program often incorporates a blend of in-person and online learning, helping you balance your studies with work or personal commitments.",
+      "Expert Faculty: Learn from highly experienced lecturers who bring a wealth of real-world business expertise and practical insights into the classroom.",
+      "Dedicated Career Support: Receive expert guidance on CV writing, interview preparation, and other job-finding skills to ensure a smooth transition from university to your professional career.",
+    ],
+    curriculum: [
+      {
+        year: "Foundation Year: Building Core Skills",
+        modules: [
+          "Academic Achievement",
+          "Introduction to Business Studies",
+          "Quantitative Methods",
+          "Digital Skills",
+        ],
+      },
+      {
+        year: "Year 2: Core Business Knowledge",
+        modules: [
+          "Management Philosophies",
+          "Marketing Techniques",
+          "Financial Accounting",
+          "Business Law",
+        ],
+      },
+      {
+        year: "Year 3: Specialised & Strategic Modules",
+        modules: [
+          "Human Resources Management",
+          "Operations Management",
+          "Strategic Management",
+          "Optional Modules: Innovation and Entrepreneurship or International Business",
+        ],
+      },
+      {
+        year: "Year 4: Advanced Study & Dissertation",
+        modules: [
+          "Advanced Strategic Management",
+          "Business Analytics",
+          "Leadership & Change Management",
+          "Dissertation",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Business Manager",
+      "Marketing Manager",
+      "Human Resources (HR) Manager",
+      "Operations Manager",
+      "Entrepreneur",
+    ],
+    admissionRequirements: [
+      {
+        title: "Academic Qualifications",
+        items: [
+          "Typically five GCSEs at Grade C/4 or above (including Maths and English), plus A-Levels or equivalent qualifications.",
+          "Relevant professional experience may also be considered.",
+        ],
+      },
+      {
+        title: "English Language Proficiency",
+        items: [
+          "Non-native English speakers usually require an IELTS score of 6.0 or equivalent.",
+        ],
+      },
+      {
+        title: "Additional Requirements",
+        items: [
+          "A personal statement outlining your interest in business management and your career goals.",
+          "Suitable candidates may be invited for an interview to assess their fit for the program.",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "FAQs",
+        content:
+          "How long is this course? This is a full-time course that takes four years to complete. Is part-time study available? While this is structured as a full-time course, flexible learning options are often available. What is the difference between a BA and a BSc? Generally, a BA focuses more on qualitative aspects while a BSc emphasizes quantitative and analytical skills. How do I apply? Applications are typically submitted via UCAS or the university's direct portal. What jobs can I get? Graduates can pursue roles such as Marketing Manager, HR Manager, Operations Manager, or Entrepreneur.",
+      },
+    ],
+  },
+  {
+    id: "17",
+    title: "Courses Offered by Our Partner Institutions",
+    slug: "courses-offered-by-partner-institutions",
+    category: "all",
+    duration: "Varies",
+    level: "Various Levels",
+    thumbnail: "/images/courses/partner-institutions.jpg",
+    image: "/images/courses/partner-institutions-large.jpg",
+    description:
+      "At Blossom Educare, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are completely free for all students. Whether you're starting your academic journey or advancing your qualifications, we're here to guide you. We listen carefully to your career aspirations and scheduling needs—be it weekday, evening, or weekend classes—to match you with the perfect course and institution for your success.",
+    whyChoose: [
+      "Completely Free Service: Our expert guidance and support come at no cost to you.",
+      "Personalised Matching: We tailor recommendations to your specific career goals, lifestyle, and schedule.",
+      "Wide Access: Gain entry to a vast network of courses and prestigious UK institutions.",
+      "Full Application Support: We assist you at every stage, from applications and interviews to final enrolment.",
+    ],
+    curriculum: [
+      {
+        year: "Undergraduate Degrees (with Foundation Year Options)",
+        modules: [
+          "BSc (Hons) Business and Tourism Management",
+          "BA (Hons) Hospitality Management and Leadership",
+          "BA (Hons) Business Management and Entrepreneurship",
+          "LLB (Hons) Law (3 or 4-year options)",
+          "BSc (Hons) Computing",
+          "BSc (Hons) Public Health",
+          "BSc (Hons) Mental Health and Wellbeing",
+          "BA (Hons) Education Studies",
+          "BA (Hons) Business Management and Sustainability",
+          "BSc (Hons) Finance and Accounting",
+          "BSc (Hons) Digital Marketing and Management",
+        ],
+      },
+      {
+        year: "Top-Up Programs",
+        modules: [
+          "Business Management",
+          "Health & Social Care",
+        ],
+      },
+      {
+        year: "Diplomas and Vocational Qualifications",
+        modules: [
+          "NCFE Level 4 Cyber Security Engineering",
+          "NCFE Level 4 Diploma in Data Analysis",
+          "HNC & HND in Business Marketing (2 Years)",
+        ],
+      },
+    ],
+    careerPaths: [
+      "Business Manager",
+      "Tourism Manager",
+      "Hospitality Manager",
+      "Legal Professional",
+      "IT Professional",
+      "Public Health Officer",
+      "Mental Health Practitioner",
+      "Education Professional",
+      "Financial Analyst",
+      "Digital Marketing Specialist",
+    ],
+    admissionRequirements: [
+      {
+        title: "Our Network of Trusted Partner Institutions",
+        items: [
+          "Anglia Ruskin University London",
+          "CECOS College (London, Birmingham, Nottingham)",
+          "LSME (Gants Hill)",
+          "University of Central Lancashire (UCLan)",
+          "University of Bolton Manchester",
+          "UK Management College",
+          "Global Banking School",
+          "London school of commerce",
+          "William college",
+          "Victoria College of Arts and Design",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "Start Your Journey Today",
+        content:
+          "Ready to take the next step? Contact our expert team and let's find the perfect course for you! Email us at: info@blossomeducare.co.uk",
+      },
+    ],
+  },
 ];

@@ -13,7 +13,10 @@ import { coursesData } from "@/data/courses-data";
 const categories = [
   { id: "all", label: "All Courses", value: "all" },
   { id: "bachelor-courses", label: "Bachelor Courses", value: "bachelor-courses" },
+  { id: "certhe", label: "CertHE", value: "certhe" },
+  { id: "hnd-courses", label: "HND Courses", value: "hnd-courses" },
   { id: "master-courses", label: "Master Courses", value: "master-courses" },
+  { id: "top-up-courses", label: "Top-Up Courses", value: "top-up-courses" },
 ];
 
 export default function Courses() {
