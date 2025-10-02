@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const partners = [
-  { name: "GBS", logo: "/images/gbs.png" },
-  { name: "CECOS College London", logo: "/images/CECOS-College-London.webp" },
-  { name: "UoB Manchester", logo: "/images/UoB-Manchester.webp" },
-  { name: "UCLan University", logo: "/images/UCLan-University.webp" },
-  { name: "ARU London", logo: "/images/ARU-London.webp" },
-  { name: "Icon College", logo: "/images/Icon-College-3.jpg" },
-  { name: "Icon College", logo: "/images/Icon-College-2.jpg" },
-  { name: "Icon College", logo: "/images/Icon-College-1.jpg" },
-  { name: "UKMC", logo: "/images/ukmc.png" },
+  { name: "GBS", logo: "/images/homepage/gbs.png" },
+  { name: "CECOS College London", logo: "/images/homepage/CECOS-College-London.webp" },
+  { name: "UoB Manchester", logo: "/images/homepage/UoB-Manchester.webp" },
+  { name: "UCLan University", logo: "/images/homepage/UCLan-University.webp" },
+  { name: "ARU London", logo: "/images/homepage/ARU-London.webp" },
+  { name: "Icon College", logo: "/images/homepage/Icon-College-3.jpg" },
+  { name: "Icon College", logo: "/images/homepage/Icon-College-2.jpg" },
+  { name: "Icon College", logo: "/images/homepage/Icon-College-1.jpg" },
+  { name: "UKMC", logo: "/images/homepage/ukmc.png" },
 ];
 
 export function Partners() {
@@ -60,9 +60,9 @@ export function Partners() {
             {visiblePartners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center border border-gray-100 hover:border-primary"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center border border-gray-100 hover:border-primary aspect-square"
               >
-                <div className="relative w-full h-24">
+                <div className="relative w-full h-full">
                   <Image
                     src={partner.logo}
                     alt={partner.name}

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { WavyBackground } from "@/components/ui/wavy-background";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const slides = [
@@ -14,18 +14,21 @@ const slides = [
       { text: "Explore Courses", href: "/courses" },
       { text: "Apply Now", href: "/apply-now" },
     ],
+    image: "/images/homepage/hero-scaled.jpg",
   },
   {
     heading: "Your Career Starts Here.",
     description:
       "Blossom Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
+    image: "/images/homepage/african-american-student-smiles-sincerely-while-si-2025-01-09-22-07-27-utc-min-scaled.jpg",
   },
   {
     heading: "Secure Your Admission to a UK University",
     description:
       "Ready to study in the UK? Our expert consultants are here to help students from all backgrounds achieve their goals. Begin your application with our support.",
     ctas: [{ text: "APPLY NOW", href: "/apply-now" }],
+    image: "/images/homepage/water-of-leith-walkway-in-edimburgh-city.jpg",
   },
 ];
 
@@ -52,17 +55,34 @@ export function AceternityHero() {
   };
 
   return (
-    <WavyBackground
-      className="w-full min-h-[600px] flex items-center justify-center"
-      containerClassName="w-full min-h-[600px]"
-      colors={["#051d44", "#0a2f61", "#dcb685", "#e8c89f", "#1e3a8a"]}
-      waveWidth={80}
-      backgroundFill="rgba(255,255,255,0.95)"
-      blur={20}
-      speed="slow"
-      waveOpacity={0.2}
-    >
-      <div className="w-full py-20">
+    <div className="relative w-full min-h-[600px] overflow-hidden">
+      {/* Background Images */}
+      {slides.map((slide, index) => {
+        const isActive = index === currentSlide;
+
+        return (
+          <motion.div
+            key={`bg-${index}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isActive ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute inset-0"
+            style={{ pointerEvents: 'none' }}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.heading}
+              fill
+              className="object-cover"
+              priority={index === 0}
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </motion.div>
+        );
+      })}
+
+      {/* Content */}
+      <div className="relative w-full py-20 min-h-[600px]">
         <div className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
           {slides.map((slide, index) => {
             const isActive = index === currentSlide;
@@ -88,11 +108,11 @@ export function AceternityHero() {
                 }}
               >
               <div className="container mx-auto text-center px-4 w-full">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-secondary via-secondary-light to-primary leading-tight">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
                   {slide.heading}
                 </h1>
 
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-10 leading-relaxed max-w-4xl mx-auto">
+                <p className="text-lg md:text-xl lg:text-2xl text-white mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md">
                   {slide.description}
                 </p>
 
@@ -127,13 +147,13 @@ export function AceternityHero() {
               className={`transition-all duration-300 rounded-full ${
                 index === currentSlide
                   ? "bg-primary w-12 h-3 shadow-lg"
-                  : "bg-gray-300 hover:bg-gray-400 w-3 h-3"
+                  : "bg-white/70 hover:bg-white w-3 h-3"
               } ${isTransitioning ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
       </div>
-    </WavyBackground>
+    </div>
   );
 }

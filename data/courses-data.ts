@@ -32,8 +32,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-management.jpg",
-    image: "/images/courses/business-management-large.jpg",
+    thumbnail: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
+    image: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
     description:
       "Unlock your potential in the creative and strategic world of business and marketing. 💡 This four-year program, offered by top UK universities, is methodically designed to give you the business acumen and marketing expertise you need for a successful career in the global marketplace. The integrated Foundation Year provides a supportive pathway into higher education, building the essential knowledge and academic skills you need to excel in your degree, even if you don't meet the standard entry requirements.",
     whyChoose: [
@@ -102,8 +102,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/computing.jpg",
-    image: "/images/courses/computing-large.jpg",
+    thumbnail: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
+    image: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
     description:
       "Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Blossom Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector. The integrated Foundation Year provides a solid introduction to computing and essential academic skills, preparing you for the advanced, specialized study in the years to follow.",
     whyChoose: [
@@ -173,8 +173,8 @@ export const coursesData: Course[] = [
     category: "master-courses",
     duration: "1-2 Years",
     level: "Postgraduate",
-    thumbnail: "/images/courses/mba.jpg",
-    image: "/images/courses/mba-large.jpg",
+    thumbnail: "/images/courses/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg",
+    image: "/images/courses/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg",
     description:
       "Elevate your career and become a global leader with the MBA – International. 🌍 This program is designed for ambitious professionals who want to enhance their leadership and management skills in a global context. Over a flexible 12 or 24-month period, you'll gain a deep understanding of all key business functions and the specific challenges facing organizations with global operations. This degree allows you to study at a postgraduate level while maintaining and enhancing your contribution to your employer.",
     whyChoose: [
@@ -228,8 +228,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/health-social-care.jpg",
-    image: "/images/courses/health-social-care-large.jpg",
+    thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
+    image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
     description:
       "Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. Blossom Educare is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors. The integrated Foundation Year provides a supportive pathway into higher education, ensuring you're fully prepared for the challenges of the degree.",
     whyChoose: [
@@ -299,8 +299,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/accounting-finance.jpg",
-    image: "/images/courses/accounting-finance-large.jpg",
+    thumbnail: "/images/courses/modern-asian-businessman-with-high-confidence-comm-2025-03-13-23-46-20-utc-min-2048x1365.jpg",
+    image: "/images/courses/modern-asian-businessman-with-high-confidence-comm-2025-03-13-23-46-20-utc-min-2048x1365.jpg",
     description:
       "Embark on your journey into the world of finance with the BSc (Hons) Accounting and Finance with Foundation Year program, offered by our esteemed partner, Canterbury Christ Church University (CCCU). 🎓 This four-year program is the perfect starting point if you're passionate about finance but don't meet the direct entry requirements for a standard three-year degree. The integrated Foundation Year is designed to equip you with the essential academic and subject-specific skills needed to succeed.",
     whyChoose: [
@@ -381,8 +381,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-management-2.jpg",
-    image: "/images/courses/business-management-2-large.jpg",
+    thumbnail: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365.jpg",
+    image: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365.jpg",
     description:
       "This carefully designed four-year BSc (Hons) program is your direct path to a successful career in the complex corporate world. 📈 The integrated Foundation Year is specifically planned to provide you with the essential academic and analytical skills you'll need to excel in your degree and beyond. This course ensures you get a strong start by developing your critical thinking, research, and writing abilities. You'll combine this theoretical understanding with practical experience through projects and internships, making you a highly capable and employable graduate.",
     whyChoose: [
@@ -463,8 +463,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-and-management.jpg",
-    image: "/images/courses/business-and-management-large.jpg",
+    thumbnail: "/images/courses/male-and-female-business-people-in-a-meeting-at-a-2025-04-05-07-23-57-utc-min-2048x1365.jpg",
+    image: "/images/courses/male-and-female-business-people-in-a-meeting-at-a-2025-04-05-07-23-57-utc-min-2048x1365.jpg",
     description:
       "This degree is your ideal pathway to a successful career in business, especially if you don't currently meet the requirements for direct university entry. The integrated Foundation Year provides you with the essential academic and subject-specific knowledge you need to thrive, preparing you for the full three-year degree program. 🎓 The course blends core business theory with practical, real-world application, giving you a complete understanding of modern business.",
     whyChoose: [
@@ -553,8 +553,8 @@ export const coursesData: Course[] = [
     category: "top-up-courses",
     duration: "1 Year",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-topup.jpg",
-    image: "/images/courses/business-topup-large.jpg",
+    thumbnail: "/images/courses/diverse-group-of-happy-graduates-celebrating-with-2025-03-11-15-11-33-utc-min-2048x1366.jpg",
+    image: "/images/courses/diverse-group-of-happy-graduates-celebrating-with-2025-03-11-15-11-33-utc-min-2048x1366.jpg",
     description:
       "Upgrade your existing qualification to a full Bachelor's degree in just one year. This BA Business Management Top-Up program is specifically designed for students who have already completed a Foundation Degree, HND, or an equivalent qualification in a business-related field. The curriculum focuses on developing your strategic and analytical thinking, preparing you for leadership roles in the corporate world.",
     whyChoose: [
@@ -622,8 +622,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "3 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-management-3yr.jpg",
-    image: "/images/courses/business-management-3yr-large.jpg",
+    thumbnail: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365.jpg",
+    image: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365.jpg",
     description:
       "This three-year undergraduate degree provides a comprehensive understanding of modern business principles and management practices. It is the perfect choice for aspiring professionals seeking a versatile qualification that blends academic knowledge with practical skills, ensuring you are fully prepared to meet the challenges of the global corporate world. The curriculum covers all essential business areas, including marketing, finance, human resources, and strategic planning.",
     whyChoose: [
@@ -699,8 +699,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "3 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/accounting-finance-3yr.jpg",
-    image: "/images/courses/accounting-finance-3yr-large.jpg",
+    thumbnail: "/images/courses/portrait-of-young-beautiful-latin-american-female-2025-03-24-23-17-26-utc-min-2048x1366.jpg",
+    image: "/images/courses/portrait-of-young-beautiful-latin-american-female-2025-03-24-23-17-26-utc-min-2048x1366.jpg",
     description:
       "Build a successful career in the fast-paced world of accounting and finance with this three-year undergraduate degree. The program is designed to provide you with a comprehensive understanding of accounting principles and financial management, blending rigorous academic theory with practical, real-world application. You will gain expertise in critical areas like corporate finance, financial markets, and management accounting.",
     whyChoose: [
@@ -774,8 +774,8 @@ export const coursesData: Course[] = [
     category: "certhe",
     duration: "1 Year",
     level: "Certificate",
-    thumbnail: "/images/courses/certhe-business.jpg",
-    image: "/images/courses/certhe-business-large.jpg",
+    thumbnail: "/images/courses/multiracial-group-young-people-2024-10-18-07-23-04-utc-min-2048x1367.jpg",
+    image: "/images/courses/multiracial-group-young-people-2024-10-18-07-23-04-utc-min-2048x1367.jpg",
     description:
       "Launch your business career in just one year with a Certificate of Higher Education (CertHE) in Business Management. This intensive program provides a university-level qualification, giving you a solid foundation in the core concepts and practices of the modern business world. This course is the perfect choice if you are looking to start your career, formalize your existing knowledge, or take the first step towards a full Bachelor's degree.",
     whyChoose: [
@@ -846,8 +846,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "3 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/education-studies.jpg",
-    image: "/images/courses/education-studies-large.jpg",
+    thumbnail: "/images/courses/group-of-friends-sitting-outdoors-drinking-beer-s-2024-10-18-04-41-15-utc-min-2048x1367.jpg",
+    image: "/images/courses/group-of-friends-sitting-outdoors-drinking-beer-s-2024-10-18-04-41-15-utc-min-2048x1367.jpg",
     description:
       "Are you passionate about shaping the future of education? This BA (Hons) Education Studies degree, offered by our esteemed partner institutions, is designed for aspiring professionals who want to deepen their understanding of the pedagogical, social, and philosophical issues in education today. This comprehensive program blends academic theory with practical application, equipping you with the critical thinking and intellectual skills essential for management and leadership roles in both national and international educational contexts.",
     whyChoose: [
@@ -890,8 +890,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/law-foundation.jpg",
-    image: "/images/courses/law-foundation-large.jpg",
+    thumbnail: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365 (1).jpg",
+    image: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365 (1).jpg",
     description:
       "Dreaming of a career in law but need the right starting point? The LLB (Hons) Law with Foundation Year, offered by our partner universities, is the ideal pathway to build the robust legal knowledge and academic skills required to succeed. This program is specifically designed for aspiring legal professionals who need a supportive first step. The integrated Foundation Year provides essential study skills and subject knowledge, ensuring you are fully prepared for the rigours of a university law degree.",
     whyChoose: [
@@ -948,8 +948,8 @@ export const coursesData: Course[] = [
     category: "master-courses",
     duration: "1-2 Years",
     level: "Postgraduate",
-    thumbnail: "/images/courses/mph.jpg",
-    image: "/images/courses/mph-large.jpg",
+    thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
+    image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
     description:
       "Ready to tackle today's complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by Blossom Educare's partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector. This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.",
     whyChoose: [
@@ -996,8 +996,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "3 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-management.jpg",
-    image: "/images/courses/business-management-large.jpg",
+    thumbnail: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
+    image: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
     description:
       "The BSc (Hons) Business Management is a three-year undergraduate program designed to give you a complete understanding of modern business principles and management practices. The first year is crucial, as it builds a strong foundation for your advanced studies. This foundational year covers essential subjects like organizational behavior, financial accounting, and marketing to ensure you develop a comprehensive knowledge of core business operations from day one.",
     whyChoose: [
@@ -1057,8 +1057,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-management.jpg",
-    image: "/images/courses/business-management-large.jpg",
+    thumbnail: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
+    image: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
     description:
       "This four-year degree is your direct pathway to a career in corporate management, even if you don't currently meet the standard entry requirements for a three-year course. The integrated foundation year is designed to provide you with the essential academic and professional skills needed to succeed, preparing you for three years of focused, advanced study.",
     whyChoose: [
@@ -1151,8 +1151,8 @@ export const coursesData: Course[] = [
     category: "all",
     duration: "Varies",
     level: "Various Levels",
-    thumbnail: "/images/courses/partner-institutions.jpg",
-    image: "/images/courses/partner-institutions-large.jpg",
+    thumbnail: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365 (1).jpg",
+    image: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365 (1).jpg",
     description:
       "At Blossom Educare, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are completely free for all students. Whether you're starting your academic journey or advancing your qualifications, we're here to guide you. We listen carefully to your career aspirations and scheduling needs—be it weekday, evening, or weekend classes—to match you with the perfect course and institution for your success.",
     whyChoose: [

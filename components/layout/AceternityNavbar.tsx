@@ -182,7 +182,7 @@ export function AceternityNavbar() {
               <Link href="/" className="flex items-center">
                 <div className="relative w-48 h-16">
                   <Image
-                    src="/Wbg-Wexford Education Long.png"
+                    src="/WObg-Wexford Education Long.png"
                     alt="Wexford Educare"
                     fill
                     className="object-contain"

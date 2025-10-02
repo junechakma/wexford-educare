@@ -5,28 +5,28 @@ import Image from "next/image";
 const categories = [
   {
     title: "Master's Degree",
-    image: "/images/happy-mixed-race-female-student-celebrating-gradua-2025-04-22-02-53-48-utc-min-681x1024.jpg",
+    image: "/images/homepage/happy-mixed-race-female-student-celebrating-gradua.jpg",
     description:
       "Advance your career and specialize in your field with a postgraduate qualification.",
     duration: "1–2 years",
   },
   {
     title: "HND",
-    image: "/images/4-692x1024.jpg",
+    image: "/images/homepage/4-1384x2048.jpg",
     description:
       "A practical qualification after A-levels for direct career entry or degree progression.",
     duration: "2 years",
   },
   {
     title: "Top-Up Degree",
-    image: "/images/3-692x1024.jpg",
+    image: "/images/homepage/3-1384x2048.jpg",
     description:
       "Upgrade your HND or foundation degree to a full Bachelor's in just one year.",
     duration: "1 year",
   },
   {
     title: "Bachelor's Degree",
-    image: "/images/2-692x1024.jpg",
+    image: "/images/homepage/2-1384x2048.jpg",
     description: "Launch your career with an undergraduate degree.",
     duration: "4 years",
   },

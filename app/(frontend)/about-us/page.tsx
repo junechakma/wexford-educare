@@ -60,19 +60,19 @@ export default function AboutUs() {
     {
       name: "MD Zahid Hasan Akhand",
       designation: "Managing Director",
-      src: "/images/team-1.jpg",
+      src: "/images/aboutus/jahid-bha.jpg",
       quote: "Leading Wexford Educare with a vision to make quality education accessible to every student aspiring to study in the UK.",
     },
     {
       name: "Mahmud Hasan Sefat",
       designation: "Head of Operations",
-      src: "/images/team-2.jpg",
+      src: "/images/aboutus/hanif-bhai.jpg",
       quote: "Ensuring seamless operations and exceptional service delivery to help students achieve their educational dreams.",
     },
     {
       name: "MD Ariful Hossain Shohrab",
       designation: "Head of HR and Admin",
-      src: "/images/team-3.jpg",
+      src: "/images/aboutus/sohrab-bhai.jpg",
       quote: "Building a strong team dedicated to supporting students throughout their educational journey.",
     },
   ];
@@ -165,7 +165,7 @@ export default function AboutUs() {
               <CardBody className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <CardItem translateZ="100" className="w-full h-full">
                   <Image
-                    src="/images/vision.jpg"
+                    src="/images/aboutus/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg"
                     alt="Our Vision"
                     fill
                     className="object-cover"
@@ -211,7 +211,7 @@ export default function AboutUs() {
               <CardBody className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <CardItem translateZ="100" className="w-full h-full">
                   <Image
-                    src="/images/mission.jpg"
+                    src="/images/aboutus/male-and-female-business-people-in-a-meeting-at-a-2025-04-05-07-23-57-utc-min-2048x1365.jpg"
                     alt="Our Mission"
                     fill
                     className="object-cover"
