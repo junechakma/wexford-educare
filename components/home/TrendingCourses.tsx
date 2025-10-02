@@ -3,31 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
-const courses = [
-  {
-    category: "Bachelor Courses",
-    image: "/images/business-people-office.jpg",
-    title: "BA (Hons) Business Management and Marketing with Foundation Year",
-    link: "/courses/ba-hons-business-management-and-marketing-with-foundation-year",
-  },
-  {
-    category: "Bachelor Courses",
-    image: "/images/robot-engineers.jpg",
-    title: "BSc (Hons) Computing with Integrated Foundation Year",
-    link: "/courses/bsc-hons-computing-with-integrated-foundation-year",
-  },
-  {
-    category: "Master Courses",
-    image: "/images/students-group.jpg",
-    title: "MBA – International",
-    link: "/courses/mba-international",
-  },
-];
+import { coursesData } from "@/data/courses-data";
 
 export function TrendingCourses() {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 5;
+  const coursesPerPage = 3;
+
+  // Calculate pagination
+  const totalCourses = coursesData.length;
+  const totalPages = Math.ceil(totalCourses / coursesPerPage);
+  const startIndex = (currentPage - 1) * coursesPerPage;
+  const endIndex = startIndex + coursesPerPage;
+  const currentCourses = coursesData.slice(startIndex, endIndex);
 
   return (
     <section className="py-20 bg-white">
@@ -39,22 +26,22 @@ export function TrendingCourses() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {courses.map((course, index) => (
+          {currentCourses.map((course) => (
             <Link
-              key={index}
-              href={course.link}
+              key={course.id}
+              href={`/courses/${course.slug}`}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-secondary)]/80 via-transparent to-transparent z-10" />
                 <Image
-                  src={course.image}
+                  src={course.thumbnail}
                   alt={course.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 bg-secondary text-primary px-4 py-2 rounded-full text-xs font-semibold z-20">
-                  {course.category}
+                  {course.level}
                 </div>
               </div>
 

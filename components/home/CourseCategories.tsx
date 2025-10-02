@@ -4,6 +4,13 @@ import Image from "next/image";
 
 const categories = [
   {
+    title: "Master's Degree",
+    image: "/images/happy-mixed-race-female-student-celebrating-gradua-2025-04-22-02-53-48-utc-min-681x1024.jpg",
+    description:
+      "Advance your career and specialize in your field with a postgraduate qualification.",
+    duration: "1–2 years",
+  },
+  {
     title: "HND",
     image: "/images/4-692x1024.jpg",
     description:
@@ -23,13 +30,6 @@ const categories = [
     description: "Launch your career with an undergraduate degree.",
     duration: "4 years",
   },
-  {
-    title: "Master's Degree",
-    image: "/images/happy-mixed-race-female-student-celebrating-gradua-2025-04-22-02-53-48-utc-min-681x1024.jpg",
-    description:
-      "Advance your career and specialize in your field with a postgraduate qualification.",
-    duration: "1–2 years",
-  },
 ];
 
 export function CourseCategories() {
@@ -46,7 +46,7 @@ export function CourseCategories() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-2xl overflow-hidden border border-gray-100"
             >
               <div className="relative h-72 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-secondary)]/80 via-transparent to-transparent z-10" />
@@ -54,10 +54,10 @@ export function CourseCategories() {
                   src={category.image}
                   alt={category.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-primary px-4 py-2 rounded-full text-sm font-semibold z-20">
-                  {category.duration}
+                  Program Duration: {category.duration}
                 </div>
               </div>
 
