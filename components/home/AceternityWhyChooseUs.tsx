@@ -74,28 +74,35 @@ function Feature3DCard({
 
 export function AceternityWhyChooseUs() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-r from-[#1e3a8a] via-[#7c2d5e] to-[#dc2626]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
-            Why Choose Us?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Wexford Educare has been preferred as one of the top higher
-            education consultants, when it comes to pursuing your higher degree
-            in the UK
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          {/* Left side - Text content */}
+          <div className="text-white">
+            <p className="text-sm font-medium mb-4 uppercase tracking-wider">
+              WANT TO STUDY IN THE UK?
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Why Choose Us?
+            </h2>
+            <p className="text-base md:text-lg leading-relaxed opacity-90">
+              Wexford Educare has been preferred as one of the top higher
+              education consultants, when it comes to pursuing your higher degree
+              in the UK
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {features.map((feature, index) => (
-            <Feature3DCard
-              key={index}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
+          {/* Right side - 2x2 grid of cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {features.map((feature, index) => (
+              <Feature3DCard
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

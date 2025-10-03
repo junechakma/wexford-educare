@@ -76,7 +76,7 @@ export function AceternityHero() {
               className="object-cover"
               priority={index === 0}
             />
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
           </motion.div>
         );
       })}
@@ -107,24 +107,26 @@ export function AceternityHero() {
                   pointerEvents: isActive ? 'auto' : 'none',
                 }}
               >
-              <div className="container mx-auto text-center px-4 w-full">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
-                  {slide.heading}
+              <div className="container mx-auto text-left px-4 w-full max-w-7xl">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+                  <span className="text-primary">UK</span> {slide.heading}
                 </h1>
 
-                <p className="text-lg md:text-xl lg:text-2xl text-white mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md">
-                  {slide.description}
-                </p>
+                <div className="border-l-4 border-primary pl-4 mb-8 max-w-2xl">
+                  <p className="text-base md:text-lg text-white/90 leading-relaxed">
+                    {slide.description}
+                  </p>
+                </div>
 
-                  <div className="flex gap-4 justify-center flex-wrap">
+                  <div className="flex gap-4 flex-wrap">
                     {slide.ctas.map((cta, ctaIndex) => (
                       <Link
                         key={ctaIndex}
                         href={cta.href}
-                        className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
+                        className={`px-6 py-3 font-semibold text-sm transition-all duration-300 ${
                           ctaIndex === 0
-                            ? "bg-secondary text-primary hover:shadow-2xl hover:scale-105"
-                            : "bg-white text-secondary border-2 border-secondary hover:bg-secondary hover:text-primary hover:shadow-xl"
+                            ? "bg-secondary text-white hover:bg-secondary-dark shadow-lg"
+                            : "bg-transparent text-white border-2 border-white hover:bg-white hover:text-secondary"
                         }`}
                       >
                         {cta.text}
@@ -138,7 +140,7 @@ export function AceternityHero() {
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex justify-center gap-3 mt-8">
+        <div className="flex justify-center gap-2 mt-8">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -146,8 +148,8 @@ export function AceternityHero() {
               disabled={isTransitioning}
               className={`transition-all duration-300 rounded-full ${
                 index === currentSlide
-                  ? "bg-primary w-12 h-3 shadow-lg"
-                  : "bg-white/70 hover:bg-white w-3 h-3"
+                  ? "bg-secondary w-3 h-3"
+                  : "bg-white/50 hover:bg-white w-3 h-3"
               } ${isTransitioning ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
               aria-label={`Go to slide ${index + 1}`}
             />

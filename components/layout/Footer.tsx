@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 
 export function Footer() {
@@ -157,47 +157,81 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Accreditations */}
+          {/* Logo */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-primary">
-              Accreditations & Trust
+              Wexford Educare
             </h3>
-            <div className="space-y-6">
-              <div className="relative w-full h-20">
-                <Image
-                  src="/WObg-Wexford Education Long.png"
-                  alt="Wexford Educare"
-                  fill
-                  className="object-contain object-left"
-                />
-              </div>
-              <div className="flex gap-4">
-                <div className="relative w-24 h-16 bg-white rounded p-2">
-                  <Image
-                    src="/images/british.webp"
-                    alt="British Council"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="relative w-24 h-16 bg-white rounded p-2">
-                  <Image
-                    src="/images/ico.webp"
-                    alt="ICO"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </div>
+            <div className="relative w-full h-20">
+              <Image
+                src="/WObg-Wexford Education Long.png"
+                alt="Wexford Educare"
+                fill
+                className="object-contain object-left"
+              />
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2020 - 2025 Wexford Educare | All Rights Reserved
-          </p>
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400">
+              © 2025-26 AHZ All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/privacy-policy"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <span className="text-gray-600">-</span>
+              <Link
+                href="/terms-conditions"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
+                Terms of Use
+              </Link>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link
+                href="#"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

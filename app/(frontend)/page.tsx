@@ -4,6 +4,7 @@ import { CourseCategories } from "@/components/home/CourseCategories";
 import { TrendingCourses } from "@/components/home/TrendingCourses";
 import { Partners } from "@/components/home/Partners";
 import { AceternityTestimonials } from "@/components/home/AceternityTestimonials";
+import { Banner } from "@/components/home/Banner";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AceternityHero />
       <AceternityWhyChooseUs />
       <CourseCategories />
+      <Banner />
       <TrendingCourses />
       <Partners />
       <AceternityTestimonials />
