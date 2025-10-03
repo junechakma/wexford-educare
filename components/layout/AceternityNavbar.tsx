@@ -200,14 +200,12 @@ export function AceternityNavbar() {
                     <NavigationMenuItem key={index}>
                       <Link
                         href={link.href}
-                        className={cn(
-                          'group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-bold transition-colors hover:text-primary focus:text-primary focus:outline-none no-underline',
-                          isActive(link.href)
-                            ? 'text-primary'
-                            : 'text-foreground/80'
-                        )}
+                        className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-bold transition-colors focus:outline-none no-underline relative text-foreground/80"
                       >
                         {link.name}
+                        {isActive(link.href) && (
+                          <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full" />
+                        )}
                       </Link>
                     </NavigationMenuItem>
                   ))}

@@ -73,7 +73,7 @@ export default function ApplyNow() {
     setSubmitStatus({ type: null, message: "" });
 
     try {
-      const response = await fetch("/api/applications/submit.php", {
+      const response = await fetch("/api/applications", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

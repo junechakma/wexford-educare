@@ -2,13 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 // In a real application, you would use a database
 // For now, we'll store applications in memory (will reset on server restart)
-let applications: any[] = [];
+const applications: Array<Record<string, unknown>> = [];
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     // In production, add authentication check here
     return NextResponse.json(applications);
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to fetch applications" },
       { status: 500 }
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to submit application" },
       { status: 500 }
