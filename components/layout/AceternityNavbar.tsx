@@ -51,6 +51,7 @@ const HamburgerIcon = ({ className, ...props }: React.SVGAttributes<SVGElement>)
 
 export function AceternityNavbar() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
@@ -74,6 +75,15 @@ export function AceternityNavbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const navItems = [
     { name: 'Homepage', href: '/' },
     { name: 'About Us', href: '/about-us' },
@@ -94,24 +104,28 @@ export function AceternityNavbar() {
       {/* Top Bar */}
       <div className="bg-blue-950 text-white py-3 hidden md:block">
         <div className="container mx-auto px-4">
-          <div className="flex justify-end items-center">
+          <div className="flex justify-between items-center">
             {/* Social Media */}
-            {/* <div className="flex gap-4">
+            <div className="flex gap-4">
               <Link
-                href="https://www.facebook.com/wexfordeducare"
+                href="https://www.facebook.com/share/1CpqGRxZ8Q/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/wexford_educare?igsh=d3BsYzFvazNnNTdn&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
-            </div> */}
+            </div>
 
             {/* Contact Info */}
             <div className="flex gap-6 text-sm">
@@ -182,10 +196,10 @@ export function AceternityNavbar() {
               <Link href="/" className="flex items-center">
                 <div className="relative w-48 h-16">
                   <Image
-                    src="/WObg-Wexford Education Long.png"
+                    src={isScrolled ? "/wexford-logo-dark.png" : "/WObg-Wexford Education Long.png"}
                     alt="Wexford Educare"
                     fill
-                    className="object-contain"
+                    className="object-contain transition-opacity duration-300"
                     priority
                   />
                 </div>
