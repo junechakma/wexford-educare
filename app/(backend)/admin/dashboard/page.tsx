@@ -109,7 +109,9 @@ export default function AdminDashboard() {
     router.push("/admin/login");
   };
 
-  const exportToCSV = () => {
+  const exportToCSV = (applyFilters: boolean = true) => {
+    const dataToExport = applyFilters ? filteredApplications : applications;
+
     const headers = [
       "Name",
       "Email",
@@ -124,7 +126,7 @@ export default function AdminDashboard() {
 
     const csvContent = [
       headers.join(","),
-      ...filteredApplications.map((app) =>
+      ...dataToExport.map((app) =>
         [
           `"${app.name}"`,
           `"${app.email}"`,
@@ -143,9 +145,10 @@ export default function AdminDashboard() {
     const link = document.createElement("a");
     const url = URL.createObjectURL(blob);
     link.setAttribute("href", url);
+    const filterSuffix = applyFilters && (searchTerm || filterCampus !== 'all' || filterCourse !== 'all') ? '_filtered' : '';
     link.setAttribute(
       "download",
-      `applications_${new Date().toISOString().split("T")[0]}.csv`
+      `applications_${new Date().toISOString().split("T")[0]}${filterSuffix}.csv`
     );
     link.style.visibility = "hidden";
     document.body.appendChild(link);
@@ -153,7 +156,9 @@ export default function AdminDashboard() {
     document.body.removeChild(link);
   };
 
-  const exportToExcel = () => {
+  const exportToExcel = (applyFilters: boolean = true) => {
+    const dataToExport = applyFilters ? filteredApplications : applications;
+
     // For Excel export, we'll use CSV format with .xlsx extension
     // In a real app, you'd use a library like xlsx or exceljs
     const headers = [
@@ -170,7 +175,7 @@ export default function AdminDashboard() {
 
     const csvContent = [
       headers.join("\t"),
-      ...filteredApplications.map((app) =>
+      ...dataToExport.map((app) =>
         [
           app.name,
           app.email,
@@ -191,9 +196,10 @@ export default function AdminDashboard() {
     const link = document.createElement("a");
     const url = URL.createObjectURL(blob);
     link.setAttribute("href", url);
+    const filterSuffix = applyFilters && (searchTerm || filterCampus !== 'all' || filterCourse !== 'all') ? '_filtered' : '';
     link.setAttribute(
       "download",
-      `applications_${new Date().toISOString().split("T")[0]}.xls`
+      `applications_${new Date().toISOString().split("T")[0]}${filterSuffix}.xls`
     );
     link.style.visibility = "hidden";
     document.body.appendChild(link);
@@ -355,21 +361,43 @@ export default function AdminDashboard() {
             </div>
 
             {/* Export Buttons */}
-            <div className="flex gap-2">
-              <button
-                onClick={exportToCSV}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                CSV
-              </button>
-              <button
-                onClick={exportToExcel}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                Excel
-              </button>
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2">
+                <button
+                  onClick={() => exportToCSV(true)}
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm"
+                  title="Export filtered results to CSV"
+                >
+                  <Download className="w-4 h-4" />
+                  CSV (Filtered)
+                </button>
+                <button
+                  onClick={() => exportToExcel(true)}
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                  title="Export filtered results to Excel"
+                >
+                  <Download className="w-4 h-4" />
+                  Excel (Filtered)
+                </button>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => exportToCSV(false)}
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-1.5 bg-green-100 text-green-700 border border-green-300 rounded-lg hover:bg-green-200 transition-colors text-xs"
+                  title="Export all results to CSV"
+                >
+                  <Download className="w-3 h-3" />
+                  All CSV
+                </button>
+                <button
+                  onClick={() => exportToExcel(false)}
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-1.5 bg-blue-100 text-blue-700 border border-blue-300 rounded-lg hover:bg-blue-200 transition-colors text-xs"
+                  title="Export all results to Excel"
+                >
+                  <Download className="w-3 h-3" />
+                  All Excel
+                </button>
+              </div>
             </div>
           </div>
         </Card>
