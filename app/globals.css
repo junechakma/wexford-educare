@@ -319,3 +319,13 @@ html {
 .animate-meteor {
   animation: meteor 5s linear infinite;
 }
+
+/* Hide scrollbar for horizontal scroll carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

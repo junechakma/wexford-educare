@@ -35,7 +35,7 @@ export default function Courses() {
         <div className="container mx-auto px-4 relative z-10">
           <TextGenerateEffect
             words="Our Courses"
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
           />
           <div className="flex items-center gap-2 text-white/80">
             <Link href="/" className="hover:text-primary transition-colors">
@@ -51,10 +51,10 @@ export default function Courses() {
       {/* Courses Introduction */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 sm:mb-6">
             Discover Your Path to Success
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Explore our wide range of courses designed to help you achieve your
             academic and career goals. From foundation years to postgraduate
             programs, we offer comprehensive education solutions tailored to
@@ -67,15 +67,48 @@ export default function Courses() {
       <section className="py-12 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-2">
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">
                 <span className="text-secondary">Filter by </span>
                 <span className="text-primary">Category</span>
               </h3>
-              <p className="text-gray-600">Choose a category to explore our courses</p>
+              <p className="text-sm sm:text-base text-gray-600">Choose a category to explore our courses</p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {/* Mobile: Horizontal Scroll Carousel */}
+            <div className="md:hidden overflow-x-auto scrollbar-hide -mx-4 px-4">
+              <div className="flex gap-3 pb-2 min-w-max">
+                {categories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => setActiveFilter(category.value)}
+                    className={`group relative px-4 py-3 rounded-xl font-semibold transition-all duration-300 border-2 flex-shrink-0 ${
+                      activeFilter === category.value
+                        ? "bg-gradient-to-br from-primary to-primary/80 text-white border-primary shadow-lg shadow-primary/30"
+                        : "bg-white text-gray-700 border-gray-200 hover:border-primary/50 hover:shadow-md"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                        activeFilter === category.value
+                          ? "bg-white/20"
+                          : "bg-primary/10 group-hover:bg-primary/20"
+                      }`}>
+                        <BookOpen className={`w-4 h-4 ${
+                          activeFilter === category.value
+                            ? "text-white"
+                            : "text-primary"
+                        }`} />
+                      </div>
+                      <span className="text-sm whitespace-nowrap">{category.label}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Desktop: Grid Layout */}
+            <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
               {categories.map((category) => (
                 <button
                   key={category.id}
@@ -107,8 +140,8 @@ export default function Courses() {
               ))}
             </div>
 
-            <div className="mt-6 text-center">
-              <p className="text-sm text-gray-500">
+            <div className="mt-4 sm:mt-6 text-center">
+              <p className="text-xs sm:text-sm text-gray-500">
                 Showing <span className="font-semibold text-primary">{filteredCourses.length}</span> course{filteredCourses.length !== 1 ? 's' : ''}
               </p>
             </div>
@@ -119,34 +152,34 @@ export default function Courses() {
       {/* Courses Grid */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {filteredCourses.map((course) => (
               <Card key={course.id} className="bg-white hover:shadow-xl border border-gray-100 rounded-xl overflow-hidden transition-shadow">
-                <div className="w-full h-48 relative">
+                <div className="w-full h-40 sm:h-48 relative">
                   <Image
                     src={course.thumbnail}
                     alt={course.title}
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-primary text-white px-2 sm:px-3 py-1 rounded-full text-xs font-medium">
                     {course.level}
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-secondary mb-4 line-clamp-2 min-h-[3.5rem]">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-secondary mb-3 sm:mb-4 line-clamp-2 min-h-[3rem] sm:min-h-[3.5rem]">
                     {course.title}
                   </h3>
 
-                  <div className="space-y-3 mb-6">
+                  <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Clock className="w-4 h-4 text-primary" />
-                      <span className="text-sm">Duration: {course.duration}</span>
+                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-xs sm:text-sm">Duration: {course.duration}</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
-                      <Award className="w-4 h-4 text-primary" />
-                      <span className="text-sm capitalize">
+                      <Award className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-xs sm:text-sm capitalize">
                         {course.category.replace("-", " ")}
                       </span>
                     </div>
@@ -154,7 +187,7 @@ export default function Courses() {
 
                   <Link
                     href={`/courses/${course.slug}`}
-                    className="block w-full bg-secondary hover:bg-primary text-white text-center py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg"
+                    className="block w-full bg-secondary hover:bg-primary text-white text-center py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 hover:shadow-lg"
                   >
                     Learn More
                   </Link>

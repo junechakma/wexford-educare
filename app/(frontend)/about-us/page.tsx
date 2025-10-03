@@ -93,12 +93,12 @@ export default function AboutUs() {
       {/* About Wexford Educare Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             <span className="text-secondary">About </span>
             <span className="text-primary">Wexford </span>
             <span className="text-primary">Educare</span>
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             <strong>Wexford Educare</strong> is a London-based education
             consultancy firm. Since its inception, the company has rapidly
             earned a reputation as a trusted partner for students pursuing
@@ -114,7 +114,7 @@ export default function AboutUs() {
       {/* Why Choose Us Section with 3D Cards */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
             <span className="text-secondary">Why Choose </span>
             <span className="text-primary">Us</span>
           </h2>
@@ -158,7 +158,7 @@ export default function AboutUs() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
-            <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
+            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
               <Image
                 src="/images/aboutus/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg"
                 alt="Our Vision"
@@ -169,24 +169,24 @@ export default function AboutUs() {
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent" />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 <span className="text-secondary">Our </span>
                 <span className="text-primary">Vision</span>
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
                 Our vision is to be the world&apos;s most trusted education
                 consultancy, known for bridging the gap between students and
                 their dream institutions. We envision a future where every
                 student, regardless of their background, can access quality
                 education and contribute positively to society.
               </p>
-              <div className="flex items-start gap-4 p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🎯</span>
+              <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl sm:text-2xl">🎯</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-secondary mb-1">Our Goal</h3>
-                  <p className="text-sm text-gray-600">Empowering students worldwide to achieve their educational dreams</p>
+                  <h3 className="text-sm sm:text-base font-semibold text-secondary mb-1">Our Goal</h3>
+                  <p className="text-xs sm:text-sm text-gray-600">Empowering students worldwide to achieve their educational dreams</p>
                 </div>
               </div>
             </div>
@@ -199,11 +199,11 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 <span className="text-secondary">Our </span>
                 <span className="text-primary">Mission</span>
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
                 The mission of <strong>Wexford Educare</strong> is to empower
                 students to achieve their academic and professional goals. We
                 provide dedicated, personalized support from initial course
@@ -211,17 +211,17 @@ export default function AboutUs() {
                 accessible and attainable, we strive to create an inclusive
                 environment where every student can thrive.
               </p>
-              <div className="flex items-start gap-4 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
-                <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🚀</span>
+              <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl sm:text-2xl">🚀</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-secondary mb-1">Our Commitment</h3>
-                  <p className="text-sm text-gray-600">Providing end-to-end support for every student's journey</p>
+                  <h3 className="text-sm sm:text-base font-semibold text-secondary mb-1">Our Commitment</h3>
+                  <p className="text-xs sm:text-sm text-gray-600">Providing end-to-end support for every student's journey</p>
                 </div>
               </div>
             </div>
-            <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-secondary/20 order-1 lg:order-2">
+            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-secondary/20 order-1 lg:order-2">
               <Image
                 src="/images/aboutus/male-and-female-business-people-in-a-meeting-at-a-2025-04-05-07-23-57-utc-min-2048x1365.jpg"
                 alt="Our Mission"

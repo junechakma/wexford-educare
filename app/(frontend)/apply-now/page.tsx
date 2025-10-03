@@ -124,9 +124,9 @@ export default function ApplyNow() {
         <div className="container mx-auto px-4 relative z-10">
           <TextGenerateEffect
             words="Apply Now"
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
           />
-          <div className="flex items-center gap-2 text-white/80">
+          <div className="flex items-center gap-2 text-sm sm:text-base text-white/80">
             <Link href="/" className="hover:text-primary transition-colors">
               Home
             </Link>
@@ -138,30 +138,30 @@ export default function ApplyNow() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             <span className="text-secondary">Check Your </span>
             <span className="text-primary">Eligibility</span>
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed px-4">
             Find out if you qualify to study in the UK and access government funding by completing the form below. If you&apos;re eligible, one of our consultants will contact you to explain the process and guide you through the next steps.
           </p>
         </div>
       </section>
 
       {/* Application Form Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <Card className="bg-white rounded-xl p-8 md:p-12 shadow-md">
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <Card className="bg-white rounded-xl p-5 sm:p-8 md:p-12 shadow-md">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 {/* Name and Email */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Your Full Name *
                     </label>
@@ -172,7 +172,7 @@ export default function ApplyNow() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                       placeholder="Name"
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function ApplyNow() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Your Email Address *
                     </label>
@@ -191,18 +191,18 @@ export default function ApplyNow() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                       placeholder="Email"
                     />
                   </div>
                 </div>
 
                 {/* Phone and Campus */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Your Phone Number *
                     </label>
@@ -214,7 +214,7 @@ export default function ApplyNow() {
                       onChange={handleChange}
                       required
                       pattern="[0-9()#&+*\-=.]+"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                       placeholder="Phone Number"
                     />
                   </div>
@@ -222,7 +222,7 @@ export default function ApplyNow() {
                   <div>
                     <label
                       htmlFor="campus"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Which Campus Are You Preferred? *
                     </label>
@@ -232,7 +232,7 @@ export default function ApplyNow() {
                       value={formData.campus}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
                     >
                       <option value="">London</option>
                       {campuses.map((campus) => (
@@ -245,11 +245,11 @@ export default function ApplyNow() {
                 </div>
 
                 {/* Status and Course */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label
                       htmlFor="status"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Your Current Status in UK ? *
                     </label>
@@ -259,7 +259,7 @@ export default function ApplyNow() {
                       value={formData.status}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
                     >
                       <option value="">British</option>
                       {statuses.map((status) => (
@@ -273,7 +273,7 @@ export default function ApplyNow() {
                   <div>
                     <label
                       htmlFor="course"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                     >
                       Which course are you interested in? *
                     </label>
@@ -283,7 +283,7 @@ export default function ApplyNow() {
                       value={formData.course}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none bg-white"
                     >
                       <option value="">Business Management</option>
                       {courses.map((course) => (
@@ -299,7 +299,7 @@ export default function ApplyNow() {
                 <div>
                   <label
                     htmlFor="bestTime"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                   >
                     What is the best time to call you?
                   </label>
@@ -309,7 +309,7 @@ export default function ApplyNow() {
                     name="bestTime"
                     value={formData.bestTime}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                     placeholder="eg. Tomorrow 9AM - 11AM"
                   />
                 </div>
@@ -318,7 +318,7 @@ export default function ApplyNow() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2"
                   >
                     Enter your message (If any)
                   </label>
@@ -327,8 +327,8 @@ export default function ApplyNow() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
+                    rows={4}
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
                     placeholder="Message"
                   />
                 </div>
@@ -336,35 +336,35 @@ export default function ApplyNow() {
                 {/* Success Message */}
                 {submitStatus.type && (
                   <div
-                    className={`p-5 rounded-lg flex items-start gap-4 ${
+                    className={`p-3 sm:p-5 rounded-lg flex items-start gap-3 sm:gap-4 ${
                       submitStatus.type === "success"
                         ? "bg-green-50 text-green-800 border border-green-200"
                         : "bg-red-50 text-red-800 border border-red-200"
                     }`}
                   >
                     {submitStatus.type === "success" && (
-                      <CheckCircle2 className="w-6 h-6 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5" />
                     )}
-                    <span className="font-medium">{submitStatus.message}</span>
+                    <span className="font-medium text-sm sm:text-base">{submitStatus.message}</span>
                   </div>
                 )}
 
                 {/* Submit Button */}
-                <div className="pt-4">
+                <div className="pt-2 sm:pt-4">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-secondary text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                    className="w-full bg-primary hover:bg-secondary text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3"
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="w-6 h-6 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                        Submitting...
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 border-3 border-white border-t-transparent rounded-full animate-spin" />
+                        <span className="text-sm sm:text-base">Submitting...</span>
                       </>
                     ) : (
                       <>
-                        <Send className="w-5 h-5" />
-                        Submit Application
+                        <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <span className="text-sm sm:text-base">Submit Application</span>
                       </>
                     )}
                   </button>
@@ -376,13 +376,13 @@ export default function ApplyNow() {
       </section>
 
       {/* Why Apply Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10 md:mb-12">
             <span className="text-secondary">Why Apply </span>
             <span className="text-primary">With Us?</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
             {[
               {
                 title: "Free Consultation",
@@ -403,8 +403,8 @@ export default function ApplyNow() {
                 illustration: "/images/illustrations/undraw_user-flow_d1ya.svg"
               },
             ].map((item, index) => (
-              <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary/30 hover:-translate-y-1">
-                <div className="relative w-full h-32 mb-5 p-4 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors">
+              <Card key={index} className="group p-5 sm:p-6 md:p-8 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary/30 hover:-translate-y-1">
+                <div className="relative w-full h-24 sm:h-28 md:h-32 mb-4 sm:mb-5 p-3 sm:p-4 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors">
                   <Image
                     src={item.illustration}
                     alt={item.title}
@@ -412,10 +412,10 @@ export default function ApplyNow() {
                     className="object-contain p-2"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-secondary mb-3 text-center group-hover:text-primary transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-secondary mb-2 sm:mb-3 text-center group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-center">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
                   {item.description}
                 </p>
               </Card>
@@ -425,27 +425,27 @@ export default function ApplyNow() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-20 bg-secondary relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 bg-secondary relative overflow-hidden">
         <BackgroundBeams className="absolute inset-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             <span className="text-white">Have </span>
             <span className="text-primary">Questions?</span>
           </h2>
-          <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-white/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
             Our team is here to help. Contact us for any questions about the
             application process or course offerings.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Link
               href="/contact-us"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="inline-block bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Contact Us
             </Link>
             <Link
               href="/courses"
-              className="inline-block bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="inline-block bg-white hover:bg-gray-100 text-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Browse Courses
             </Link>

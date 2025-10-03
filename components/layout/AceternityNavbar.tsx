@@ -23,8 +23,8 @@ import { cn } from '@/lib/utils';
 const HamburgerIcon = ({ className, ...props }: React.SVGAttributes<SVGElement>) => (
   <svg
     className={cn('pointer-events-none', className)}
-    width={16}
-    height={16}
+    width={24}
+    height={24}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -52,6 +52,7 @@ const HamburgerIcon = ({ className, ...props }: React.SVGAttributes<SVGElement>)
 export function AceternityNavbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
@@ -128,14 +129,14 @@ export function AceternityNavbar() {
             </div>
 
             {/* Contact Info */}
-            <div className="flex gap-6 text-sm">
+            <div className="flex gap-3 md:gap-6 text-xs md:text-sm">
               <Link
                 href="tel:+442033759568"
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors hidden sm:inline"
               >
                 +44 20 3375 9568
               </Link>
-              <span className="text-gray-400">|</span>
+              <span className="text-gray-400 hidden sm:inline">|</span>
               <Link
                 href="mailto:info@wexfordeducare.com"
                 className="hover:text-primary transition-colors"
@@ -152,49 +153,26 @@ export function AceternityNavbar() {
         ref={containerRef}
         className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm transition-all duration-300"
       >
-        <div className="container mx-auto px-4">
-          <div className="flex h-20 items-center justify-between gap-4">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between gap-2 sm:gap-4">
             {/* Left side - Logo */}
             <div className="flex items-center gap-2">
               {/* Mobile menu trigger */}
               {isMobile && (
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button
-                      className="group h-9 w-9 hover:bg-accent hover:text-accent-foreground"
-                      variant="ghost"
-                      size="icon"
-                    >
-                      <HamburgerIcon />
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent align="start" className="w-48 p-2">
-                    <NavigationMenu className="max-w-none">
-                      <NavigationMenuList className="flex-col items-start gap-1">
-                        {navItems.map((link, index) => (
-                          <NavigationMenuItem key={index} className="w-full">
-                            <Link
-                              href={link.href}
-                              className={cn(
-                                'flex w-full items-center rounded-md px-3 py-2 text-sm font-bold transition-colors hover:bg-accent hover:text-accent-foreground no-underline',
-                                isActive(link.href)
-                                  ? 'text-primary'
-                                  : 'text-foreground/80'
-                              )}
-                            >
-                              {link.name}
-                            </Link>
-                          </NavigationMenuItem>
-                        ))}
-                      </NavigationMenuList>
-                    </NavigationMenu>
-                  </PopoverContent>
-                </Popover>
+                <Button
+                  onClick={() => setIsMobileMenuOpen(true)}
+                  className="group h-10 w-10 hover:bg-accent hover:text-accent-foreground"
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Open menu"
+                >
+                  <HamburgerIcon className="w-6 h-6" />
+                </Button>
               )}
 
               {/* Logo */}
               <Link href="/" className="flex items-center">
-                <div className="relative w-48 h-16">
+                <div className="relative w-36 sm:w-44 md:w-52 h-14 sm:h-16 md:h-18">
                   <Image
                     src={isScrolled ? "/wexford-logo-dark.png" : "/WObg-Wexford Education Long.png"}
                     alt="Wexford Educare"
@@ -228,18 +206,18 @@ export function AceternityNavbar() {
             )}
 
             {/* Right side */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:bg-accent hover:text-accent-foreground"
+                className="hover:bg-accent hover:text-accent-foreground hidden sm:flex"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5" />
               </Button>
               <Link href="/apply-now">
                 <button
-                  className="text-sm font-semibold px-6 h-10 rounded-full shadow-sm bg-secondary text-primary hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  className="text-xs sm:text-sm font-semibold px-4 sm:px-6 h-9 sm:h-10 rounded-full shadow-sm bg-secondary text-primary hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"
                 >
                   Apply Now
                 </button>
@@ -248,6 +226,132 @@ export function AceternityNavbar() {
           </div>
         </div>
       </header>
+
+      {/* Mobile Sidebar Menu */}
+      {isMobile && (
+        <>
+          {/* Backdrop */}
+          <div
+            className={cn(
+              "fixed inset-0 bg-black/50 z-50 transition-opacity duration-300",
+              isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            )}
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+
+          {/* Sidebar */}
+          <div
+            className={cn(
+              "fixed top-0 left-0 h-full w-72 bg-white z-50 shadow-2xl transition-transform duration-300 ease-in-out flex flex-col",
+              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            )}
+          >
+            {/* Sidebar Header */}
+            <div className="flex items-center justify-between p-4 border-b">
+              <div className="relative w-32 h-12">
+                <Image
+                  src="/wexford-logo-dark.png"
+                  alt="Wexford Educare"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <Button
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="ghost"
+                size="icon"
+                className="h-10 w-10"
+                aria-label="Close menu"
+              >
+                <svg
+                  className="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </Button>
+            </div>
+
+            {/* Menu Items */}
+            <nav className="flex-1 overflow-y-auto p-4">
+              <ul className="space-y-2">
+                {navItems.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={cn(
+                        'flex w-full items-center rounded-lg px-4 py-3 text-base font-semibold transition-colors hover:bg-gray-100 no-underline',
+                        isActive(link.href)
+                          ? 'bg-primary/10 text-primary'
+                          : 'text-gray-700'
+                      )}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* Sidebar Footer */}
+            <div className="p-4 border-t bg-gray-50">
+              <Link
+                href="/apply-now"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block w-full text-center bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-secondary/90 transition-all"
+              >
+                Apply Now
+              </Link>
+
+              {/* Social Links */}
+              <div className="flex justify-center gap-4 mt-4">
+                <Link
+                  href="https://www.facebook.com/share/1CpqGRxZ8Q/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/wexford_educare?igsh=d3BsYzFvazNnNTdn&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </Link>
+              </div>
+
+              {/* Contact Info */}
+              <div className="mt-4 text-center text-xs text-gray-600 space-y-1">
+                <Link
+                  href="tel:+442033759568"
+                  className="block hover:text-primary transition-colors"
+                >
+                  +44 20 3375 9568
+                </Link>
+                <Link
+                  href="mailto:info@wexfordeducare.com"
+                  className="block hover:text-primary transition-colors"
+                >
+                  info@wexfordeducare.com
+                </Link>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }
