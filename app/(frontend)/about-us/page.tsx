@@ -32,7 +32,7 @@ export default function AboutUs() {
       illustration: "/images/illustrations/undraw_success-factors_i417.svg",
       title: "Proven Success",
       description:
-        "We've helped countless students achieve their academic dreams.",
+        "We&apos;ve helped countless students achieve their academic dreams.",
     },
     {
       illustration: "/images/illustrations/undraw_active-support_v6g0.svg",
@@ -217,7 +217,7 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-semibold text-secondary mb-1">Our Commitment</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Providing end-to-end support for every student's journey</p>
+                  <p className="text-xs sm:text-sm text-gray-600">Providing end-to-end support for every student&apos;s journey</p>
                 </div>
               </div>
             </div>

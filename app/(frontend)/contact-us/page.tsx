@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CardContainer, CardBody, CardItem } from "@/components/ui/aceternity/3d-card";
 import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
