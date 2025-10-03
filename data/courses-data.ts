@@ -105,7 +105,7 @@ export const coursesData: Course[] = [
     thumbnail: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
     image: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
     description:
-      "Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Blossom Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector. The integrated Foundation Year provides a solid introduction to computing and essential academic skills, preparing you for the advanced, specialized study in the years to follow.",
+      "Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Wexford Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector. The integrated Foundation Year provides a solid introduction to computing and essential academic skills, preparing you for the advanced, specialized study in the years to follow.",
     whyChoose: [
       "A Strong Foundation: The initial year provides a thorough introduction to computing concepts and academic skills, ensuring you're fully prepared for the challenges of the degree.",
       "Expert-Led Teaching: Learn from experienced professionals and industry experts who bring practical, up-to-date knowledge and real-world experience directly into the classroom. 🎓",
@@ -231,7 +231,7 @@ export const coursesData: Course[] = [
     thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
     image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
     description:
-      "Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. Blossom Educare is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors. The integrated Foundation Year provides a supportive pathway into higher education, ensuring you're fully prepared for the challenges of the degree.",
+      "Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. Wexford Educare is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors. The integrated Foundation Year provides a supportive pathway into higher education, ensuring you're fully prepared for the challenges of the degree.",
     whyChoose: [
       "A Strong Foundation: The initial year provides a distinct advantage, preparing you with the essential academic and practical abilities to succeed in your degree and future career.",
       "Expert-Led Teaching: Learn from seasoned practitioners and renowned academics who bring real-world perspectives and specialized knowledge into the classroom.",
@@ -878,7 +878,7 @@ export const coursesData: Course[] = [
       {
         title: "General Requirements",
         items: [
-          "Contact Blossom Educare for detailed entry requirements and application process.",
+          "Contact Wexford Educare for detailed entry requirements and application process.",
         ],
       },
     ],
@@ -936,7 +936,7 @@ export const coursesData: Course[] = [
       {
         title: "General Requirements",
         items: [
-          "Contact Blossom Educare for detailed entry requirements and application process.",
+          "Contact Wexford Educare for detailed entry requirements and application process.",
         ],
       },
     ],
@@ -951,7 +951,7 @@ export const coursesData: Course[] = [
     thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
     image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
     description:
-      "Ready to tackle today's complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by Blossom Educare's partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector. This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.",
+      "Ready to tackle today's complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by Wexford Educare's partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector. This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.",
     whyChoose: [
       "Industry-Relevant Curriculum: Explore the intricate social and environmental factors that shape population health and gain insights into practical strategies for health improvement and protection.",
       "Real-World Application: Your learning is grounded in reality through case studies and direct input from public health professionals.",
@@ -984,7 +984,7 @@ export const coursesData: Course[] = [
       {
         title: "General Requirements",
         items: [
-          "Contact Blossom Educare for detailed entry requirements and application process.",
+          "Contact Wexford Educare for detailed entry requirements and application process.",
         ],
       },
     ],
@@ -1154,7 +1154,7 @@ export const coursesData: Course[] = [
     thumbnail: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365 (1).jpg",
     image: "/images/courses/group-of-four-confident-smiling-multiethnical-stud-2024-12-13-04-31-44-utc-min-2048x1365 (1).jpg",
     description:
-      "At Blossom Educare, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are completely free for all students. Whether you're starting your academic journey or advancing your qualifications, we're here to guide you. We listen carefully to your career aspirations and scheduling needs—be it weekday, evening, or weekend classes—to match you with the perfect course and institution for your success.",
+      "At Wexford Educare, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are completely free for all students. Whether you're starting your academic journey or advancing your qualifications, we're here to guide you. We listen carefully to your career aspirations and scheduling needs—be it weekday, evening, or weekend classes—to match you with the perfect course and institution for your success.",
     whyChoose: [
       "Completely Free Service: Our expert guidance and support come at no cost to you.",
       "Personalised Matching: We tailor recommendations to your specific career goals, lifestyle, and schedule.",
@@ -1227,7 +1227,7 @@ export const coursesData: Course[] = [
       {
         title: "Start Your Journey Today",
         content:
-          "Ready to take the next step? Contact our expert team and let's find the perfect course for you! Email us at: info@blossomeducare.co.uk",
+          "Ready to take the next step? Contact our expert team and let's find the perfect course for you! Email us at: info@wexfordeducare.com",
       },
     ],
   },

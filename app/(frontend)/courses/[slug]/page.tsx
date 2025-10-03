@@ -233,10 +233,10 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
         <BackgroundBeams className="absolute inset-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Start Your Journey with Blossom Educare
+            Start Your Journey with Wexford Educare
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Ready to take the first step? The expert team at Blossom Educare is
+            Ready to take the first step? The expert team at Wexford Educare is
             here to provide personalized support and guide you through the
             application process.
           </p>
@@ -248,7 +248,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
               Apply Now
             </Link>
             <Link
-              href="mailto:info@blossomeducare.co.uk"
+              href="mailto:info@wexfordeducare.com"
               className="inline-block bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Email for Free Consultation

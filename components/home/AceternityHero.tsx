@@ -19,7 +19,7 @@ const slides = [
   {
     heading: "Your Career Starts Here.",
     description:
-      "Blossom Educare connects you with the right courses to achieve your professional ambitions.",
+      "Wexford Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
     image: "/images/homepage/african-american-student-smiles-sincerely-while-si-2025-01-09-22-07-27-utc-min-scaled.jpg",
   },
@@ -123,10 +123,10 @@ export function AceternityHero() {
                       <Link
                         key={ctaIndex}
                         href={cta.href}
-                        className={`px-6 py-3 font-semibold text-sm transition-all duration-300 ${
+                        className={`px-8 py-3 font-semibold text-sm transition-all duration-300 rounded-full ${
                           ctaIndex === 0
-                            ? "bg-secondary text-white hover:bg-secondary-dark shadow-lg"
-                            : "bg-transparent text-white border-2 border-white hover:bg-white hover:text-secondary"
+                            ? "bg-secondary text-white hover:bg-secondary/90 shadow-lg"
+                            : "bg-white text-secondary border-2 border-white hover:bg-white/90 hover:text-primary active:bg-secondary active:text-secondary shadow-lg"
                         }`}
                       >
                         {cta.text}

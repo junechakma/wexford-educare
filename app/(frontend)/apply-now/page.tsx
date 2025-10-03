@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
@@ -139,8 +140,9 @@ export default function ApplyNow() {
       {/* Introduction Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
-            Check Your Eligibility
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <span className="text-secondary">Check Your </span>
+            <span className="text-primary">Eligibility</span>
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             Find out if you qualify to study in the UK and access government funding by completing the form below. If you&apos;re eligible, one of our consultants will contact you to explain the process and guide you through the next steps.
@@ -376,8 +378,9 @@ export default function ApplyNow() {
       {/* Why Apply Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
-            Why Apply With Us?
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <span className="text-secondary">Why Apply </span>
+            <span className="text-primary">With Us?</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
@@ -385,26 +388,34 @@ export default function ApplyNow() {
                 title: "Free Consultation",
                 description:
                   "Get expert guidance on course selection and application process at no cost.",
+                illustration: "/images/illustrations/undraw_remote-worker_0l91.svg"
               },
               {
                 title: "Government Funding",
                 description:
                   "We help you access available government funding and financial support options.",
+                illustration: "/images/illustrations/undraw_investment_ojxu.svg"
               },
               {
                 title: "End-to-End Support",
                 description:
                   "From application to enrollment, we support you throughout your educational journey.",
+                illustration: "/images/illustrations/undraw_user-flow_d1ya.svg"
               },
             ].map((item, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5">
-                  <CheckCircle2 className="w-7 h-7 text-primary" />
+              <Card key={index} className="group p-8 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary/30 hover:-translate-y-1">
+                <div className="relative w-full h-32 mb-5 p-4 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                  <Image
+                    src={item.illustration}
+                    alt={item.title}
+                    fill
+                    className="object-contain p-2"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-secondary mb-3">
+                <h3 className="text-xl font-bold text-secondary mb-3 text-center group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-center">
                   {item.description}
                 </p>
               </Card>
@@ -417,8 +428,9 @@ export default function ApplyNow() {
       <section className="py-16 md:py-20 bg-secondary relative overflow-hidden">
         <BackgroundBeams className="absolute inset-0" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Have Questions?
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <span className="text-white">Have </span>
+            <span className="text-primary">Questions?</span>
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             Our team is here to help. Contact us for any questions about the

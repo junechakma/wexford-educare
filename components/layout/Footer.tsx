@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 
 export function Footer() {
@@ -162,14 +162,14 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-6 text-primary">
               Wexford Educare
             </h3>
-            <div className="relative w-full h-20">
+            <Link href="/" className="block relative w-full h-20 cursor-pointer">
               <Image
                 src="/WObg-Wexford Education Long.png"
                 alt="Wexford Educare"
                 fill
-                className="object-contain object-left"
+                className="object-contain object-left hover:opacity-80 transition-opacity"
               />
-            </div>
+            </Link>
           </div>
         </div>
 
@@ -177,7 +177,7 @@ export function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">
-              © 2025-26 AHZ All rights reserved.
+              © 2025-26 Wexford Educare All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               <Link
@@ -196,39 +196,22 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1CpqGRxZ8Q/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/wexford_educare?igsh=d3BsYzFvazNnNTdn&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
               </Link>
             </div>
           </div>

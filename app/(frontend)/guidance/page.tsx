@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/aceternity/3d-card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
@@ -10,9 +11,6 @@ import {
   Building2,
   BookOpen,
   MapPin,
-  Users,
-  DollarSign,
-  Headphones,
   Calendar,
   UserCheck,
   CheckCircle,
@@ -29,17 +27,27 @@ import { universityData } from "@/data/university-data";
 
 
 export default function Guidance() {
-  // Map icons to features and services
-  const featureIcons = [GraduationCap, BookOpen, Users, DollarSign];
+  // Map illustrations to features and services
+  const featureIllustrations = [
+    "/images/illustrations/undraw_education_3vwh.svg",
+    "/images/illustrations/undraw_reading-a-book_4cap.svg",
+    "/images/illustrations/undraw_team-spirit_18vw.svg",
+    "/images/illustrations/undraw_savings_uwjn.svg"
+  ];
   const features = guidanceContent.features.map((feature, idx) => ({
     ...feature,
-    icon: featureIcons[idx],
+    illustration: featureIllustrations[idx],
   }));
 
-  const serviceIcons = [Headphones, Calendar, DollarSign, Building2];
+  const serviceIllustrations = [
+    "/images/illustrations/undraw_active-support_v6g0.svg",
+    "/images/illustrations/undraw_schedule_ry1w.svg",
+    "/images/illustrations/undraw_wallet_diag.svg",
+    "/images/illustrations/undraw_building_burz.svg"
+  ];
   const services = guidanceContent.services.map((service, idx) => ({
     ...service,
-    icon: serviceIcons[idx],
+    illustration: serviceIllustrations[idx],
   }));
 
 
@@ -69,33 +77,38 @@ export default function Guidance() {
         <Meteors number={20} />
       </section>
 
-      {/* Blossom Educare Overview */}
+      {/* Wexford Educare Overview */}
       <section className="py-16 md:py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6 text-center">
-            Blossom Educare
-          </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 text-center">
-            Comprehensive Guide for Executives
-          </h3>
-          <p className="text-lg text-gray-700 leading-relaxed text-center mb-12">
-            Navigating university admissions and student finance with expert guidance. Empowering clients to achieve their educational aspirations across the UK.
-          </p>
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-secondary">Blossom </span>
+              <span className="text-primary">Educare</span>
+            </h2>
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+              Comprehensive Guide for Executives
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+              Navigating university admissions and student finance with expert guidance. Empowering clients to achieve their educational aspirations across the UK.
+            </p>
+          </div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
               return (
-                <CardContainer key={index} containerClassName="py-0">
-                  <CardBody className="bg-white relative group/card hover:shadow-2xl w-full h-full rounded-xl p-6 border-0 shadow-md flex flex-col justify-between md:min-h-[220px]">
+                <CardContainer key={index} containerClassName="py-0 h-full">
+                  <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] border-2 border-gray-200 hover:border-primary/30 transition-colors w-full h-full rounded-xl p-6 flex flex-col items-center min-h-[280px]">
                     <CardItem
                       translateZ="50"
-                      className="flex justify-center mb-4"
+                      className="mb-4 relative w-full h-32"
                     >
-                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                        <Icon className="w-8 h-8 text-primary" />
-                      </div>
+                      <Image
+                        src={feature.illustration}
+                        alt={feature.title}
+                        fill
+                        className="object-contain"
+                      />
                     </CardItem>
                     <CardItem
                       translateZ="40"
@@ -120,11 +133,12 @@ export default function Guidance() {
       {/* Company Overview */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
-            Company Overview
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            <span className="text-secondary">Company </span>
+            <span className="text-primary">Overview</span>
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed text-center mb-12 max-w-4xl mx-auto">
-            Blossom Educare is a leading education consultancy dedicated to making higher education accessible by assisting clients with university admissions and securing student finance. We operate across four major UK cities and partner with top-tier universities to offer comprehensive educational pathways.
+            Wexford Educare is a leading education consultancy dedicated to making higher education accessible by assisting clients with university admissions and securing student finance. We operate across four major UK cities and partner with top-tier universities to offer comprehensive educational pathways.
           </p>
 
           <div className="grid grid-cols-1 gap-8 mb-8">
@@ -187,36 +201,35 @@ export default function Guidance() {
       {/* Services We Offer */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
-            Our Services
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <span className="text-secondary">Our </span>
+            <span className="text-primary">Services</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {services.map((service, index) => {
-              const Icon = service.icon;
               return (
-                <CardContainer key={index} containerClassName="py-0">
-                  <CardBody className="bg-white relative group/card hover:shadow-2xl w-full h-full rounded-xl p-8 border-0 shadow-md">
-                    <div className="flex gap-4">
-                      <CardItem translateZ="50" className="flex-shrink-0">
-                        <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Icon className="w-7 h-7 text-primary" />
-                        </div>
-                      </CardItem>
-                      <div className="flex-1">
-                        <CardItem
-                          translateZ="40"
-                          className="text-xl font-bold text-secondary mb-3"
-                        >
-                          {service.title}
-                        </CardItem>
-                        <CardItem
-                          translateZ="30"
-                          className="text-gray-600 leading-relaxed"
-                        >
-                          {service.description}
-                        </CardItem>
-                      </div>
-                    </div>
+                <CardContainer key={index} containerClassName="py-0 h-full">
+                  <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] border-2 border-gray-200 hover:border-primary/30 transition-colors w-full h-full rounded-xl p-8 flex flex-col items-center min-h-[300px]">
+                    <CardItem translateZ="50" className="mb-4 relative w-full h-40">
+                      <Image
+                        src={service.illustration}
+                        alt={service.title}
+                        fill
+                        className="object-contain"
+                      />
+                    </CardItem>
+                    <CardItem
+                      translateZ="40"
+                      className="text-xl font-bold text-secondary mb-3 text-center"
+                    >
+                      {service.title}
+                    </CardItem>
+                    <CardItem
+                      translateZ="30"
+                      className="text-gray-600 leading-relaxed text-center"
+                    >
+                      {service.description}
+                    </CardItem>
                   </CardBody>
                 </CardContainer>
               );
@@ -228,8 +241,9 @@ export default function Guidance() {
       {/* Target Audience & Eligibility */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
-            Our Target Audience & Eligibility
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <span className="text-secondary">Our Target Audience & </span>
+            <span className="text-primary">Eligibility</span>
           </h2>
 
           {/* Who We Help */}
@@ -314,8 +328,9 @@ export default function Guidance() {
 {/* University Locations */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-8">
-            Universities & Locations
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            <span className="text-secondary">Universities & </span>
+            <span className="text-primary">Locations</span>
           </h2>
 
           <Tabs defaultValue="anglia">
@@ -513,7 +528,10 @@ export default function Guidance() {
       {/* Generel Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-8">General Course Information</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            <span className="text-secondary">General Course </span>
+            <span className="text-primary">Information</span>
+          </h2>
 
           <InfoGrid
             items={[
@@ -527,7 +545,10 @@ export default function Guidance() {
             className="mb-12"
           />
 
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-6">Tuition Fee Loans</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+            <span className="text-secondary">Tuition Fee </span>
+            <span className="text-primary">Loans</span>
+          </h2>
           <div className="mb-12">
             <LoanTable
               headers={["Course Type", "Max Amount", "Details"]}
@@ -541,7 +562,10 @@ export default function Guidance() {
             />
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-6">Maintenance Loans (Living Costs)</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+            <span className="text-secondary">Maintenance Loans </span>
+            <span className="text-primary">(Living Costs)</span>
+          </h2>
           <div>
             <LoanTable
               headers={["Living Situation", "Max Amount", "Details"]}
@@ -551,7 +575,7 @@ export default function Guidance() {
                       href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                       See the government guidance for student loans (2025–26)
                     </a>
@@ -561,7 +585,7 @@ export default function Guidance() {
                       href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                       See the government guidance for student loans (2025–26)
                     </a>
@@ -571,7 +595,7 @@ export default function Guidance() {
                       href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                       See the government guidance for student loans (2025–26)
                     </a>
@@ -581,7 +605,7 @@ export default function Guidance() {
                       href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                       See the government guidance for student loans (2025–26)
                     </a>
@@ -591,7 +615,7 @@ export default function Guidance() {
                       href="https://www.gov.uk/government/publications/student-loans-a-guide-to-terms-and-conditions/student-loans-a-guide-to-terms-and-conditions-2025-to-2026"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                       See the government guidance for student loans (2025–26)
                     </a>

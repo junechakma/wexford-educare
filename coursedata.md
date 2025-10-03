@@ -4,7 +4,7 @@ BA (Hons) Business Management and Marketing with Foundation Year
 
 Unlock your potential in the creative and strategic world of business and marketing. 💡 This four-year program, offered by top UK universities, is methodically designed to give you the business acumen and marketing expertise you need for a successful career in the global marketplace.
 
-The integrated **Foundation Year** provides a supportive pathway into higher education, building the essential knowledge and academic skills you need to excel in your degree, even if you don’t meet the standard entry requirements. **Blossom Educare** is here to help you find and apply to the perfect university for you.
+The integrated **Foundation Year** provides a supportive pathway into higher education, building the essential knowledge and academic skills you need to excel in your degree, even if you don’t meet the standard entry requirements. **Wexford Educare** is here to help you find and apply to the perfect university for you.
 
 ### Why Choose This Program?
 
@@ -85,16 +85,16 @@ To apply for this program, you’ll typically need:
 *   **Additional Prerequisites:** A compelling personal statement and, in some cases, a successful interview.
     
 
-### Start Your Career with Blossom Educare
+### Start Your Career with Wexford Educare
 
-Ready to launch your career in business and marketing? 📈 The expert team at **Blossom Educare** is here to provide personalized support and guide you through the entire application process.
+Ready to launch your career in business and marketing? 📈 The expert team at **Wexford Educare** is here to provide personalized support and guide you through the entire application process.
 
-Email us for a free consultation at: info@blossomeducare.co.uk
+Email us for a free consultation at: info@wexfordeducare.com
 
 BSc (Hons) Computing with Integrated Foundation Year
 ----------------------------------------------------
 
-**Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Blossom Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector.**
+**Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Wexford Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector.**
 
 The integrated **Foundation Year** provides a solid introduction to computing and essential academic skills, preparing you for the advanced, specialized study in the years to follow, even if you don’t meet the standard entry requirements for a three-year degree.
 
@@ -179,11 +179,11 @@ To apply for this program, you’ll typically need:
 *   **Additional Prerequisites:** A compelling personal statement and, in some cases, a successful interview.
     
 
-### Start Your Tech Journey with Blossom Educare
+### Start Your Tech Journey with Wexford Educare
 
-Ready to build the future? 💻 The expert team at **Blossom Educare** is here to provide personalized support and guide you through the application process.
+Ready to build the future? 💻 The expert team at **Wexford Educare** is here to provide personalized support and guide you through the application process.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 MBA – International
 ===================
@@ -240,16 +240,16 @@ Over the course of your MBA, you’ll study a total of six comprehensive modules
 
 **Note:** If you don’t meet the standard academic grades but can demonstrate that your significant life or work experience makes you a suitable candidate, your application will still be strongly considered.
 
-### Advance Your Global Career with Blossom Educare 💼
+### Advance Your Global Career with Wexford Educare 💼
 
-Ready to take the next step in your international career? A degree that combines excellent academics with practical, global experience can shape your future. The expert team at **Blossom Educare** is here to guide you through the application process.
+Ready to take the next step in your international career? A degree that combines excellent academics with practical, global experience can shape your future. The expert team at **Wexford Educare** is here to guide you through the application process.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BA (Hons) Health and Social Care with Foundation Year
 =====================================================
 
-Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. **Blossom Educare** is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors.
+Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. **Wexford Educare** is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors.
 
 The integrated **Foundation Year** provides a supportive pathway into higher education, ensuring you’re fully prepared for the challenges of the degree, even if you don’t meet the standard entry requirements.
 
@@ -334,18 +334,18 @@ To apply for this program, you’ll typically need:
 *   **Additional Prerequisites:** A compelling personal statement and a successful interview.
     
 
-### Start Your Journey with Blossom Educare
+### Start Your Journey with Wexford Educare
 
-Ready to take the next step toward a meaningful career? The expert team at **Blossom Educare** is here to provide personalized support and guide you through the application process.
+Ready to take the next step toward a meaningful career? The expert team at **Wexford Educare** is here to provide personalized support and guide you through the application process.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BSc (Hons) Accounting and Finance with Foundation Year (4 years)
 ================================================================
 
 Embark on your journey into the world of finance with the BSc (Hons) Accounting and Finance with Foundation Year program, offered by our esteemed partner, **Canterbury Christ Church University (CCCU)**. 🎓 This four-year program is the perfect starting point if you’re passionate about finance but don’t meet the direct entry requirements for a standard three-year degree.
 
-The integrated **Foundation Year** is designed to equip you with the essential academic and subject-specific skills needed to succeed. **Blossom Educare** is here to guide you through the entire application process to this exceptional program.
+The integrated **Foundation Year** is designed to equip you with the essential academic and subject-specific skills needed to succeed. **Wexford Educare** is here to guide you through the entire application process to this exceptional program.
 
 ### Why Choose This Program?
 
@@ -442,11 +442,11 @@ To apply for this program, candidates should typically have:
 *   Relevant work experience may also be considered.
     
 
-### Start Your Finance Career with Blossom Educare
+### Start Your Finance Career with Wexford Educare
 
-Ready to take the first step? The expert team at **Blossom Educare** is here to provide personalized support and guide you through the application process.
+Ready to take the first step? The expert team at **Wexford Educare** is here to provide personalized support and guide you through the application process.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BSc (Hons) Business Management with Foundation Year (4 years)
 -------------------------------------------------------------
@@ -536,11 +536,11 @@ To apply for the Business Management Degree with Foundation Year, candidates sho
 *   Proof of English proficiency for international students (e.g., IELTS score of 6.0).
     
 
-### Start Your Journey with Blossom Educare
+### Start Your Journey with Wexford Educare
 
-Ready to take the first step toward your business career? The expert team at **Blossom Educare** provides personalized academic support to help you navigate the application process and succeed.
+Ready to take the first step toward your business career? The expert team at **Wexford Educare** provides personalized academic support to help you navigate the application process and succeed.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 ### Frequently Asked Questions (FAQs)
 
@@ -663,7 +663,7 @@ Upon graduation, you’ll be equipped for a wide range of roles in the corporate
 *   International students may need to provide proof of English language proficiency through a recognized test like IELTS.
     
 
-At **Blossom Educare**, we are here to guide you through the entire application process to help you achieve your academic goals.
+At **Wexford Educare**, we are here to guide you through the entire application process to help you achieve your academic goals.
 
 ### Frequently Asked Questions (FAQs)
 
@@ -780,9 +780,9 @@ Graduates can pursue management roles in marketing, finance, HR, and operations,
 
 ### **Advance Your Career Today**
 
-Ready to take the next step? To learn more about this program and receive expert guidance on your application, contact the advisory team at **Blossom Educare**.
+Ready to take the next step? To learn more about this program and receive expert guidance on your application, contact the advisory team at **Wexford Educare**.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BA (Hons) Business Management (3 Years)
 =======================================
@@ -900,9 +900,9 @@ The program provides many opportunities to gain practical experience through int
 
 ### **Start Your Business Journey Today**
 
-Ready to take the next step towards a successful career? The expert team at **Blossom Educare** is here to guide you through the application process and help you achieve your academic goals.
+Ready to take the next step towards a successful career? The expert team at **Wexford Educare** is here to guide you through the application process and help you achieve your academic goals.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BSc (Hons) Accounting and Finance (3 Years)
 -------------------------------------------
@@ -1002,9 +1002,9 @@ The program includes opportunities for internships, work placements, and practic
 
 ### **Start Your Finance Career Today**
 
-Ready to take the next step? To learn more and receive expert guidance on your application, contact the advisory team at **Blossom Educare**.
+Ready to take the next step? To learn more and receive expert guidance on your application, contact the advisory team at **Wexford Educare**.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BSc (Hons) Business Management (3 Years)
 ----------------------------------------
@@ -1070,9 +1070,9 @@ Graduates can pursue a wide range of careers, including roles in marketing, fina
 
 ### **Start Your Business Journey Today**
 
-Ready to take the next step towards a successful career in business? The team at **Blossom Educare** is here to support you through the application process and help you achieve your goals.
+Ready to take the next step towards a successful career in business? The team at **Wexford Educare** is here to support you through the application process and help you achieve your goals.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 CertHE Business Management (1 Year)
 -----------------------------------
@@ -1154,9 +1154,9 @@ The CertHE in Business Management also serves as the first year of a full Bachel
 
 ### **Start Your Business Journey Today**
 
-Ready to take the next step? For more details and expert help with your application, contact the advisory team at **Blossom Educare**.
+Ready to take the next step? For more details and expert help with your application, contact the advisory team at **Wexford Educare**.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 **BA/BSc Business Management with Foundation Year (4 years)**
 -------------------------------------------------------------
@@ -1276,9 +1276,9 @@ Graduates can pursue roles such as Marketing Manager, HR Manager, Operations Man
 
 ### **Start Your Business Career Today**
 
-To learn more about this course and get expert assistance with your application, contact the team at **Blossom Educare**.
+To learn more about this course and get expert assistance with your application, contact the team at **Wexford Educare**.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 BA (Hons) Education Studies
 ---------------------------
@@ -1315,9 +1315,9 @@ This program opens doors to leadership and management opportunities in areas suc
 
 ### **Shape Your Future Today**
 
-Invest in your future and empower yourself with the knowledge to become a leader in the evolving landscape of education. For more details about the course, entry requirements, and the application process, contact the expert team at **Blossom Educare**.
+Invest in your future and empower yourself with the knowledge to become a leader in the evolving landscape of education. For more details about the course, entry requirements, and the application process, contact the expert team at **Wexford Educare**.
 
-**Email us for a free consultation at: info@blossomeducare.co.uk**
+**Email us for a free consultation at: info@wexfordeducare.com**
 
 LLB (Hons) Law with Foundation Year
 -----------------------------------
@@ -1362,14 +1362,14 @@ An LLB (Hons) Law degree from a UK university opens doors to a multitude of exci
 
 ### **Begin Your Legal Journey Today**
 
-Ready to take the first step towards a fulfilling legal career? Contact the expert advisors at **Blossom Educare** for a free consultation to learn more about the course, fees, and application process.
+Ready to take the first step towards a fulfilling legal career? Contact the expert advisors at **Wexford Educare** for a free consultation to learn more about the course, fees, and application process.
 
-**Email us at: info@blossomeducare.co.uk**
+**Email us at: info@wexfordeducare.com**
 
 Master of Public Health (MPH)
 -----------------------------
 
-Ready to tackle today’s complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by **Blossom Educare**‘s partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector.
+Ready to tackle today’s complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by **Wexford Educare**‘s partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector.
 
 This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.
 
@@ -1426,20 +1426,20 @@ Graduates emerge with a clear, practical understanding of population health and 
 
 ### **Take the Next Step**
 
-Ready to learn more about course fees, start dates, and the application process? Contact our expert team at **Blossom Educare** for a free consultation.
+Ready to learn more about course fees, start dates, and the application process? Contact our expert team at **Wexford Educare** for a free consultation.
 
-**Email us at: info@blossomeducare.co.uk**
+**Email us at: info@wexfordeducare.com**
 
 Courses Offered by Our Partner Institutions
 -------------------------------------------
 
-At **Blossom Educare**, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are **completely free for all students**.
+At **Wexford Educare**, we are dedicated to connecting every student with a quality education that fits their career goals, lifestyle, and learning preferences. We proudly partner with a diverse range of respected UK academic institutions to offer in-demand courses. Best of all, our expert consultancy services are **completely free for all students**.
 
 Whether you’re starting your academic journey or advancing your qualifications, we’re here to guide you. We listen carefully to your career aspirations and scheduling needs—be it weekday, evening, or weekend classes—to match you with the perfect course and institution for your success.
 
 #### **Courses Available Through Our Network**
 
-Here is a selection of the exciting programs you can apply for through **Blossom Educare**:
+Here is a selection of the exciting programs you can apply for through **Wexford Educare**:
 
 **Undergraduate Degrees (with Foundation Year Options)**
 
@@ -1507,7 +1507,7 @@ We are proud to collaborate with a network of respected academic providers, incl
 *   Victoria College of Arts and Design
     
 
-#### **Why Choose Blossom Educare?**
+#### **Why Choose Wexford Educare?**
 
 *   **Completely Free Service:** Our expert guidance and support come at no cost to you.
     
@@ -1522,4 +1522,4 @@ We are proud to collaborate with a network of respected academic providers, incl
 
 Ready to take the next step? Contact our expert team and let’s find the perfect course for you!
 
-**Email us at: info@blossomeducare.co.uk**
+**Email us at: info@wexfordeducare.com**

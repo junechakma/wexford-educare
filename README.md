@@ -1,6 +1,6 @@
-# Blossom Educare Website
+# Wexford Educare Website
 
-A modern, responsive Next.js website for Blossom Educare - UK Higher Education Consultants.
+A modern, responsive Next.js website for Wexford Educare - UK Higher Education Consultants.
 
 ## Project Structure
 
@@ -89,10 +89,10 @@ npm start
 
 - **Phone:** 02080894489
 - **WhatsApp:** +447437402307
-- **Email:** info@blossomeducare.co.uk
+- **Email:** info@wexfordeducare.com
 - **Address:** 129 Mile End Road, London, E1 4BG, UK
 - **Company Number:** 13810286
 
 ## License
 
-All Rights Reserved © 2020-2025 Blossom Educare
+All Rights Reserved © 2020-2025 Wexford Educare

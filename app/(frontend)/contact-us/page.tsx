@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/aceternity/3d-card";
 import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
-import { MapPin, Phone, Mail, Clock, Building2, Send } from "lucide-react";
+import { Send, MapPin } from "lucide-react";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -58,31 +59,31 @@ export default function ContactUs() {
 
   const contactInfo = [
     {
-      icon: MapPin,
+      illustration: "/images/illustrations/undraw_map_cuix.svg",
       title: "Address",
       content: "129 Mile End Road, London, E1 4BG, United Kingdom",
       link: "https://maps.google.com/?q=129+Mile+End+Road+London+E1+4BG",
     },
     {
-      icon: Phone,
+      illustration: "/images/illustrations/undraw_notifications_uvwd.svg",
       title: "Phone",
       content: "02080894489",
       subContent: "+447437402307",
       link: "tel:02080894489",
     },
     {
-      icon: Mail,
+      illustration: "/images/illustrations/undraw_mail-sent_ujev.svg",
       title: "Email",
-      content: "info@blossomeducare.co.uk",
-      link: "mailto:info@blossomeducare.co.uk",
+      content: "info@wexfordeducare.com",
+      link: "mailto:info@wexfordeducare.com",
     },
     {
-      icon: Clock,
+      illustration: "/images/illustrations/undraw_time-management_4ss6.svg",
       title: "Working Hours",
       content: "Monday – Friday: 9:30 AM – 5:30 PM",
     },
     {
-      icon: Building2,
+      illustration: "/images/illustrations/undraw_business-decisions_3x2a.svg",
       title: "Company Number",
       content: "13810286",
     },
@@ -110,40 +111,53 @@ export default function ContactUs() {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-            Contact Information
-          </h2>
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              <span className="text-secondary">Contact </span>
+              <span className="text-primary">Information</span>
+            </h2>
+            <p className="text-gray-600">Get in touch with us through any of these channels</p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {contactInfo.map((info, index) => {
-              const Icon = info.icon;
               return (
-                <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon className="w-7 h-7 text-primary" />
+                <Card key={index} className="group p-6 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary/30 hover:-translate-y-1">
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="relative w-20 h-20 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Image
+                        src={info.illustration}
+                        alt={info.title}
+                        fill
+                        className="object-contain p-3"
+                      />
                     </div>
-                    <h3 className="text-base font-bold text-secondary">{info.title}</h3>
-                    <div className="text-sm text-gray-600">
-                      {info.link ? (
-                        <a
-                          href={info.link}
-                          className="hover:text-primary transition-colors"
-                          target={info.link.startsWith("http") ? "_blank" : undefined}
-                          rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                        >
-                          {info.content}
-                        </a>
-                      ) : (
-                        <span>{info.content}</span>
-                      )}
-                      {info.subContent && (
-                        <>
-                          <br />
-                          <span className="text-gray-500 text-xs">{info.subContent}</span>
-                        </>
-                      )}
+                    <div>
+                      <h3 className="text-base font-bold text-secondary mb-2 group-hover:text-primary transition-colors">
+                        {info.title}
+                      </h3>
+                      <div className="text-sm text-gray-600">
+                        {info.link ? (
+                          <a
+                            href={info.link}
+                            className="hover:text-primary transition-colors font-medium"
+                            target={info.link.startsWith("http") ? "_blank" : undefined}
+                            rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                          >
+                            {info.content}
+                          </a>
+                        ) : (
+                          <span className="font-medium">{info.content}</span>
+                        )}
+                        {info.subContent && (
+                          <>
+                            <br />
+                            <span className="text-gray-500 text-xs mt-1 inline-block">{info.subContent}</span>
+                          </>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </Card>

@@ -7,7 +7,7 @@ export const guidanceContent = {
   },
 
   blossomEducare: {
-    title: "Blossom Educare",
+    title: "Wexford Educare",
     subtitle: "Comprehensive Guide for Executives",
     description:
       "Navigating university admissions and student finance with expert guidance. Empowering clients to achieve their educational aspirations across the UK.",
@@ -35,7 +35,7 @@ export const guidanceContent = {
   companyOverview: {
     title: "Company Overview",
     description:
-      "Blossom Educare is a leading education consultancy dedicated to making higher education accessible by assisting clients with university admissions and securing student finance. We operate across four major UK cities and partner with top-tier universities to offer comprehensive educational pathways.",
+      "Wexford Educare is a leading education consultancy dedicated to making higher education accessible by assisting clients with university admissions and securing student finance. We operate across four major UK cities and partner with top-tier universities to offer comprehensive educational pathways.",
     mission: {
       title: "Our Mission",
       description:

@@ -64,22 +64,54 @@ export default function Courses() {
       </section>
 
       {/* Course Filters */}
-      <section className="py-8 bg-gray-50">
+      <section className="py-12 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveFilter(category.value)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeFilter === category.value
-                    ? "bg-primary text-white shadow-lg scale-105"
-                    : "bg-white text-gray-700 hover:bg-gray-100 hover:shadow-md"
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-2">
+                <span className="text-secondary">Filter by </span>
+                <span className="text-primary">Category</span>
+              </h3>
+              <p className="text-gray-600">Choose a category to explore our courses</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {categories.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => setActiveFilter(category.value)}
+                  className={`group relative px-4 py-4 rounded-xl font-semibold transition-all duration-300 border-2 ${
+                    activeFilter === category.value
+                      ? "bg-gradient-to-br from-primary to-primary/80 text-white border-primary shadow-lg shadow-primary/30 scale-105"
+                      : "bg-white text-gray-700 border-gray-200 hover:border-primary/50 hover:shadow-md hover:scale-102"
+                  }`}
+                >
+                  <div className="flex flex-col items-center gap-2">
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                      activeFilter === category.value
+                        ? "bg-white/20"
+                        : "bg-primary/10 group-hover:bg-primary/20"
+                    }`}>
+                      <BookOpen className={`w-5 h-5 ${
+                        activeFilter === category.value
+                          ? "text-white"
+                          : "text-primary"
+                      }`} />
+                    </div>
+                    <span className="text-sm text-center leading-tight">{category.label}</span>
+                  </div>
+                  {activeFilter === category.value && (
+                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45" />
+                  )}
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-500">
+                Showing <span className="font-semibold text-primary">{filteredCourses.length}</span> course{filteredCourses.length !== 1 ? 's' : ''}
+              </p>
+            </div>
           </div>
         </div>
       </section>

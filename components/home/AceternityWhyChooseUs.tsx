@@ -1,29 +1,29 @@
 "use client";
 
-import { BookOpen, Clipboard, Users, Building2 } from "lucide-react";
+import Image from "next/image";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 
 const features = [
   {
-    icon: BookOpen,
+    illustration: "/images/illustrations/undraw_education_3vwh.svg",
     title: "Career Courses",
     description:
       "From Bachelor's and Master's degrees to specialized HNC/HND programs, we help you find the trending course that will build your career.",
   },
   {
-    icon: Clipboard,
+    illustration: "/images/illustrations/undraw_teaching_58yg.svg",
     title: "Expert Guidance",
     description:
       "Schedule a free consultation with Wexford Educare. We provide dedicated support to help you choose and apply for your ideal course with confidence.",
   },
   {
-    icon: Users,
+    illustration: "/images/illustrations/undraw_graduation_u7uc.svg",
     title: "Top Institutions",
     description:
       "As official partners with over 20 leading universities and colleges, we open doors to a world of educational opportunities for you.",
   },
   {
-    icon: Building2,
+    illustration: "/images/illustrations/undraw_online-learning_tgmv.svg",
     title: "Easy Admission",
     description:
       "We simplify your journey by conducting a thorough eligibility check, making sure your application meets the specific requirements of your chosen institution.",
@@ -31,17 +31,17 @@ const features = [
 ];
 
 function Feature3DCard({
-  icon: Icon,
+  illustration,
   title,
   description,
 }: {
-  icon: React.ComponentType<{ className?: string }>;
+  illustration: string;
   title: string;
   description: string;
 }) {
   return (
-    <CardContainer containerClassName="py-0">
-      <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] border-border rounded-xl p-6 border h-auto w-full">
+    <CardContainer containerClassName="py-0 !flex !items-stretch h-full">
+      <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-primary/[0.1] border-border rounded-xl p-6 border !h-full w-full flex flex-col !min-h-[340px]">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-secondary mb-2"
@@ -50,14 +50,19 @@ function Feature3DCard({
         </CardItem>
         <CardItem
           translateZ="60"
-          className="text-primary mb-4"
+          className="mb-4 relative w-full h-32"
         >
-          <Icon className="w-12 h-12" />
+          <Image
+            src={illustration}
+            alt={title}
+            fill
+            className="object-contain"
+          />
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-foreground/80 text-sm mt-2 max-w-sm"
+          className="text-foreground/80 text-sm mt-2 flex-1"
         >
           {description}
         </CardItem>
@@ -93,11 +98,11 @@ export function AceternityWhyChooseUs() {
           </div>
 
           {/* Right side - 2x2 grid of cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 auto-rows-fr">
             {features.map((feature, index) => (
               <Feature3DCard
                 key={index}
-                icon={feature.icon}
+                illustration={feature.illustration}
                 title={feature.title}
                 description={feature.description}
               />
