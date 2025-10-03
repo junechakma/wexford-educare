@@ -72,25 +72,47 @@ export default function ApplyNow() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/applications/submit.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message:
+            "Your application has been submitted successfully! Our team will contact you soon.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          campus: "",
+          status: "",
+          course: "",
+          bestTime: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Failed to submit application. Please try again.",
+        });
+      }
+    } catch (error) {
       setSubmitStatus({
-        type: "success",
-        message:
-          "Your application has been submitted successfully! Our team will contact you soon.",
+        type: "error",
+        message: "An error occurred. Please try again later.",
       });
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        campus: "",
-        status: "",
-        course: "",
-        bestTime: "",
-        message: "",
-      });
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
