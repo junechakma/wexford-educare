@@ -12,6 +12,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
+import { coursesData } from '@/data/courses-data';
 
 import { cn } from '@/lib/utils';
 
@@ -49,7 +50,10 @@ export function AceternityNavbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -80,6 +84,43 @@ export function AceternityNavbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close search on click outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setIsSearchOpen(false);
+      }
+    };
+
+    if (isSearchOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isSearchOpen]);
+
+  // Get category display name
+  const getCategoryName = (category: string) => {
+    const categoryMap: Record<string, string> = {
+      'bachelor-courses': 'Bachelor Courses',
+      'master-courses': 'Master Courses',
+      'top-up-courses': 'Top-Up Courses',
+      'hnd-courses': 'HND Courses',
+      'certhe': 'CertHE',
+      'all': 'All Courses'
+    };
+    return categoryMap[category] || category;
+  };
+
+  const filteredCourses = searchQuery.trim() === ''
+    ? []
+    : coursesData.filter(course =>
+        course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        getCategoryName(course.category).toLowerCase().includes(searchQuery.toLowerCase())
+      ).slice(0, 10); // Limit to 10 results
 
   const navItems = [
     { name: 'Homepage', href: '/' },
@@ -202,15 +243,83 @@ export function AceternityNavbar() {
             )}
 
             {/* Right side */}
-            <div className="flex items-center gap-2 sm:gap-3">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:bg-accent hover:text-accent-foreground hidden sm:flex"
-                aria-label="Search"
-              >
-                <Search className="w-5 h-5" />
-              </Button>
+            <div className="flex items-center gap-2 sm:gap-3 relative">
+              <div ref={searchRef}>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-accent hover:text-accent-foreground hidden sm:flex"
+                  aria-label="Search"
+                  onClick={() => setIsSearchOpen(!isSearchOpen)}
+                >
+                  <Search className="w-5 h-5" />
+                </Button>
+
+                {/* Search Dropdown */}
+                {isSearchOpen && (
+                  <div className="absolute right-0 top-full mt-2 w-96 bg-white rounded-lg shadow-xl border border-gray-200 z-50 overflow-hidden">
+                    <div className="p-4 border-b border-gray-200">
+                      <div className="relative">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                        <input
+                          type="text"
+                          placeholder="Search courses..."
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none text-sm"
+                          autoFocus
+                        />
+                      </div>
+                    </div>
+
+                    <div className="max-h-96 overflow-y-auto">
+                      {searchQuery.trim() === '' ? (
+                        <div className="p-8 text-center text-gray-500 text-sm">
+                          Start typing to search for courses...
+                        </div>
+                      ) : filteredCourses.length > 0 ? (
+                        <div className="py-2">
+                          {filteredCourses.map((course) => (
+                            <Link
+                              key={course.id}
+                              href={`/courses/${course.slug}`}
+                              onClick={() => {
+                                setIsSearchOpen(false);
+                                setSearchQuery('');
+                              }}
+                              className="block px-4 py-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
+                            >
+                              <div className="font-semibold text-secondary text-sm line-clamp-2">
+                                {course.title}
+                              </div>
+                              <div className="flex items-center gap-2 text-xs text-gray-500 mt-1">
+                                <span>{getCategoryName(course.category)}</span>
+                                <span>•</span>
+                                <span>{course.duration}</span>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="p-8 text-center">
+                          <div className="text-gray-500 text-sm mb-2">No courses found</div>
+                          <Link
+                            href="/courses"
+                            onClick={() => {
+                              setIsSearchOpen(false);
+                              setSearchQuery('');
+                            }}
+                            className="text-primary text-sm hover:underline"
+                          >
+                            View all courses
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+
               <Link href="/apply-now">
                 <button
                   className="text-xs sm:text-sm font-semibold px-4 sm:px-6 h-9 sm:h-10 rounded-full shadow-sm bg-secondary text-primary hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"

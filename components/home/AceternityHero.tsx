@@ -112,21 +112,8 @@ export function AceternityHero() {
               >
               <div className="container mx-auto text-left px-4 w-full max-w-7xl">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                  {slide.heading.split(slide.highlightedWord).map((part, i, arr) => (
-                    i === 0 ? (
-                      <>
-                        <span className="text-primary">{slide.highlightedWord}</span>
-                        {part}
-                      </>
-                    ) : i === arr.length - 1 ? (
-                      part
-                    ) : (
-                      <>
-                        {part}
-                        <span className="text-primary">{slide.highlightedWord}</span>
-                      </>
-                    )
-                  ))}
+                  <span className="text-primary">{slide.highlightedWord}</span>
+                  {slide.heading.replace(slide.highlightedWord, '')}
                 </h1>
 
                 <div className="border-l-4 border-primary pl-4 mb-8 max-w-2xl">
