@@ -12,11 +12,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
+
 import { cn } from '@/lib/utils';
 
 // Hamburger icon component
@@ -109,7 +105,7 @@ export function AceternityNavbar() {
             {/* Social Media */}
             <div className="flex gap-4">
               <Link
-                href="https://www.facebook.com/share/1CpqGRxZ8Q/?mibextid=wwXIfr"
+                href="https://www.facebook.com/profile.php?id=61581656609879"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"

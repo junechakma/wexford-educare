@@ -43,8 +43,8 @@ export const guidanceContent = {
     },
     websiteAndLocations: {
       title: "Website & Locations",
-      website: "blossomeducare.co.uk",
-      websiteUrl: "https://blossomeducare.co.uk",
+      website: "wexfordeducare.co.uk",
+      websiteUrl: "https://wexfordeducare.co.uk",
       locations: ["London", "Leeds", "Manchester", "Birmingham"],
     },
   },

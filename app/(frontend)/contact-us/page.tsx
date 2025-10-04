@@ -66,9 +66,9 @@ export default function ContactUs() {
     {
       illustration: "/images/illustrations/undraw_notifications_uvwd.svg",
       title: "Phone",
-      content: "02080894489",
-      subContent: "+447437402307",
-      link: "tel:02080894489",
+      content: "+44 20 3375 9568",
+      subContent: "+44 20 3375 9568",
+      link: "tel:+44 20 3375 9568",
     },
     {
       illustration: "/images/illustrations/undraw_mail-sent_ujev.svg",

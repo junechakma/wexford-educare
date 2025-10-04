@@ -166,12 +166,12 @@ export default function Guidance() {
                       <div>
                         <p className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Website</p>
                         <a
-                          href="https://blossomeducare.co.uk"
+                          href="https://wexfordeducare.co.uk"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 text-base sm:text-lg font-semibold hover:underline transition-colors inline-flex items-center gap-2 break-all"
                         >
-                          blossomeducare.co.uk
+                          wexfordeducare.co.uk
                           <svg className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>

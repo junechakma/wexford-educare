@@ -101,7 +101,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/admin"
+                  href="/admin/login"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
                   Administration Panel
@@ -162,7 +162,7 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-6 text-primary">
               Wexford Educare
             </h3>
-            <Link href="/" className="block relative w-full h-20 cursor-pointer">
+            <Link href="/" className="block relative w-full h-20 cursor-pointer mb-6">
               <Image
                 src="/WObg-Wexford Education Long.png"
                 alt="Wexford Educare"
@@ -170,6 +170,24 @@ export function Footer() {
                 className="object-contain object-left hover:opacity-80 transition-opacity"
               />
             </Link>
+            <div className="grid grid-cols-2 gap-4 mt-6">
+              <div className="relative h-16 w-full">
+                <Image
+                  src="/images/footer/british.webp"
+                  alt="British Council"
+                  fill
+                  className="object-contain object-left"
+                />
+              </div>
+              <div className="relative h-16 w-full">
+                <Image
+                  src="/images/footer/ico.webp"
+                  alt="ICO Registered"
+                  fill
+                  className="object-contain object-left"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -181,22 +199,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <Link
-                href="/privacy-policy"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <span className="text-gray-600">-</span>
-              <Link
-                href="/terms-conditions"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Terms of Use
-              </Link>
-            </div>
-            <div className="flex items-center gap-4">
-              <Link
-                href="https://www.facebook.com/share/1CpqGRxZ8Q/?mibextid=wwXIfr"
+                href="https://www.facebook.com/profile.php?id=61581656609879"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"

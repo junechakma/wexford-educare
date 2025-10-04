@@ -87,8 +87,8 @@ npm start
 
 ## Contact Information
 
-- **Phone:** 02080894489
-- **WhatsApp:** +447437402307
+- **Phone:** +44 20 3375 9568
+- **WhatsApp:** +44 20 3375 9568
 - **Email:** info@wexfordeducare.com
 - **Address:** 129 Mile End Road, London, E1 4BG, UK
 - **Company Number:** 13810286
