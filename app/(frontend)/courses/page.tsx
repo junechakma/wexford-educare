@@ -22,10 +22,16 @@ const categories = [
 export default function Courses() {
   const [activeFilter, setActiveFilter] = useState("all");
 
+  // Course ID 17 "Courses Offered by Our Partner Institutions" should appear in all tabs
+  const partnerInstitutionsCourse = coursesData.find((course) => course.id === "17");
+
   const filteredCourses =
     activeFilter === "all"
       ? coursesData
-      : coursesData.filter((course) => course.category === activeFilter);
+      : [
+          ...coursesData.filter((course) => course.category === activeFilter && course.id !== "17"),
+          ...(partnerInstitutionsCourse ? [partnerInstitutionsCourse] : [])
+        ];
 
   return (
     <div className="min-h-screen">

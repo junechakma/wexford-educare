@@ -50,22 +50,34 @@ export default function AboutUs() {
 
   const teamTestimonials = [
     {
-      name: "MD Zahid Hasan Akhand",
-      designation: "Managing Director",
-      src: "/images/aboutus/jahid-bha.jpg",
+      name: "Md Mosaraf Hossen",
+      designation: "Founder & Managing Director",
+      src: "/images/aboutus/1.png",
       quote: "Leading Wexford Educare with a vision to make quality education accessible to every student aspiring to study in the UK.",
     },
     {
-      name: "Mahmud Hasan Sefat",
-      designation: "Head of Operations",
-      src: "/images/aboutus/hanif-bhai.jpg",
-      quote: "Ensuring seamless operations and exceptional service delivery to help students achieve their educational dreams.",
+      name: "Hasan Imam Evan",
+      designation: "Director of Partnerships & Growth",
+      src: "/images/aboutus/2.png",
+      quote: "Building strategic partnerships and driving growth to expand educational opportunities for students across the UK.",
     },
     {
-      name: "MD Ariful Hossain Shohrab",
-      designation: "Head of HR and Admin",
-      src: "/images/aboutus/sohrab-bhai.jpg",
-      quote: "Building a strong team dedicated to supporting students throughout their educational journey.",
+      name: "Md Abrar Hossain",
+      designation: "Admissions Quality & Standards Manager",
+      src: "/images/aboutus/3.png",
+      quote: "Ensuring the highest standards in our admissions process to help students find their perfect educational pathway.",
+    },
+    {
+      name: "Muhaimen Khondokar",
+      designation: "Enrolment & Student Success Manager",
+      src: "/images/aboutus/4.png",
+      quote: "Dedicated to supporting students from enrolment through to graduation, ensuring their success every step of the way.",
+    },
+    {
+      name: "Hamim Ur Rahman",
+      designation: "Data Protection & Compliance Manager",
+      src: "/images/aboutus/5.png",
+      quote: "Safeguarding student data and ensuring full compliance with UK regulations to maintain trust and security.",
     },
   ];
 
@@ -157,8 +169,8 @@ export default function AboutUs() {
       {/* Our Vision Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
-            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch max-w-7xl mx-auto">
+            <div className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-full lg:min-h-[700px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
               <Image
                 src="/images/aboutus/CEO_Picture_Oxford.jpg"
                 alt="Our Vision"
@@ -168,7 +180,7 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent" />
             </div>
-            <div>
+            <div className="flex flex-col justify-center">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 <span className="text-secondary">Our </span>
                 <span className="text-primary">Vision</span>
@@ -197,8 +209,8 @@ export default function AboutUs() {
       {/* Our Mission Section */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
-            <div className="order-2 lg:order-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch max-w-7xl mx-auto">
+            <div className="order-2 lg:order-1 flex flex-col justify-center">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 <span className="text-secondary">Our </span>
                 <span className="text-primary">Mission</span>
@@ -221,7 +233,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-secondary/20 order-1 lg:order-2">
+            <div className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-full lg:min-h-[700px] rounded-xl overflow-hidden shadow-2xl border-2 border-secondary/20 order-1 lg:order-2">
               <Image
                 src="/images/aboutus/Staffs&Executives.jpg"
                 alt="Our Mission"
