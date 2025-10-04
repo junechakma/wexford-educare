@@ -8,6 +8,7 @@ import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
 import { Send, CheckCircle2 } from "lucide-react";
+import { AnimatedButton } from "@/components/ui/animated-button";
 
 export default function ApplyNow() {
   const [formData, setFormData] = useState({
@@ -351,10 +352,15 @@ export default function ApplyNow() {
 
                 {/* Submit Button */}
                 <div className="pt-2 sm:pt-4">
-                  <button
+                  <AnimatedButton
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-secondary text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3"
+                    bgColor="bg-primary"
+                    textColor="text-white"
+                    hoverBgColor="bg-secondary"
+                    hoverTextColor="text-secondary"
+                    hoverBorderColor="border-secondary"
+                    className="w-full py-3 sm:py-4 text-base sm:text-lg"
                   >
                     {isSubmitting ? (
                       <>
@@ -367,7 +373,7 @@ export default function ApplyNow() {
                         <span className="text-sm sm:text-base">Submit Application</span>
                       </>
                     )}
-                  </button>
+                  </AnimatedButton>
                 </div>
               </form>
             </Card>
@@ -437,17 +443,29 @@ export default function ApplyNow() {
             application process or course offerings.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Link
-              href="/contact-us"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-            >
-              Contact Us
+            <Link href="/contact-us">
+              <AnimatedButton
+                bgColor="bg-primary"
+                textColor="text-white"
+                hoverBgColor="bg-white"
+                hoverTextColor="text-primary"
+                hoverBorderColor="border-primary"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg"
+              >
+                Contact Us
+              </AnimatedButton>
             </Link>
-            <Link
-              href="/courses"
-              className="inline-block bg-white hover:bg-gray-100 text-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-            >
-              Browse Courses
+            <Link href="/courses">
+              <AnimatedButton
+                bgColor="bg-white"
+                textColor="text-secondary"
+                hoverBgColor="bg-secondary"
+                hoverTextColor="text-white"
+                hoverBorderColor="border-white"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg"
+              >
+                Browse Courses
+              </AnimatedButton>
             </Link>
           </div>
         </div>

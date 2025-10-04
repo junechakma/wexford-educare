@@ -46,6 +46,9 @@ export const AnimatedButton = React.forwardRef<HTMLButtonElement, AnimatedButton
         )}
         {...props}
       >
+        {isHovered && (
+          <span className="absolute inset-0 bg-white/10 backdrop-blur-sm" />
+        )}
         <span className="relative z-10 flex items-center justify-center">{children}</span>
         {isHovered && (
           <span

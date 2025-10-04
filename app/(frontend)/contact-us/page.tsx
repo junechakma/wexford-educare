@@ -8,6 +8,7 @@ import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
 import { Send, MapPin } from "lucide-react";
+import { AnimatedButton } from "@/components/ui/animated-button";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -84,7 +85,7 @@ export default function ContactUs() {
     {
       illustration: "/images/illustrations/undraw_business-decisions_3x2a.svg",
       title: "Company Number",
-      content: "13810286",
+      content: "16289441",
     },
   ];
 
@@ -253,10 +254,15 @@ export default function ContactUs() {
                 )}
 
                 <div>
-                  <button
+                  <AnimatedButton
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-secondary text-white py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    bgColor="bg-primary"
+                    textColor="text-white"
+                    hoverBgColor="bg-secondary"
+                    hoverTextColor="text-secondary"
+                    hoverBorderColor="border-secondary"
+                    className="w-full py-3 sm:py-4 text-sm sm:text-base"
                   >
                     {isSubmitting ? (
                       <>
@@ -269,7 +275,7 @@ export default function ContactUs() {
                         <span className="text-sm sm:text-base">Send Message</span>
                       </>
                     )}
-                  </button>
+                  </AnimatedButton>
                 </div>
               </form>
             </Card>
@@ -311,17 +317,29 @@ export default function ContactUs() {
             through every step of your application process.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Link
-              href="/apply-now"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-            >
-              Apply Now
+            <Link href="/apply-now">
+              <AnimatedButton
+                bgColor="bg-primary"
+                textColor="text-white"
+                hoverBgColor="bg-white"
+                hoverTextColor="text-primary"
+                hoverBorderColor="border-primary"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg"
+              >
+                Apply Now
+              </AnimatedButton>
             </Link>
-            <Link
-              href="/courses"
-              className="inline-block bg-white hover:bg-gray-100 text-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-            >
-              View Courses
+            <Link href="/courses">
+              <AnimatedButton
+                bgColor="bg-white"
+                textColor="text-secondary"
+                hoverBgColor="bg-secondary"
+                hoverTextColor="text-white"
+                hoverBorderColor="border-white"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg"
+              >
+                View Courses
+              </AnimatedButton>
             </Link>
           </div>
         </div>
