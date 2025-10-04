@@ -161,7 +161,7 @@ export default function AboutUs() {
                   </CardBody>
                 </CardContainer>
               );
-            })}
+            })} 
           </div>
         </div>
       </section>
@@ -172,10 +172,10 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch max-w-7xl mx-auto">
             <div className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-full lg:min-h-[700px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
               <Image
-                src="/images/aboutus/CEO_Picture_Oxford.jpg"
+                src="/images/aboutus/Founder.jpg"
                 alt="Our Vision"
                 fill
-                className="object-cover"
+                className="object-scale-down"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent" />

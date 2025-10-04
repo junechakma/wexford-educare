@@ -12,21 +12,21 @@ const categories = [
   },
   {
     title: "HND",
-    image: "/images/homepage/4-1384x2048.jpg",
+    image: "/images/homepage/course-categories1.jpg",
     description:
       "A practical qualification after A-levels for direct career entry or degree progression.",
     duration: "2 years",
   },
   {
     title: "Top-Up Degree",
-    image: "/images/homepage/3-1384x2048.jpg",
+    image: "/images/homepage/course-categories2.jpg",
     description:
       "Upgrade your HND or foundation degree to a full Bachelor's in just one year.",
     duration: "1 year",
   },
   {
     title: "Bachelor's Degree",
-    image: "/images/homepage/2-1384x2048.jpg",
+    image: "/images/homepage/course-categories3.jpg",
     description: "Launch your career with an undergraduate degree.",
     duration: "4 years",
   },

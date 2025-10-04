@@ -24,7 +24,7 @@ const slides = [
     description:
       "Wexford Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
-    image: "/images/homepage/campus.jpg",
+    image: "/images/homepage/career.jpg",
   },
   {
     heading: "Secure Your Admission to a UK University",

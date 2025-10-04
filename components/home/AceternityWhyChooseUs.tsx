@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
+import { Meteors } from "@/components/ui/aceternity/meteors";
 
 const features = [
   {
@@ -73,8 +74,9 @@ function Feature3DCard({
 
 export function AceternityWhyChooseUs() {
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary to-primary">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-br from-secondary to-primary relative overflow-hidden">
+      <Meteors number={30} />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left side - Text content */}
           <div className="text-white">
