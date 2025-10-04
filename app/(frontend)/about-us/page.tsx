@@ -60,6 +60,11 @@ export default function AboutUs() {
       designation: "Director of Partnerships & Growth",
       src: "/images/aboutus/2.png",
       quote: "Building strategic partnerships and driving growth to expand educational opportunities for students across the UK.",
+    }, {
+      name: "Muhaimen Khondokar",
+      designation: "Enrolment & Student Success Manager",
+      src: "/images/aboutus/4.png",
+      quote: "Dedicated to supporting students from enrolment through to graduation, ensuring their success every step of the way.",
     },
     {
       name: "Md Abrar Hossain",
@@ -67,12 +72,7 @@ export default function AboutUs() {
       src: "/images/aboutus/3.png",
       quote: "Ensuring the highest standards in our admissions process to help students find their perfect educational pathway.",
     },
-    {
-      name: "Muhaimen Khondokar",
-      designation: "Enrolment & Student Success Manager",
-      src: "/images/aboutus/4.png",
-      quote: "Dedicated to supporting students from enrolment through to graduation, ensuring their success every step of the way.",
-    },
+   
     {
       name: "Hamim Ur Rahman",
       designation: "Data Protection & Compliance Manager",

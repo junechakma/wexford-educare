@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { AnimatedButton } from "@/components/ui/animated-button";
 
 const slides = [
   {
@@ -124,16 +125,17 @@ export function AceternityHero() {
 
                   <div className="flex gap-4 flex-wrap">
                     {slide.ctas.map((cta, ctaIndex) => (
-                      <Link
-                        key={ctaIndex}
-                        href={cta.href}
-                        className={`px-8 py-3 font-semibold text-sm transition-all duration-300 rounded-full ${
-                          ctaIndex === 0
-                            ? "bg-secondary text-white hover:bg-secondary/90 shadow-lg"
-                            : "bg-white text-secondary border-2 border-white hover:bg-white/90 hover:text-primary active:bg-secondary active:text-secondary shadow-lg"
-                        }`}
-                      >
-                        {cta.text}
+                      <Link key={ctaIndex} href={cta.href}>
+                        <AnimatedButton
+                          bgColor={ctaIndex === 0 ? "bg-secondary" : "bg-white"}
+                          textColor={ctaIndex === 0 ? "text-white" : "text-secondary"}
+                          hoverBgColor={ctaIndex === 0 ? "bg-white" : "bg-secondary"}
+                          hoverTextColor={ctaIndex === 0 ? "text-secondary" : "text-white"}
+                          hoverBorderColor={ctaIndex === 0 ? "border-secondary" : "border-white"}
+                          className="px-8 py-3 text-sm rounded-full shadow-lg"
+                        >
+                          {cta.text}
+                        </AnimatedButton>
                       </Link>
                     ))}
                 </div>

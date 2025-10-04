@@ -150,12 +150,6 @@ export default function ContactUs() {
                         ) : (
                           <span className="font-medium">{info.content}</span>
                         )}
-                        {info.subContent && (
-                          <>
-                            <br />
-                            <span className="text-gray-500 text-xs mt-1 inline-block">{info.subContent}</span>
-                          </>
-                        )}
                       </div>
                     </div>
                   </div>

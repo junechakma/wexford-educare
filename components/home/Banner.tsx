@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { AnimatedButton } from "@/components/ui/animated-button";
 
 export function Banner() {
   return (
@@ -14,17 +15,29 @@ export function Banner() {
             Get <span className="text-primary font-semibold">expert guidance</span> from our experienced counselors and take the first step towards your <span className="text-primary font-semibold">dream university</span>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href="/apply-now"
-              className="bg-primary text-secondary px-8 py-4 rounded-full font-semibold hover:bg-primary-light transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              Apply Now
+            <Link href="/apply-now">
+              <AnimatedButton
+                bgColor="bg-primary"
+                textColor="text-secondary"
+                hoverBgColor="bg-secondary"
+                hoverTextColor="text-primary"
+                hoverBorderColor="border-primary"
+                className="px-8 py-4 rounded-full shadow-lg"
+              >
+                Apply Now
+              </AnimatedButton>
             </Link>
-            <Link
-              href="/contact-us"
-              className="bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-secondary transition-all duration-300 hover:scale-105"
-            >
-              Contact Us
+            <Link href="/contact-us">
+              <AnimatedButton
+                bgColor="bg-transparent"
+                textColor="text-primary"
+                hoverBgColor="bg-primary"
+                hoverTextColor="text-secondary"
+                hoverBorderColor="border-secondary"
+                className="px-8 py-4 rounded-full border-primary"
+              >
+                Contact Us
+              </AnimatedButton>
             </Link>
           </div>
         </div>

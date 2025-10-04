@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 import { coursesData } from '@/data/courses-data';
+import { AnimatedButton } from '@/components/ui/animated-button';
 
 import { cn } from '@/lib/utils';
 
@@ -321,11 +322,16 @@ export function AceternityNavbar() {
               </div>
 
               <Link href="/apply-now">
-                <button
-                  className="text-xs sm:text-sm font-semibold px-4 sm:px-6 h-9 sm:h-10 rounded-full shadow-sm bg-secondary text-primary hover:shadow-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                <AnimatedButton
+                  bgColor="bg-secondary"
+                  textColor="text-primary"
+                  hoverBgColor="bg-primary"
+                  hoverTextColor="text-secondary"
+                  hoverBorderColor="border-secondary"
+                  className="text-xs sm:text-sm px-4 sm:px-6 h-9 sm:h-10 rounded-full whitespace-nowrap"
                 >
                   Apply Now
-                </button>
+                </AnimatedButton>
               </Link>
             </div>
           </div>
@@ -411,9 +417,17 @@ export function AceternityNavbar() {
               <Link
                 href="/apply-now"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full text-center bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-secondary/90 transition-all"
               >
-                Apply Now
+                <AnimatedButton
+                  bgColor="bg-secondary"
+                  textColor="text-primary"
+                  hoverBgColor="bg-primary"
+                  hoverTextColor="text-secondary"
+                  hoverBorderColor="border-secondary"
+                  className="w-full rounded-full"
+                >
+                  Apply Now
+                </AnimatedButton>
               </Link>
 
               {/* Social Links */}
