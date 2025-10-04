@@ -16,7 +16,7 @@ const slides = [
       { text: "Explore Courses", href: "/courses" },
       { text: "Apply Now", href: "/apply-now" },
     ],
-    image: "/images/homepage/hero-scaled.jpg",
+    image: "/images/homepage/sucess.jpg",
   },
   {
     heading: "Your Career Starts Here.",
@@ -24,7 +24,7 @@ const slides = [
     description:
       "Wexford Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
-    image: "/images/homepage/african-american-student-smiles-sincerely-while-si-2025-01-09-22-07-27-utc-min-scaled.jpg",
+    image: "/images/homepage/campus.jpg",
   },
   {
     heading: "Secure Your Admission to a UK University",
@@ -32,7 +32,7 @@ const slides = [
     description:
       "Ready to study in the UK? Our expert consultants are here to help students from all backgrounds achieve their goals. Begin your application with our support.",
     ctas: [{ text: "APPLY NOW", href: "/apply-now" }],
-    image: "/images/homepage/water-of-leith-walkway-in-edimburgh-city.jpg",
+    image: "/images/homepage/university2.jpg",
   },
 ];
 
@@ -130,7 +130,7 @@ export function AceternityHero() {
                           bgColor={ctaIndex === 0 ? "bg-secondary" : "bg-white"}
                           textColor={ctaIndex === 0 ? "text-white" : "text-secondary"}
                           hoverBgColor={ctaIndex === 0 ? "bg-white" : "bg-secondary"}
-                          hoverTextColor={ctaIndex === 0 ? "text-secondary" : "text-white"}
+                          hoverTextColor={ctaIndex === 0 ? "text-white" : "text-white"}
                           hoverBorderColor={ctaIndex === 0 ? "border-secondary" : "border-white"}
                           className="px-8 py-3 text-sm rounded-full shadow-lg"
                         >

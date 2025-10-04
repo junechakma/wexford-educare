@@ -32,7 +32,7 @@ export function Banner() {
                 bgColor="bg-transparent"
                 textColor="text-primary"
                 hoverBgColor="bg-primary"
-                hoverTextColor="text-secondary"
+                hoverTextColor="text-white"
                 hoverBorderColor="border-secondary"
                 className="px-8 py-4 rounded-full border-primary"
               >

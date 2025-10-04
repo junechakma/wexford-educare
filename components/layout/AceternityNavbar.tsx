@@ -326,7 +326,7 @@ export function AceternityNavbar() {
                   bgColor="bg-secondary"
                   textColor="text-primary"
                   hoverBgColor="bg-primary"
-                  hoverTextColor="text-secondary"
+                  hoverTextColor="text-white"
                   hoverBorderColor="border-secondary"
                   className="text-xs sm:text-sm px-4 sm:px-6 h-9 sm:h-10 rounded-full whitespace-nowrap"
                 >
@@ -422,7 +422,7 @@ export function AceternityNavbar() {
                   bgColor="bg-secondary"
                   textColor="text-primary"
                   hoverBgColor="bg-primary"
-                  hoverTextColor="text-secondary"
+                  hoverTextColor="text-white"
                   hoverBorderColor="border-secondary"
                   className="w-full rounded-full"
                 >

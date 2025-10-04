@@ -39,7 +39,9 @@ export const AnimatedButton = React.forwardRef<HTMLButtonElement, AnimatedButton
           "flex items-center justify-center",
           "active:scale-95",
           "disabled:opacity-50 disabled:cursor-not-allowed",
-          isHovered ? `${hoverBgColor} ${hoverTextColor} scale-105 shadow-xl border-2 ${hoverBorderColor}` : `${bgColor} ${textColor} border-2 border-transparent`,
+          isHovered
+            ? `${hoverBgColor}/95 ${hoverTextColor} scale-105 shadow-xl border-2 ${hoverBorderColor} backdrop-blur supports-[backdrop-filter]:${hoverBgColor}/60`
+            : `${bgColor} ${textColor} border-2 border-transparent`,
           className
         )}
         {...props}
