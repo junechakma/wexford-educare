@@ -74,7 +74,7 @@ export default function ApplyNow() {
     setSubmitStatus({ type: null, message: "" });
 
     try {
-      const response = await fetch("/api/applications", {
+      const response = await fetch("/api/applications/submit.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -310,7 +310,7 @@ export default function ApplyNow() {
                     value={formData.bestTime}
                     onChange={handleChange}
                     className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                    placeholder="eg. Tomorrow 9AM - 11AM"
+                    placeholder="e.g. 10PM to 11PM or Morning 9AM-11AM"
                   />
                 </div>
 

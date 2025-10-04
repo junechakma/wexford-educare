@@ -160,7 +160,7 @@ export function Footer() {
           {/* Logo */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-primary">
-              Wexford Educare
+              Accreditations & Customer Trust
             </h3>
             <Link href="/" className="block relative w-full h-20 cursor-pointer mb-6">
               <Image

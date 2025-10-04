@@ -16,13 +16,13 @@ export function Banner() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/apply-now"
-              className="bg-white text-secondary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-primary text-secondary px-8 py-4 rounded-full font-semibold hover:bg-primary-light transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Apply Now
             </Link>
             <Link
               href="/contact-us"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-secondary transition-all duration-300 hover:scale-105"
+              className="bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-secondary transition-all duration-300 hover:scale-105"
             >
               Contact Us
             </Link>

@@ -273,7 +273,7 @@ export default function AdminDashboard() {
                   {stats.total}
                 </p>
               </div>
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                 <Users className="w-6 h-6 text-primary" />
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function AdminDashboard() {
                   {stats.thisWeek}
                 </p>
               </div>
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <TrendingUp className="w-6 h-6 text-green-600" />
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function AdminDashboard() {
                   {stats.today}
                 </p>
               </div>
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <Calendar className="w-6 h-6 text-blue-600" />
               </div>
             </div>
@@ -312,8 +312,8 @@ export default function AdminDashboard() {
         <Card className="p-6 mb-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Search */}
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <div className="relative flex items-center">
+              <Search className="absolute left-3 w-5 h-5 text-gray-400 pointer-events-none" />
               <input
                 type="text"
                 placeholder="Search by name, email, phone..."
@@ -324,8 +324,8 @@ export default function AdminDashboard() {
             </div>
 
             {/* Campus Filter */}
-            <div className="relative">
-              <Filter className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <div className="relative flex items-center">
+              <Filter className="absolute left-3 w-5 h-5 text-gray-400 pointer-events-none" />
               <select
                 value={filterCampus}
                 onChange={(e) => setFilterCampus(e.target.value)}
@@ -341,8 +341,8 @@ export default function AdminDashboard() {
             </div>
 
             {/* Course Filter */}
-            <div className="relative">
-              <Filter className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <div className="relative flex items-center">
+              <Filter className="absolute left-3 w-5 h-5 text-gray-400 pointer-events-none" />
               <select
                 value={filterCourse}
                 onChange={(e) => setFilterCourse(e.target.value)}
@@ -430,6 +430,9 @@ export default function AdminDashboard() {
                     Best Time
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                    Message
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Submitted
                   </th>
                 </tr>
@@ -438,7 +441,7 @@ export default function AdminDashboard() {
                 {filteredApplications.length === 0 ? (
                   <tr>
                     <td
-                      colSpan={8}
+                      colSpan={9}
                       className="px-6 py-12 text-center text-gray-500"
                     >
                       No applications found
@@ -479,6 +482,11 @@ export default function AdminDashboard() {
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-gray-600">
                           {app.bestTime || "-"}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 max-w-xs">
+                        <div className="text-sm text-gray-600 truncate" title={app.message || "-"}>
+                          {app.message || "-"}
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">

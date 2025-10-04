@@ -160,7 +160,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
             <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20">
               <Image
-                src="/images/aboutus/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg"
+                src="/images/aboutus/CEO_Picture_Oxford.jpg"
                 alt="Our Vision"
                 fill
                 className="object-cover"
@@ -223,7 +223,7 @@ export default function AboutUs() {
             </div>
             <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-secondary/20 order-1 lg:order-2">
               <Image
-                src="/images/aboutus/male-and-female-business-people-in-a-meeting-at-a-2025-04-05-07-23-57-utc-min-2048x1365.jpg"
+                src="/images/aboutus/Staffs&Executives.jpg"
                 alt="Our Mission"
                 fill
                 className="object-cover"

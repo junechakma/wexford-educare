@@ -67,7 +67,7 @@ export default function ContactUs() {
       illustration: "/images/illustrations/undraw_notifications_uvwd.svg",
       title: "Phone",
       content: "+44 20 3375 9568",
-      subContent: "+44 20 3375 9568",
+      // subContent: "+44 20 3375 9568",
       link: "tel:+44 20 3375 9568",
     },
     {
@@ -238,7 +238,7 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex-1">
+                <div className="flex-1 flex flex-col">
                   <label htmlFor="message" className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1 sm:mb-2">Your Message *</label>
                   <textarea
                     id="message"
@@ -247,7 +247,7 @@ export default function ContactUs() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full h-full min-h-[150px] sm:min-h-[200px] px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
+                    className="w-full flex-1 min-h-[150px] sm:min-h-[200px] px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none outline-none"
                     placeholder="Tell us about your educational goals and how we can help..."
                   />
                 </div>

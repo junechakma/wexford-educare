@@ -82,7 +82,7 @@ export default function Guidance() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-              <span className="text-secondary">Blossom </span>
+              <span className="text-secondary">Wexford </span>
               <span className="text-primary">Educare</span>
             </h2>
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
@@ -143,8 +143,8 @@ export default function Guidance() {
 
           <div className="grid grid-cols-1 gap-6 sm:gap-8 mb-6 sm:mb-8">
             <Card className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-5 sm:p-6 md:p-8 border-0 shadow-md">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                <div className="flex flex-col justify-between">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:divide-x divide-gray-300">
+                <div className="flex flex-col justify-between pb-6 sm:pb-8 lg:pb-0 lg:pr-6 sm:lg:pr-8 border-b lg:border-b-0 border-gray-300">
                   <div>
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
                       <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
@@ -156,10 +156,10 @@ export default function Guidance() {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between lg:pl-6 sm:lg:pl-8">
                   <div>
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                      <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                      <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                     </div>
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-3 sm:mb-4">Website & Locations</h3>
                     <div className="space-y-3 sm:space-y-4">
@@ -183,7 +183,7 @@ export default function Guidance() {
                         <div className="grid grid-cols-2 gap-2 sm:gap-3">
                           {["London", "Leeds", "Manchester", "Birmingham"].map((city, idx) => (
                             <div key={idx} className="flex items-center gap-2 bg-white/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
-                              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-secondary flex-shrink-0" />
+                              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
                               <span className="text-gray-700 font-medium text-xs sm:text-sm">{city}</span>
                             </div>
                           ))}
@@ -248,80 +248,67 @@ export default function Guidance() {
 
           {/* Who We Help */}
           <div className="mb-8 sm:mb-10 md:mb-12">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-6 sm:mb-8 text-center">
-              Who We Help:
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-              <div>
-                <Card className="mb-4 flex flex-col items-start h-full md:min-h-[260px] lg:min-h-[320px]">
-                  <CardHeader>
-                    <CardTitle className="text-base sm:text-lg md:text-xl">Who We Help</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2 sm:space-y-3">
-                      {[
-                        { title: "British Citizens", icon: UserCheck },
-                        { title: "EU Nationals with settled or pre-settled status", icon: UserCheck },
-                        { title: "Ages 18-60 (flexible for 60+)", icon: UserCheck },
-                        { title: "Individuals with Refugee Status", icon: UserCheck },
-                      ].map((item, idx) => {
-                        const Icon = item.icon;
-                        return (
-                          <div key={idx} className="flex items-center gap-3 sm:gap-4">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                              <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
-                            </div>
-                            <div className="text-xs sm:text-sm font-medium text-secondary">{item.title}</div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+            <Card className="mb-6 border-2 border-gray-200">
+              <CardHeader className="border-b-2 border-gray-200 pb-4">
+                <CardTitle className="flex items-center gap-3 text-lg sm:text-xl md:text-2xl">
+                  <UserCheck className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  Who We Help:
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                  {[
+                    { title: "British Citizens", icon: UserCheck },
+                    { title: "EU Nationals with settled or pre-settled status", icon: UserCheck },
+                    { title: "Ages 18-60 (flexible for 60+)", icon: UserCheck },
+                    { title: "Individuals with Refugee Status", icon: UserCheck },
+                  ].map((item, idx) => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={idx} className="flex items-start gap-3">
+                        <Icon className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <div className="text-sm sm:text-base text-gray-700 leading-relaxed">{item.title}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
 
-              <div>
-                <Card className="mb-4 flex flex-col items-start h-full md:min-h-[260px] lg:min-h-[320px]">
-                  <CardHeader>
-                    <CardTitle className="text-base sm:text-lg md:text-xl">Key Eligibility Points</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
-                      {[
-                        {
-                          title: "Flexible Qualifications",
-                          description: "Prior qualifications optional - work experience pathways offered.",
-                          icon: BookOpen,
-                        },
-                        {
-                          title: "Residency Requirement",
-                          description: "Three-year UK residency pre-course (excluding temporary absences like holidays).",
-                          icon: MapPin,
-                        },
-                        {
-                          title: "No Age Limit",
-                          description: "No upper age limit for tuition fee loans or grants.",
-                          icon: Calendar,
-                        },
-                      ].map((point, index) => {
-                        const Icon = point.icon;
-                        return (
-                          <div key={index} className="flex flex-col items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-white/50 rounded-lg">
-                            <div className="flex items-center gap-2 sm:gap-3">
-                              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                                <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                              </div>
-                              <div className="text-xs sm:text-sm font-semibold text-secondary">{point.title}</div>
-                            </div>
-                            <div className="text-xs sm:text-sm text-gray-700">{point.description}</div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
+            <Card className="border-2 border-gray-200">
+              <CardHeader className="border-b-2 border-gray-200 pb-4">
+                <CardTitle className="flex items-center gap-3 text-lg sm:text-xl md:text-2xl">
+                  <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  Key Eligibility Points:
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                  {[
+                    {
+                      title: "Prior qualifications optional - work experience pathways offered.",
+                      icon: BookOpen,
+                    },
+                    {
+                      title: "Three-year UK residency pre-course (excluding temporary absences like holidays).",
+                      icon: Calendar,
+                    },
+                    {
+                      title: "No upper age limit for tuition fee loans or grants.",
+                      icon: Calendar,
+                    },
+                  ].map((point, index) => {
+                    const Icon = point.icon;
+                    return (
+                      <div key={index} className="flex items-start gap-3">
+                        <Icon className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <div className="text-sm sm:text-base text-gray-700 leading-relaxed">{point.title}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

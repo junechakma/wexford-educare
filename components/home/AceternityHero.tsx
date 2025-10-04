@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const slides = [
   {
     heading: "Ready to Succeed in Your Studies?",
+    highlightedWord: "Ready",
     description:
       "Unlock your potential with our personalized support and expert guidance. We're here to help local, EU, and international students thrive on their educational journey.",
     ctas: [
@@ -18,6 +19,7 @@ const slides = [
   },
   {
     heading: "Your Career Starts Here.",
+    highlightedWord: "Your Career",
     description:
       "Wexford Educare connects you with the right courses to achieve your professional ambitions.",
     ctas: [{ text: "Find Your Course", href: "/courses" }],
@@ -25,6 +27,7 @@ const slides = [
   },
   {
     heading: "Secure Your Admission to a UK University",
+    highlightedWord: "Secure",
     description:
       "Ready to study in the UK? Our expert consultants are here to help students from all backgrounds achieve their goals. Begin your application with our support.",
     ctas: [{ text: "APPLY NOW", href: "/apply-now" }],
@@ -109,7 +112,21 @@ export function AceternityHero() {
               >
               <div className="container mx-auto text-left px-4 w-full max-w-7xl">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                  <span className="text-primary">UK</span> {slide.heading}
+                  {slide.heading.split(slide.highlightedWord).map((part, i, arr) => (
+                    i === 0 ? (
+                      <>
+                        <span className="text-primary">{slide.highlightedWord}</span>
+                        {part}
+                      </>
+                    ) : i === arr.length - 1 ? (
+                      part
+                    ) : (
+                      <>
+                        {part}
+                        <span className="text-primary">{slide.highlightedWord}</span>
+                      </>
+                    )
+                  ))}
                 </h1>
 
                 <div className="border-l-4 border-primary pl-4 mb-8 max-w-2xl">

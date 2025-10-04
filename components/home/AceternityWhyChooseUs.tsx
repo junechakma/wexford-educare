@@ -66,12 +66,6 @@ function Feature3DCard({
         >
           {description}
         </CardItem>
-        <CardItem
-          translateZ="100"
-          className="w-full mt-6"
-        >
-          <div className="h-1 w-full bg-gradient-to-r from-secondary via-primary to-secondary rounded-full opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
-        </CardItem>
       </CardBody>
     </CardContainer>
   );
@@ -79,7 +73,7 @@ function Feature3DCard({
 
 export function AceternityWhyChooseUs() {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#1e3a8a] via-[#7c2d5e] to-[#dc2626]">
+    <section className="py-20 bg-gradient-to-br from-secondary to-primary">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left side - Text content */}

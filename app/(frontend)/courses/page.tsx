@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
-import { BookOpen, Clock, Award } from "lucide-react";
+import { BookOpen, Clock, Award, ArrowRight } from "lucide-react";
 import { coursesData } from "@/data/courses-data";
 
 const categories = [
@@ -187,9 +187,10 @@ export default function Courses() {
 
                   <Link
                     href={`/courses/${course.slug}`}
-                    className="block w-full bg-secondary hover:bg-primary text-white text-center py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 hover:shadow-lg"
+                    className="group flex items-center justify-center gap-2 w-full bg-secondary hover:bg-primary text-white text-center py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 hover:shadow-lg"
                   >
-                    Learn More
+                    View More
+                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </div>
               </Card>
