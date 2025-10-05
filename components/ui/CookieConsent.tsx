@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { X, Cookie } from "lucide-react";
+import { AnimatedButton } from "@/components/ui/animated-button";
 
 export function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
@@ -86,18 +87,28 @@ export function CookieConsent() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-              <button
+              <AnimatedButton
                 onClick={handleDecline}
-                className="px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap"
+                bgColor="bg-white"
+                textColor="text-gray-700"
+                hoverBgColor="bg-white"
+                hoverTextColor="text-primary"
+                hoverBorderColor="border-primary"
+                className="px-6 py-3 whitespace-nowrap"
               >
                 Decline
-              </button>
-              <button
+              </AnimatedButton>
+              <AnimatedButton
                 onClick={handleAccept}
-                className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap"
+                bgColor="bg-primary"
+                textColor="text-white"
+                hoverBgColor="bg-white"
+                hoverTextColor="text-primary"
+                hoverBorderColor="border-primary"
+                className="px-6 py-3 whitespace-nowrap"
               >
                 Accept All
-              </button>
+              </AnimatedButton>
             </div>
           </div>
         </div>

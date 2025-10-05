@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import { BookOpen, Clock, Award, ArrowRight } from "lucide-react";
 import { coursesData } from "@/data/courses-data";
 
@@ -228,12 +229,20 @@ export default function Courses() {
             Get in touch with our education consultants today and let us help
             you find the perfect course for your future.
           </p>
-          <Link
-            href="/contact-us"
-            className="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
-          >
-            Contact Us Today
-          </Link>
+          <div className="flex justify-center">
+            <Link href="/contact-us">
+              <AnimatedButton
+                bgColor="bg-primary"
+                textColor="text-white"
+                hoverBgColor="bg-primary"
+                hoverTextColor="text-white"
+                hoverBorderColor="border-white"
+                className="px-8 py-4 text-lg font-medium"
+              >
+                Contact Us Today
+              </AnimatedButton>
+            </Link>
+          </div>
         </div>
         <Meteors number={15} />
       </section>

@@ -131,7 +131,7 @@ export function AceternityHero() {
                           textColor={ctaIndex === 0 ? "text-white" : "text-secondary"}
                           hoverBgColor={ctaIndex === 0 ? "bg-white" : "bg-secondary"}
                           hoverTextColor={ctaIndex === 0 ? "text-white" : "text-white"}
-                          hoverBorderColor={ctaIndex === 0 ? "border-secondary" : "border-white"}
+                          hoverBorderColor="border-white"
                           className="px-8 py-3 text-sm rounded-full shadow-lg"
                         >
                           {cta.text}

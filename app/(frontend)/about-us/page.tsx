@@ -2,13 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/aceternity/3d-card";
 import { BackgroundBeams } from "@/components/ui/aceternity/background-beams";
 import { TextGenerateEffect } from "@/components/ui/aceternity/text-generate-effect";
 import { Meteors } from "@/components/ui/aceternity/meteors";
-import { AnimatedTestimonials } from "@/components/ui/aceternity/animated-testimonials";
 
 export default function AboutUs() {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const animationRef = useRef<number | undefined>(undefined);
+
   const whyChooseUsItems = [
     {
       illustration: "/images/illustrations/undraw_personal-info_yzls.svg",
@@ -48,7 +52,7 @@ export default function AboutUs() {
     },
   ];
 
-  const teamTestimonials = [
+  const teamMembers = [
     {
       name: "Md Mosaraf Hossen",
       designation: "Founder & Managing Director",
@@ -72,7 +76,7 @@ export default function AboutUs() {
       src: "/images/aboutus/3.png",
       quote: "Ensuring the highest standards in our admissions process to help students find their perfect educational pathway.",
     },
-   
+
     {
       name: "Hamim Ur Rahman",
       designation: "Data Protection & Compliance Manager",
@@ -80,6 +84,32 @@ export default function AboutUs() {
       quote: "Safeguarding student data and ensuring full compliance with UK regulations to maintain trust and security.",
     },
   ];
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+
+    const scroll = () => {
+      if (!isPaused && scrollContainer) {
+        scrollContainer.scrollLeft += 1;
+
+        // Reset scroll when reaching the first set of duplicates
+        const maxScroll = scrollContainer.scrollWidth / 3;
+        if (scrollContainer.scrollLeft >= maxScroll) {
+          scrollContainer.scrollLeft = 0;
+        }
+      }
+      animationRef.current = requestAnimationFrame(scroll);
+    };
+
+    animationRef.current = requestAnimationFrame(scroll);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [isPaused]);
 
   return (
     <div className="min-h-screen">
@@ -246,19 +276,72 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Meet Our Team Section with Animated Testimonials */}
-      <section className="py-16 md:py-20 bg-secondary relative overflow-hidden">
+      {/* Meet Our Team Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            <span className="text-white">Meet Our </span>
+            <span className="text-secondary">Meet Our </span>
             <span className="text-primary">Team</span>
           </h2>
-          <AnimatedTestimonials
-            testimonials={teamTestimonials}
-            autoplay={true}
-            className="max-w-6xl"
-          />
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Our dedicated team of education professionals is committed to helping you achieve your academic goals.
+          </p>
+
+          <div className="relative w-full">
+            <div
+              ref={scrollContainerRef}
+              className="overflow-x-auto scrollbar-hide"
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              <div className="flex gap-6">
+                {/* Duplicate team members for infinite scroll effect */}
+                {[...teamMembers, ...teamMembers, ...teamMembers].map((member, index) => (
+                  <div
+                    key={index}
+                    className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-primary/30 flex-shrink-0 w-80"
+                  >
+                    <div className="relative h-96 w-full overflow-hidden">
+                      <Image
+                        src={member.src}
+                        alt={member.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+
+                      <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                        <h3 className="text-lg font-bold mb-1 line-clamp-2">
+                          {member.name}
+                        </h3>
+                        <p className="text-xs text-primary font-medium mb-2 line-clamp-2">
+                          {member.designation}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="p-4 bg-white">
+                      <p className="text-xs text-gray-600 leading-relaxed line-clamp-3">
+                        {member.quote}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
+
+        <style jsx>{`
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
       </section>
     </div>
   );
