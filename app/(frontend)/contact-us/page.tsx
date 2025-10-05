@@ -39,22 +39,43 @@ export default function ContactUs() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitStatus({
+          type: "success",
+          message: data.message || "Thank you for contacting us! We will get back to you shortly.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
       setSubmitStatus({
-        type: "success",
-        message:
-          "Thank you for contacting us! We will get back to you shortly.",
+        type: "error",
+        message: "An error occurred. Please try again later.",
       });
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
