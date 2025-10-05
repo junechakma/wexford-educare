@@ -69,7 +69,7 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
       {/* Course Image */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+          <div className="relative w-full h-[450px] md:h-[550px] lg:h-[600px] rounded-xl overflow-hidden shadow-2xl">
             <Image
               src={course.image}
               alt={course.title}

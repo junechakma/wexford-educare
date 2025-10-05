@@ -83,6 +83,13 @@ export default function AboutUs() {
       src: "/images/aboutus/5.png",
       quote: "Safeguarding student data and ensuring full compliance with UK regulations to maintain trust and security.",
     },
+    {
+      name: "June Chakma",
+      designation: "IT Manager",
+      src: "/images/aboutus/6.png",
+      quote: "Overseeing our IT infrastructure to provide seamless digital experiences for students and staff alike.",
+    
+    }
   ];
 
   useEffect(() => {

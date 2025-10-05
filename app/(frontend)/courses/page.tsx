@@ -162,7 +162,7 @@ export default function Courses() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {filteredCourses.map((course) => (
               <Card key={course.id} className="bg-white hover:shadow-xl border border-gray-100 rounded-xl overflow-hidden transition-shadow">
-                <div className="w-full h-40 sm:h-48 relative">
+                <div className="w-full h-48 sm:h-56 md:h-64 relative">
                   <Image
                     src={course.thumbnail}
                     alt={course.title}

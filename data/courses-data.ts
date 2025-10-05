@@ -32,8 +32,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
-    image: "/images/courses/business-team-meeting-with-stats-and-review-graphs-2025-03-25-04-25-04-utc-min-2048x1024.jpg",
+    thumbnail: "/images/courses/business-management and-marketing.jpg",
+    image: "/images/courses/business-management and-marketing.jpg",
     description:
       "Unlock your potential in the creative and strategic world of business and marketing. 💡 This four-year program, offered by top UK universities, is methodically designed to give you the business acumen and marketing expertise you need for a successful career in the global marketplace. The integrated Foundation Year provides a supportive pathway into higher education, building the essential knowledge and academic skills you need to excel in your degree, even if you don't meet the standard entry requirements.",
     whyChoose: [
@@ -102,8 +102,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
-    image: "/images/courses/robot-engineers-invent-robots-of-the-future-that-c-2025-03-09-15-56-23-utc-min-2048x1365.jpg",
+    thumbnail: "/images/courses/computing-with-integrated-foundation.jpg",
+    image: "/images/courses/computing-with-integrated-foundation.jpg",
     description:
       "Launch your career in the fast-paced world of technology with the BSc Computing with Integrated Foundation Year. 🚀 Wexford Educare is here to guide you to top UK universities offering this program, which is designed to provide a comprehensive understanding of computing, from fundamental principles to the advanced practical skills that are crucial for the tech sector. The integrated Foundation Year provides a solid introduction to computing and essential academic skills, preparing you for the advanced, specialized study in the years to follow.",
     whyChoose: [
@@ -173,8 +173,8 @@ export const coursesData: Course[] = [
     category: "master-courses",
     duration: "1-2 Years",
     level: "Postgraduate",
-    thumbnail: "/images/courses/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg",
-    image: "/images/courses/confident-businesspeople-standing-in-office-2025-04-04-20-28-40-utc-min-2048x1365.jpg",
+    thumbnail: "/images/courses/mba.jpg",
+    image: "/images/courses/mba.jpg",
     description:
       "Elevate your career and become a global leader with the MBA – International. 🌍 This program is designed for ambitious professionals who want to enhance their leadership and management skills in a global context. Over a flexible 12 or 24-month period, you'll gain a deep understanding of all key business functions and the specific challenges facing organizations with global operations. This degree allows you to study at a postgraduate level while maintaining and enhancing your contribution to your employer.",
     whyChoose: [
@@ -228,8 +228,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
-    image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365.jpg",
+    thumbnail: "/images/courses/health-and-social-care with-foundation.jpg",
+    image: "/images/courses/health-and-social-care with-foundation.jpg",
     description:
       "Begin a rewarding career and make a real difference with the BA (Hons) Health and Social Care with Foundation Year program. Wexford Educare is here to guide you to top UK universities offering this course, which is designed to give you the extensive knowledge and practical skills needed to excel in the health and social care sectors. The integrated Foundation Year provides a supportive pathway into higher education, ensuring you're fully prepared for the challenges of the degree.",
     whyChoose: [
@@ -299,8 +299,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/modern-asian-businessman-with-high-confidence-comm-2025-03-13-23-46-20-utc-min-2048x1365.jpg",
-    image: "/images/courses/modern-asian-businessman-with-high-confidence-comm-2025-03-13-23-46-20-utc-min-2048x1365.jpg",
+    thumbnail: "/images/courses/accounting-and-finance with-foundation.jpg",
+    image: "/images/courses/accounting-and-finance with-foundation.jpg",
     description:
       "Embark on your journey into the world of finance with the BSc (Hons) Accounting and Finance with Foundation Year program, offered by our esteemed partner, Canterbury Christ Church University (CCCU). 🎓 This four-year program is the perfect starting point if you're passionate about finance but don't meet the direct entry requirements for a standard three-year degree. The integrated Foundation Year is designed to equip you with the essential academic and subject-specific skills needed to succeed.",
     whyChoose: [
@@ -381,8 +381,8 @@ export const coursesData: Course[] = [
     category: "bachelor-courses",
     duration: "4 Years",
     level: "Undergraduate",
-    thumbnail: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365.jpg",
-    image: "/images/courses/group-of-businesspeople-attending-a-seminar-2025-02-03-10-03-11-utc-min-2048x1365.jpg",
+    thumbnail: "/images/courses/business-management-with-foundation.jpg",
+    image: "/images/courses/business-management-with-foundation.jpg",
     description:
       "This carefully designed four-year BSc (Hons) program is your direct path to a successful career in the complex corporate world. 📈 The integrated Foundation Year is specifically planned to provide you with the essential academic and analytical skills you'll need to excel in your degree and beyond. This course ensures you get a strong start by developing your critical thinking, research, and writing abilities. You'll combine this theoretical understanding with practical experience through projects and internships, making you a highly capable and employable graduate.",
     whyChoose: [
@@ -948,8 +948,8 @@ export const coursesData: Course[] = [
     category: "master-courses",
     duration: "1-2 Years",
     level: "Postgraduate",
-    thumbnail: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
-    image: "/images/courses/medical-students-practicing-cpr-during-training-2025-02-12-03-26-00-utc-min-2048x1365 (1).jpg",
+    thumbnail: "/images/courses/master-of-public-health.jpg",
+    image: "/images/courses/master-of-public-health.jpg",
     description:
       "Ready to tackle today's complex global health challenges? The Master of Public Health (MPH) is a career-focused degree designed by Wexford Educare's partner institutions to equip you with the advanced skills and knowledge needed for leadership and innovation in the public health sector. This program provides a deep understanding of the factors that influence population health, preparing you to create positive change in diverse communities.",
     whyChoose: [
